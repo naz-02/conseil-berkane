@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Accueil | Conseil Provincial de Berkane" data-ar="الرئيسية | المجلس الإقليمي لبركان">Accueil | Conseil Provincial de Berkane</title>
+    <meta name="description" content="Portail officiel du Conseil Provincial de Berkane. Retrouvez les actualités, les projets de développement, les documents officiels et les services aux citoyens de la province de Berkane." data-ar="البوابة الرسمية للمجلس الإقليمي لبركان. تجدون هنا آخر الأخبار، مشاريع التنمية، الوثائق الرسمية، وخدمات المواطنين بإقليم بركان.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+    
+    <main>
+        
+        <div class="main-content-container">
+            <section id="hero" class="hero-section">
+                <div class="slideshow-container">
+                    
+                    <div class="mySlides fade" style="background-image: url('images/daora.jpg');">
+                        <div class="hero-content-wrapper">
+                            <h1 data-fr="La onzième session extraordinaire du Conseil Provincial de Berkane" data-ar="الدورة الاستثنائية الحادية عشر للمجلس الاقليمي لبركان">
+                                La onzième session extraordinaire du Conseil Provincial de Berkane
+                            </h1>
+                            <p data-fr="Détails sur la onzième session extraordinaire." data-ar="تفاصيل حول الدورة الاستثنائية الحادية عشر">
+                                Détails sur la onzième session extraordinaire.
+                            </p>
+                            <a href="session-11-extraordinaire.html" class="btn btn-primary" data-fr="En Savoir Plus" data-ar="اعرف المزيد">En Savoir Plus</a>
+                        </div>
+                    </div>
+                    <div class="mySlides fade active-slide slide-2" style="background-image: url('images/61d3dd71-84b7-43cb-a650-fd7e5e15d00a.jpg');">
+                        <div class="hero-content-wrapper slide-2-content">
+                            <h1 data-fr="La douzième session extraordinaire du Conseil Provincial de Berkane" data-ar="الدورة الاستثنائية الثانية عشر للمجلس الاقليمي لبركان">
+                                La douzième session extraordinaire du Conseil Provincial de Berkane
+                            </h1>
+                            <p data-fr="Détails sur la douzième session extraordinaire." data-ar="تفاصيل حول الدورة الاستثنائية الثانية عشر">
+                                Détails sur la douzième session extraordinaire.
+                            </p>
+                            <a href="session-12-extraordinaire.html" class="btn btn-primary" data-fr="En Savoir Plus" data-ar="اعرف المزيد">En Savoir Plus</a>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+
+                
+
+            </section>
+
+            <section id="actualites-phares">
+                <h2 class="section-title" data-fr="Actualités et Annonces Récentes" data-ar="آخر الأخبار والإعلانات">
+                    Actualités et Annonces Récentes
+                </h2>
+                <div class="grille-actualites">
+                    
+                </div>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="documentation.html#actualites" class="btn btn-secondary" data-fr="Voir toutes les Actualités" data-ar="مشاهدة جميع الأخبار">Voir toutes les Actualités</a>
+                </div>
+            </section>
+        </div>
+
+        <section id="services-rapides">
+            <h2 class="section-title" data-fr="Services Citoyens & Accès Direct" data-ar="خدمات المواطنين والوصول المباشر">
+                Services Citoyens & Accès Direct
+            </h2>
+            <div class="grille-services">
+                <a href="#" class="service-box" data-fr="Déposer une Réclamation" data-ar="تقديم شكاية">
+                    <span role="img" aria-label="Lettre" data-fr-aria-label="Lettre" data-ar-aria-label="رسالة">✉️</span> Déposer une Réclamation
+                </a>
+                <a href="#" class="service-box" data-fr="Marchés Publics" data-ar="صفقات عمومية">
+                    <span role="img" aria-label="Bâtiment" data-fr-aria-label="Bâtiment" data-ar-aria-label="مبنى">🏢</span> Marchés Publics
+                </a>
+                <a href="documentation.html#pv" class="service-box" data-fr="Procès-verbaux du Conseil" data-ar="محاضر المجلس">
+                    <span role="img" aria-label="Parchemin" data-fr-aria-label="Parchemin" data-ar-aria-label="رق">📜</span> Procès-verbaux du Conseil
+                </a>
+                <a href="le-conseil.html" class="service-box" data-fr="Contacter les Membres" data-ar="الاتصال بالأعضاء">
+                    <span role="img" aria-label="Groupe de personnes" data-fr-aria-label="Groupe de personnes" data-ar-aria-label="مجموعة أشخاص">👥</span> Contacter les Membres
+                </a>
+            </div>
+        </section>
+
+    </main>
+    
+<div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Résultats de Recherche | Conseil Provincial de Berkane" data-ar="نتائج البحث | المجلس الإقليمي لبركان">Résultats de Recherche | Conseil Provincial de Berkane</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    
+    <main>
+        <div class="page-header">
+            <h1 data-fr="Résultats de Recherche" data-ar="نتائج البحث">Résultats de Recherche</h1>
+        </div>
+        <section class="content-section">
+            <form id="search-form" role="search">
+                <label for="search-input" class="sr-only" data-fr="Rechercher sur le site" data-ar="ابحث في الموقع">Rechercher sur le site</label>
+                <input type="search" id="search-input" name="query" placeholder="Rechercher..." aria-label="Search" data-fr-placeholder="Rechercher..." data-ar-placeholder="بحث..." data-fr-aria-label="Rechercher sur le site" data-ar-aria-label="ابحث في الموقع">
+                <button type="submit" data-fr="Rechercher" data-ar="بحث">Rechercher</button>
+            </form>
+            <p data-fr="Résultats pour :" data-ar="نتائج البحث عن:">Résultats pour : <strong id="search-query-display"></strong></p>
+            <div id="search-results" aria-live="polite">
+                <!-- Les résultats de la recherche seront insérés ici par search.js -->
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

@@ -1,0 +1,614 @@
+projects: Project[] = [
+        {
+            titleFr: 'تزويد مركز الفضل للتنمية البشرية بالطاقة الشمسية ببركان', // Placeholder translation
+            titleAr: 'تزويد مركز الفضل للتنمية البشرية بالطاقة الشمسية ببركان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image4.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تزويد مركز الفضل للتنمية البشرية بالطاقة الشمسية ببركان',
+            descriptionAr: 'تزويد مركز الفضل للتنمية البشرية بالطاقة الشمسية ببركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'مشروع بناء دار الثقافة بركان', // Placeholder translation
+            titleAr: 'مشروع بناء دار الثقافة بركان',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image6.jpeg',
+            descriptionFr: 'Projet de Social & Culture : مشروع بناء دار الثقافة بركان',
+            descriptionAr: 'مشروع بناء دار الثقافة بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'مشروع بناء دار الثقافة بركان', // Placeholder translation
+            titleAr: 'مشروع بناء دار الثقافة بركان',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image8.jpeg',
+            descriptionFr: 'Projet de Social & Culture : مشروع بناء دار الثقافة بركان',
+            descriptionAr: 'مشروع بناء دار الثقافة بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'الحماية من الفياضات بمركز سيدي سليمان شراعة', // Placeholder translation
+            titleAr: 'الحماية من الفياضات بمركز سيدي سليمان شراعة',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image11.jpeg',
+            descriptionFr: 'Projet de Infrastructure : الحماية من الفياضات بمركز سيدي سليمان شراعة',
+            descriptionAr: 'الحماية من الفياضات بمركز سيدي سليمان شراعة',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء النواة الجامعية', // Placeholder translation
+            titleAr: 'بناء النواة الجامعية',
+            category: 'Enseignement',
+            imageUrl: 'assets/images/projets_extracted/image13.jpeg',
+            descriptionFr: 'Projet de Enseignement : بناء النواة الجامعية',
+            descriptionAr: 'بناء النواة الجامعية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال الإنارة العمومية لمركز', // Placeholder translation
+            titleAr: 'أشغال الإنارة العمومية لمركز',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image16.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال الإنارة العمومية لمركز',
+            descriptionAr: 'أشغال الإنارة العمومية لمركز  لمريس  أغبال',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال تأهيل مركز أغبال', // Placeholder translation
+            titleAr: 'أشغال تأهيل مركز أغبال',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image19.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال تأهيل مركز أغبال',
+            descriptionAr: 'أشغال تأهيل مركز أغبال',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال تأهيل مركز أغبال', // Placeholder translation
+            titleAr: 'أشغال تأهيل مركز أغبال',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image23.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال تأهيل مركز أغبال',
+            descriptionAr: 'أشغال تأهيل مركز أغبال',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت', // Placeholder translation
+            titleAr: 'تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image24.jpeg',
+            descriptionFr: 'Projet de Social & Culture : تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت',
+            descriptionAr: 'تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت', // Placeholder translation
+            titleAr: 'تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image26.jpeg',
+            descriptionFr: 'Projet de Social & Culture : تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت',
+            descriptionAr: 'تهيئة فضاءات لعرض وبيع المنتوجات المحلية بتافوغالت',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف', // Placeholder translation
+            titleAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image28.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            descriptionAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف', // Placeholder translation
+            titleAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image31.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            descriptionAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف', // Placeholder translation
+            titleAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image33.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            descriptionAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف', // Placeholder translation
+            titleAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image35.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            descriptionAr: 'أشغال بناء المسلك الرابط بين الطريق الإقليمية رقم 6011 ودوار الدشيرة المعاريف',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'المشروع', // Placeholder translation
+            titleAr: 'المشروع',
+            category: 'Sport',
+            imageUrl: 'assets/images/projets_extracted/image38.jpeg',
+            descriptionFr: 'Projet de Sport : المشروع',
+            descriptionAr: 'المشروع المبلغ الإجمالي مساهمة المجلس الاقليمي  تقدم الأشغال الحماية من الفياضات بمركز سيدي بوهرية "بناء قناطر"  1 280 000,00 المجلس الاقليمي : 1,28 MDH   100% جماعة  سيدي بوهرية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'الحماية من الفياضات بمركز سيدي بوهرية "بناء قناطر"', // Placeholder translation
+            titleAr: 'الحماية من الفياضات بمركز سيدي بوهرية "بناء قناطر"',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image40.jpeg',
+            descriptionFr: 'Projet de Infrastructure : الحماية من الفياضات بمركز سيدي بوهرية "بناء قناطر"',
+            descriptionAr: 'الحماية من الفياضات بمركز سيدي بوهرية "بناء قناطر"',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تزويد دوار', // Placeholder translation
+            titleAr: 'تزويد دوار',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image42.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تزويد دوار',
+            descriptionAr: 'تزويد دوار  تعيشونت  2  و  دوار  تزغين   بوكشوط  بالماء الصالح للشرب',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تزويد دوار', // Placeholder translation
+            titleAr: 'تزويد دوار',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image44.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تزويد دوار',
+            descriptionAr: 'تزويد دوار  تعيشونت  2  و  دوار  تزغين   بوكشوط  بالماء الصالح للشرب',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تزويد دوار', // Placeholder translation
+            titleAr: 'تزويد دوار',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image46.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تزويد دوار',
+            descriptionAr: 'تزويد دوار  جعرة  بالماء الصالح للشرب',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'المركب التربوي', // Placeholder translation
+            titleAr: 'المركب التربوي',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image48.jpeg',
+            descriptionFr: 'Projet de Infrastructure : المركب التربوي',
+            descriptionAr: 'المركب التربوي  و  الرياضي  و  الصحي  بجماعة زكزل',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية', // Placeholder translation
+            titleAr: 'أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image50.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية',
+            descriptionAr: 'أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية', // Placeholder translation
+            titleAr: 'أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image51.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية',
+            descriptionAr: 'أشغال بناء قاعة متعددة الاختصاصات بإعدادية الشويحية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال بناء قنطرة', // Placeholder translation
+            titleAr: 'أشغال بناء قنطرة',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image53.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال بناء قنطرة',
+            descriptionAr: 'أشغال بناء قنطرة   على واد الخميس بدوار بوغريبة',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء وتجهيز فضاء النسيج الجمعوي', // Placeholder translation
+            titleAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image56.jpeg',
+            descriptionFr: 'Projet de Social & Culture : بناء وتجهيز فضاء النسيج الجمعوي',
+            descriptionAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء وتجهيز فضاء النسيج الجمعوي', // Placeholder translation
+            titleAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image57.jpeg',
+            descriptionFr: 'Projet de Social & Culture : بناء وتجهيز فضاء النسيج الجمعوي',
+            descriptionAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء وتجهيز فضاء النسيج الجمعوي', // Placeholder translation
+            titleAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image58.jpeg',
+            descriptionFr: 'Projet de Social & Culture : بناء وتجهيز فضاء النسيج الجمعوي',
+            descriptionAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء وتجهيز فضاء النسيج الجمعوي', // Placeholder translation
+            titleAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image60.jpeg',
+            descriptionFr: 'Projet de Social & Culture : بناء وتجهيز فضاء النسيج الجمعوي',
+            descriptionAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء وتجهيز فضاء النسيج الجمعوي', // Placeholder translation
+            titleAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image62.jpeg',
+            descriptionFr: 'Projet de Social & Culture : بناء وتجهيز فضاء النسيج الجمعوي',
+            descriptionAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء وتجهيز فضاء النسيج الجمعوي', // Placeholder translation
+            titleAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image63.jpeg',
+            descriptionFr: 'Projet de Social & Culture : بناء وتجهيز فضاء النسيج الجمعوي',
+            descriptionAr: 'بناء وتجهيز فضاء النسيج الجمعوي',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تزويد ملعب كرة القدم بالكهرباء بجماعة عين الركادة', // Placeholder translation
+            titleAr: 'تزويد ملعب كرة القدم بالكهرباء بجماعة عين الركادة',
+            category: 'Sport',
+            imageUrl: 'assets/images/projets_extracted/image65.jpeg',
+            descriptionFr: 'Projet de Sport : تزويد ملعب كرة القدم بالكهرباء بجماعة عين الركادة',
+            descriptionAr: 'تزويد ملعب كرة القدم بالكهرباء بجماعة عين الركادة',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال', // Placeholder translation
+            titleAr: 'أشغال',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image67.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال',
+            descriptionAr: 'أشغال  الانارة  العمومية  شارع محمد الخامس بجماعة أحفير',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال', // Placeholder translation
+            titleAr: 'أشغال',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image69.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال',
+            descriptionAr: 'أشغال  الانارة  العمومية  شارع محمد الخامس بجماعة أحفير',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير', // Placeholder translation
+            titleAr: 'أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير',
+            category: 'Enseignement',
+            imageUrl: 'assets/images/projets_extracted/image71.jpeg',
+            descriptionFr: 'Projet de Enseignement : أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير',
+            descriptionAr: 'أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير', // Placeholder translation
+            titleAr: 'أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير',
+            category: 'Enseignement',
+            imageUrl: 'assets/images/projets_extracted/image73.jpeg',
+            descriptionFr: 'Projet de Enseignement : أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير',
+            descriptionAr: 'أشغال التهيئة الخارجية للمؤسسات التعليمية بجماعة أحفير',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'أشغال تزويد دوار تكرورين-سيدي علي بن يخلف بالماء الصالح للشرب جماعة فزوان', // Placeholder translation
+            titleAr: 'أشغال تزويد دوار تكرورين-سيدي علي بن يخلف بالماء الصالح للشرب جماعة فزوان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image75.jpeg',
+            descriptionFr: 'Projet de Infrastructure : أشغال تزويد دوار تكرورين-سيدي علي بن يخلف بالماء الصالح للشرب جماعة فزوان',
+            descriptionAr: 'أشغال تزويد دوار تكرورين-سيدي علي بن يخلف بالماء الصالح للشرب جماعة فزوان سيدي علي بن يخلف',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'انجاز المسلك المؤدي من عين', // Placeholder translation
+            titleAr: 'انجاز المسلك المؤدي من عين',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image79.jpeg',
+            descriptionFr: 'Projet de Infrastructure : انجاز المسلك المؤدي من عين',
+            descriptionAr: 'انجاز المسلك المؤدي من عين  الزبدة  إلى بني موسى بجماعة مداغ',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'انجاز المسلك المؤدي من عين', // Placeholder translation
+            titleAr: 'انجاز المسلك المؤدي من عين',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image81.jpeg',
+            descriptionFr: 'Projet de Infrastructure : انجاز المسلك المؤدي من عين',
+            descriptionAr: 'انجاز المسلك المؤدي من عين  الزبدة  إلى بني موسى بجماعة مداغ',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تمويل', // Placeholder translation
+            titleAr: 'تمويل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image83.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تمويل',
+            descriptionAr: 'تمويل  و  فتح  و  تهيئة المسالك القروية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تمويل', // Placeholder translation
+            titleAr: 'تمويل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image85.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تمويل',
+            descriptionAr: 'تمويل  و  فتح  و  تهيئة المسالك القروية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تمويل', // Placeholder translation
+            titleAr: 'تمويل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image86.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تمويل',
+            descriptionAr: 'تمويل  و  فتح  و  تهيئة المسالك القروية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تمويل', // Placeholder translation
+            titleAr: 'تمويل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image88.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تمويل',
+            descriptionAr: 'تمويل  و  فتح  و  تهيئة المسالك القروية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تمويل', // Placeholder translation
+            titleAr: 'تمويل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image90.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تمويل',
+            descriptionAr: 'تمويل  و  فتح  و  تهيئة المسالك القروية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تمويل', // Placeholder translation
+            titleAr: 'تمويل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image92.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تمويل',
+            descriptionAr: 'تمويل  و  فتح  و  تهيئة المسالك القروية',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'عملية', // Placeholder translation
+            titleAr: 'عملية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image94.jpeg',
+            descriptionFr: 'Projet de Infrastructure : عملية',
+            descriptionAr: 'عملية  تتبع وتسيير أشغال تنقية واد شراعة وواد  ورطاس',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'عملية', // Placeholder translation
+            titleAr: 'عملية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image96.jpeg',
+            descriptionFr: 'Projet de Infrastructure : عملية',
+            descriptionAr: 'عملية  تتبع وتسيير أشغال تنقية واد شراعة وواد  ورطاس',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'اقتناء سيارة نفعية لفائدة نوميديا', // Placeholder translation
+            titleAr: 'اقتناء سيارة نفعية لفائدة نوميديا',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image97.jpeg',
+            descriptionFr: 'Projet de Infrastructure : اقتناء سيارة نفعية لفائدة نوميديا',
+            descriptionAr: 'اقتناء سيارة نفعية لفائدة نوميديا',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان', // Placeholder translation
+            titleAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image99.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            descriptionAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان', // Placeholder translation
+            titleAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image101.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            descriptionAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان', // Placeholder translation
+            titleAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image103.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            descriptionAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان', // Placeholder translation
+            titleAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image105.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            descriptionAr: 'تنظيم حملة طبية لقياس وتصحيح البصر للممدرسين  بإقليم بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء قنطرة على واد البسباس دوار اولاد الحاج جماعة زكزل', // Placeholder translation
+            titleAr: 'بناء قنطرة على واد البسباس دوار اولاد الحاج جماعة زكزل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image107.jpeg',
+            descriptionFr: 'Projet de Infrastructure : بناء قنطرة على واد البسباس دوار اولاد الحاج جماعة زكزل',
+            descriptionAr: 'بناء قنطرة على واد البسباس دوار اولاد الحاج جماعة زكزل ا لقنطرة  بعد   القن طرة  قبل',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تزويد', // Placeholder translation
+            titleAr: 'تزويد',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image109.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تزويد',
+            descriptionAr: 'تزويد    دوار   الزعارة لوطا بالماء الشروب بجماعة  بوغريبة',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'اقتناء 10 حافلات للنقل المدرسي لفائدة المجلس الإقليمي لبركان', // Placeholder translation
+            titleAr: 'اقتناء 10 حافلات للنقل المدرسي لفائدة المجلس الإقليمي لبركان',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image112.png',
+            descriptionFr: 'Projet de Infrastructure : اقتناء 10 حافلات للنقل المدرسي لفائدة المجلس الإقليمي لبركان',
+            descriptionAr: 'اقتناء 10 حافلات للنقل المدرسي لفائدة المجلس الإقليمي لبركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'انجاز', // Placeholder translation
+            titleAr: 'انجاز',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image114.jpeg',
+            descriptionFr: 'Projet de Infrastructure : انجاز',
+            descriptionAr: 'انجاز  منشأة فنية على واد  ورطاس  الرابطة بين حي  ورطاس  و برج  واولوت الدراسة   %   100',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'مشروع بناء دار الثقافة بركان', // Placeholder translation
+            titleAr: 'مشروع بناء دار الثقافة بركان',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image117.jpeg',
+            descriptionFr: 'Projet de Social & Culture : مشروع بناء دار الثقافة بركان',
+            descriptionAr: 'مشروع بناء دار الثقافة بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'مشروع بناء دار الثقافة بركان', // Placeholder translation
+            titleAr: 'مشروع بناء دار الثقافة بركان',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image118.jpeg',
+            descriptionFr: 'Projet de Social & Culture : مشروع بناء دار الثقافة بركان',
+            descriptionAr: 'مشروع بناء دار الثقافة بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'مشروع بناء دار الثقافة بركان', // Placeholder translation
+            titleAr: 'مشروع بناء دار الثقافة بركان',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image120.jpeg',
+            descriptionFr: 'Projet de Social & Culture : مشروع بناء دار الثقافة بركان',
+            descriptionAr: 'مشروع بناء دار الثقافة بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'مشروع بناء دار الثقافة بركان', // Placeholder translation
+            titleAr: 'مشروع بناء دار الثقافة بركان',
+            category: 'Social & Culture',
+            imageUrl: 'assets/images/projets_extracted/image123.jpeg',
+            descriptionFr: 'Projet de Social & Culture : مشروع بناء دار الثقافة بركان',
+            descriptionAr: 'مشروع بناء دار الثقافة بركان',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل', // Placeholder translation
+            titleAr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image124.jpeg',
+            descriptionFr: 'Projet de Infrastructure : بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            descriptionAr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل', // Placeholder translation
+            titleAr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image126.jpeg',
+            descriptionFr: 'Projet de Infrastructure : بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            descriptionAr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل', // Placeholder translation
+            titleAr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image128.jpeg',
+            descriptionFr: 'Projet de Infrastructure : بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            descriptionAr: 'بناء و تجهيز  المركب التربوي و الرياضي و الصحي  بجماعة زكزل',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك بالإقليم', // Placeholder translation
+            titleAr: 'تهيئة المسالك بالإقليم',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image130.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك بالإقليم',
+            descriptionAr: 'تهيئة المسالك بالإقليم',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك بالإقليم', // Placeholder translation
+            titleAr: 'تهيئة المسالك بالإقليم',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image133.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك بالإقليم',
+            descriptionAr: 'تهيئة المسالك بالإقليم',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك و تنقية', // Placeholder translation
+            titleAr: 'تهيئة المسالك و تنقية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image136.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك و تنقية',
+            descriptionAr: 'تهيئة المسالك و تنقية    النقط  السوداء بالإقليم',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك و تنقية', // Placeholder translation
+            titleAr: 'تهيئة المسالك و تنقية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image138.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك و تنقية',
+            descriptionAr: 'تهيئة المسالك و تنقية    النقط  السوداء بالإقليم',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك وتنقية', // Placeholder translation
+            titleAr: 'تهيئة المسالك وتنقية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image140.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك وتنقية',
+            descriptionAr: 'تهيئة المسالك وتنقية    النقط  السوداء بالإقليم',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك و تنقية', // Placeholder translation
+            titleAr: 'تهيئة المسالك و تنقية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image142.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك و تنقية',
+            descriptionAr: 'تهيئة المسالك و تنقية    النقط  السوداء بالإقليم',
+            status: 'En cours'
+        },
+        {
+            titleFr: 'تهيئة المسالك و تنقية', // Placeholder translation
+            titleAr: 'تهيئة المسالك و تنقية',
+            category: 'Infrastructure',
+            imageUrl: 'assets/images/projets_extracted/image136.jpeg',
+            descriptionFr: 'Projet de Infrastructure : تهيئة المسالك و تنقية',
+            descriptionAr: 'تهيئة المسالك و تنقية    النقط  السوداء بالإقليم',
+            status: 'En cours'
+        }
+    ];

@@ -1,0 +1,4 @@
+- [x] Apply design from organigramme-conseil.html to organigramme-administratif.html: absolute positioning, SVG lines, modal, gradients
+- [x] Keep the administrative structure: Présidence -> 3 services -> 4 services
+- [x] Update JavaScript for modal functionality instead of details expansion
+- [x] Test page loading and modal interactions

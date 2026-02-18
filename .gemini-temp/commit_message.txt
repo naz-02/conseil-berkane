@@ -1,0 +1,13 @@
+feat: Implement clean header and fix various issues
+
+This commit introduces a completely refactored and clean header implementation, addressing several user-reported issues:
+
+- Header Redesign: Implemented a new, compact, single-row header structure on desktop with a smaller logo.
+- Mobile Menu: Implemented a robust dropdown mobile menu with working sub-menus.
+- News Roller: Ensured the news roller banner functions correctly on both desktop and mobile.
+- "Blank Part" Fix: Resolved the persistent issue of a blank space appearing above the header by cleaning up CSS and HTML.
+- PDF Embed Fix: Restored and ensured correct display of the embedded PDF on the loi-organique.html page by removing inline styles and verifying paths.
+- Page-Specific Styles: Moved inline styles from organigrames.html and session pages into the main style.css for better maintainability and consistency.
+- Translation: Ensured all header links have correct data-fr and data-ar attributes for proper translation.
+
+This commit aims to provide a stable, functional, and visually appealing header across the site.

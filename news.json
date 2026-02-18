@@ -1,0 +1,38 @@
+[
+    {
+        "tag": "Événement",
+        "tag_ar": "حدث",
+        "tag_class": "tag-evenement",
+        "title": "Journée de l'Investissement Agricole",
+        "title_ar": "يوم الاستثمار الفلاحي",
+        "content": "Le Conseil a organisé une journée dédiée aux opportunités d'investissement dans l'Agropole.",
+        "content_ar": "نظم المجلس يومًا مخصصًا لفرص الاستثمار في الأغرو-بول.",
+        "link": "#",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →"
+    },
+    {
+        "tag": "Projet",
+        "tag_ar": "مشروع",
+        "tag_class": "tag-projet",
+        "title": "Avancement des travaux de la Route X",
+        "title_ar": "تقدم أشغال الطريق X",
+        "content": "Un taux d'achèvement de 75% a été atteint pour la réhabilitation de l'axe principal.",
+        "content_ar": "تم تحقيق نسبة إنجاز 75% لإعادة تأهيل المحور الرئيسي.",
+        "link": "#",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →"
+    },
+    {
+        "tag": "Document",
+        "tag_ar": "وثيقة",
+        "tag_class": "tag-document",
+        "title": "Publication du Budget 2026",
+        "title_ar": "نشر ميزانية 2026",
+        "content": "Le budget primitif du Conseil Provincial est disponible en consultation dans la section Infos & Docs.",
+        "content_ar": "الميزانية الأولية للمجلس متاحة للاطلاع في قسم معلومات ووثائق.",
+        "link": "documentation.html#budget",
+        "link_text": "Voir le document →",
+        "link_text_ar": "مشاهدة الوثيقة →"
+    }
+]

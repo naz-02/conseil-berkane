@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Compositions du Conseil | Conseil Provincial de Berkane" data-ar="تشكيلات المجلس | المجلس الإقليمي لبركان">Compositions du Conseil | Conseil Provincial de Berkane</title>
+    <meta name="description" content="Découvrez les organigrammes du Conseil Provincial de Berkane.">
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Montserrat:wght@700;800&amp;display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .organigramme-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .organigramme-link-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .organigramme-link-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .organigramme-link-card .icon {
+            font-size: 40px;
+            color: var(--couleur-primaire);
+            margin-bottom: 20px;
+        }
+
+        .organigramme-link-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+            margin: 0;
+            color: var(--couleur-texte);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    <main>
+        <div class="page-header">
+            <h1 data-fr="Compositions du Conseil" data-ar="تشكيلات المجلس">Compositions du Conseil</h1>
+        </div>
+
+        <div class="organigramme-links">
+            <a href="organigramme-conseil.html" class="organigramme-link-card">
+                <div class="icon"><i class="fas fa-sitemap"></i></div>
+                <h3 data-fr="Composition du Conseil" data-ar="تشكيلة المجلس">Composition du Conseil</h3>
+            </a>
+            <a href="organigramme-administratif.html" class="organigramme-link-card">
+                <div class="icon"><i class="fas fa-building-user"></i></div>
+                <h3 data-fr="Organigramme Administratif" data-ar="الهيكل التنظيمي الإداري">Organigramme Administratif</h3>
+            </a>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            loadHeaderFooter();
+            const savedLang = localStorage.getItem('language') || 'fr';
+            setLanguage(savedLang);
+        });
+    </script>
+
+</body>
+</html>

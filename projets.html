@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-fr="Projets & Réalisations | Conseil Provincial de Berkane" data-ar="المشاريع والإنجازات | المجلس الإقليمي لبركان">Projets & Réalisations | Conseil Provincial de Berkane</title>
+    <meta name="description" content="Découvrez les projets et réalisations du Conseil Provincial de Berkane pour le développement de la province." data-fr="Découvrez les projets et réalisations du Conseil Provincial de Berkane pour le développement de la province." data-ar="اكتشفوا المشاريع والإنجازات للمجلس الإقليمي لبركان لتنمية الإقليم.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles spécifiques à cette page */
+        .page-header {
+            background: var(--couleur-primaire);
+            color: var(--couleur-blanc);
+            padding: 40px 5%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .page-header h1 {
+            color: var(--couleur-blanc);
+            margin-bottom: 0;
+        }
+        .content-section {
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            background-color: var(--couleur-card-bg);
+            border-radius: 8px;
+            box-shadow: var(--ombre-douce);
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background-color: var(--couleur-arriere-plan);
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--ombre-douce);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--ombre-hover);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card-content {
+            padding: 20px;
+        }
+        .project-card-content h3 {
+            color: var(--couleur-primaire);
+            margin-bottom: 10px;
+        }
+        .project-card-content p {
+            font-size: 0.9em;
+            color: var(--couleur-texte);
+            margin-bottom: 15px;
+        }
+        .project-card-content .status {
+            font-weight: bold;
+            color: var(--couleur-secondaire);
+        }
+        .project-card-content .status.completed {
+            color: green;
+        }
+        .project-card-content .status.ongoing {
+            color: orange;
+        }
+    </style>
+    <link rel="icon" href="logo.jpg" type="image/jpeg">
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+    
+    <main>
+        <div class="page-header">
+            <h1 data-fr="Nos Projets & Réalisations" data-ar="مشاريعنا وإنجازاتنا">Nos Projets & Réalisations</h1>
+        </div>
+
+        <section class="content-section">
+            <h2 data-fr="Projets Récents et en Cours" data-ar="المشاريع الحديثة والجارية">Projets Récents et en Cours</h2>
+            
+            <div class="project-grid">
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <img src="Image 1.jpg" alt="Projet de Développement Routier">
+                    <div class="project-card-content">
+                        <h3 data-fr="Développement de l'Infrastructure Routière" data-ar="تطوير البنية التحتية الطرقية">Développement de l'Infrastructure Routière</h3>
+                        <p data-fr="Amélioration et extension du réseau routier provincial pour faciliter la circulation et le commerce." data-ar="تحسين وتوسيع شبكة الطرق الإقليمية لتسهيل حركة المرور والتجارة.">
+                            Amélioration et extension du réseau routier provincial pour faciliter la circulation et le commerce.
+                        </p>
+                        <p class="status ongoing" data-fr="Statut : En cours" data-ar="الحالة : قيد الإنجاز">Statut : En cours</p>
+                        <a href="#" class="read-more" data-fr="En savoir plus →" data-ar="قراءة المزيد →">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <img src="Image 2.jpg" alt="Projet d'Aménagement Urbain">
+                    <div class="project-card-content">
+                        <h3 data-fr="Aménagement des Espaces Verts Urbains" data-ar="تهيئة المساحات الخضراء الحضرية">Aménagement des Espaces Verts Urbains</h3>
+                        <p data-fr="Création de nouveaux parcs et jardins publics pour améliorer la qualité de vie des citoyens." data-ar="إنشاء حدائق عامة ومتنزهات جديدة لتحسين جودة حياة المواطنين.">
+                            Création de nouveaux parcs et jardins publics pour améliorer la qualité de vie des citoyens.
+                        </p>
+                        <p class="status completed" data-fr="Statut : Achevé" data-ar="الحالة : منجز">Statut : Achevé</p>
+                        <a href="#" class="read-more" data-fr="En savoir plus →" data-ar="قراءة المزيد →">En savoir plus →</a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <img src="Image 3.jpg" alt="Projet de Soutien Économique">
+                    <div class="project-card-content">
+                        <h3 data-fr="Soutien aux Jeunes Entrepreneurs Locaux" data-ar="دعم رواد الأعمال الشباب المحليين">Soutien aux Jeunes Entrepreneurs Locaux</h3>
+                        <p data-fr="Initiatives pour encourager l'entrepreneuriat et la création d'emplois dans la province." data-ar="مبادرات لتشجيع ريادة الأعمال وخلق فرص عمل بالإقليم.">
+                            Initiatives pour encourager l'entrepreneuriat et la création d'emplois dans la province.
+                        </p>
+                        <p class="status ongoing" data-fr="Statut : En cours" data-ar="الحالة : قيد الإنجاز">Statut : En cours</p>
+                        <a href="#" class="read-more" data-fr="En savoir plus →" data-ar="قراءة المزيد →">En savoir plus →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <div id="footer-placeholder"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
