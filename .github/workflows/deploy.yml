@@ -1,0 +1,47 @@
+name: Deploy to LWS FTP
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  web-deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 💻 Setup Node.js 20
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: 🔍 Debug File Structure
+      run: ls -R
+      working-directory: .
+
+    - name: 🔨 Install Dependencies
+      working-directory: ./angular-app
+      run: npm install
+
+    - name: 🔨 Build Project
+      working-directory: ./angular-app
+      run: npm run build -- --configuration production
+
+    - name: 📂 Sync files (Deploy)
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./angular-app/dist/angular-app/browser/
+        server-dir: ./
+        protocol: ftp
+        port: 21
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
