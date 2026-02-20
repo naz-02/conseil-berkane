@@ -1,0 +1,67 @@
+[
+    {
+        "tag": "Actualité",
+        "tag_ar": "أخبار",
+        "tag_class": "tag-evenement",
+        "title": "Ramadan Mubarak",
+        "title_ar": "بمناسبة حلول شهر رمضان المبارك 🌙",
+        "content": "À l'occasion du mois sacré de Ramadan, le Président du Conseil Provincial, en son nom propre et au nom de tous les membres et fonctionnaires du Conseil, présente ses meilleurs vœux à la population de la province, priant Dieu le Tout-Puissant de faire de ce mois une période de bienfaits, de solidarité et d'entraide pour tous.",
+        "content_ar": "يتقدم السيد رئيس المجلس الإقليمي أصالة عن نفسه و نيابة عن جميع أعضاء و موظفي المجلس الاقليمي بأحر التهاني وأصدق المتمنيات إلى ساكنة الإقليم وكافة المواطنات والمواطنين، راجياً من الله العلي القدير أن يعيده علينا وعليكم باليمن والبركات، وأن يجعله شهر خير وتضامن وتآزر بين الجميع. و كل عام و أنتم بخير",
+        "link": "ramadan-mubarak.html",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →",
+        "image": "assets/images/ramadan_mubarak.jpg"
+    },
+    {
+        "tag": "Actualité",
+        "tag_ar": "أخبار",
+        "tag_class": "tag-evenement",
+        "title": "Vœux du Nouvel An",
+        "title_ar": "تهنئة بمناسبة السنة الجديدة",
+        "content": "À l'occasion de cette nouvelle année, le Conseil Provincial de Berkane renouvelle son engagement au service du développement territorial et de l'intérêt général. Meilleurs vœux pour une année réussie à tous.",
+        "content_ar": "في مستهل هذه السنة الجديدة، يجدد المجلس الإقليمي لبركان التزامه بخدمة التنمية الترابية والصالح العام. أطيب المتمنيات لسنة موفقة للجميع",
+        "link": "#",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →",
+        "image": "assets/images/new year.jpg"
+    },
+    {
+        "tag": "Actualité",
+        "tag_ar": "أخبار",
+        "tag_class": "tag-evenement",
+        "title": "Félicitations aux Lions de l'Atlas",
+        "title_ar": "هنيئا لأسود الأطلس",
+        "content": "À l'occasion du sacre mérité de l'équipe nationale marocaine remportant la Coupe Arabe pour la deuxième fois de son histoire, suite à sa victoire sur l'équipe jordanienne, nous présentons nos plus chaleureuses félicitations et nos plus sincères expressions de fierté. #Félicitations.",
+        "content_ar": "بمناسبة التتويج المستحق للمنتخب الوطني المغربي بلقب كأس العرب للمرة الثانية في تاريخه، إثر فوزه على المنتخب الأردني، نتقدم بأحر التهاني وأصدق عبارات الفخر والاعتزاز. #هنيئا.",
+        "link": "coupe-arabe-detail.html",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →",
+        "image": "assets/images/cup arab.jpg"
+    },
+    {
+        "tag": "Actualité",
+        "tag_ar": "أخبار",
+        "tag_class": "tag-evenement",
+        "title": "Rencontre de Communication",
+        "title_ar": "لقاء تواصلي تفاعلي",
+        "content": "Le Conseil Provincial de Berkane a organisé une rencontre de communication interactive avec les acteurs de la société civile pour discuter de la situation du secteur de la santé dans la province.",
+        "content_ar": "نظم المجلس الإقليمي لبركان لقاء تواصليا تفاعليا مع فعاليات المجتمع المدني لمناقشة واقع قطاع الصحة بالإقليم.",
+        "link": "rencontre-communication.html",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →",
+        "image": "assets/images/rencontre-communication.jpg"
+    },
+    {
+        "tag": "Actualité",
+        "tag_ar": "أخبار",
+        "tag_class": "tag-evenement",
+        "title": "AMPCPP",
+        "title_ar": "الجمعية المغربية لرؤساء مجالس العمالات والأقاليم",
+        "content": "Participation aux activités de l'AMPCPP.",
+        "content_ar": "المشاركة في أنشطة الجمعية المغربية لرؤساء مجالس العمالات والأقاليم.",
+        "link": "ampcpp-detail.html",
+        "link_text": "Lire la suite →",
+        "link_text_ar": "قراءة المزيد →",
+        "image": "assets/images/ampcpp.jpg"
+    }
+]
