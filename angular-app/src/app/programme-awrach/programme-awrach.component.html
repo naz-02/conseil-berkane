@@ -1,0 +1,74 @@
+<div class="awrach-page" [class.rtl]="langService.currentLang() === 'ar'">
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                {{ langService.currentLang() === 'fr' ? data.titleFr : data.titleAr }}
+            </h1>
+            <p class="hero-subtitle">
+                {{ langService.currentLang() === 'fr' ? data.descriptionFr : data.descriptionAr }}
+            </p>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" *ngFor="let stat of data.stats">
+                    <div class="stat-icon">
+                        <img *ngIf="stat.imageUrl" [src]="stat.imageUrl" [alt]="stat.labelFr" class="stat-vector-icon">
+                        <span *ngIf="!stat.imageUrl" class="material-icons">{{ stat.icon }}</span>
+                    </div>
+                    <div class="stat-info">
+                        <h3 class="stat-value">{{ stat.value }}</h3>
+                        <p class="stat-label">
+                            {{ langService.currentLang() === 'fr' ? stat.labelFr : stat.labelAr }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>
+                    {{ langService.currentLang() === 'fr' ? 'Chantiers et Projets' : 'الأوراش والمشاريع' }}
+                </h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="workshops-grid">
+                <div class="workshop-card" *ngFor="let item of workshops" [class.has-image]="item.imageUrl">
+                    <div class="card-image-container" *ngIf="item.imageUrl">
+                        <img [src]="item.imageUrl" [alt]="item.titleFr" class="card-image">
+                        <div class="card-overlay"></div>
+                        <div class="year-badge" *ngIf="item.year">{{ item.year }}</div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="card-icon-floating" *ngIf="!item.imageUrl">
+                            <span class="material-icons">{{ item.icon || 'work' }}</span>
+                        </div>
+
+                        <h3 class="workshop-title">
+                            {{ langService.currentLang() === 'fr' ? item.titleFr : item.titleAr }}
+                        </h3>
+
+
+                        <!-- Updated: Location icon removed -->
+                        <div class="workshop-location-badge" *ngIf="item.locationFr || item.locationAr">
+                            <span>
+                                {{ langService.currentLang() === 'fr' ? item.locationFr : item.locationAr }}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

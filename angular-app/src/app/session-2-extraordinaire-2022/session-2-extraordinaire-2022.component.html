@@ -1,0 +1,58 @@
+<app-session-layout titleFr="2ème Session Extraordinaire 2022" titleAr="الدورة الاستثنائية الثانية لسنة 2022"
+    imageUrl="assets/images/session-unified.jpg" imageAlt="2ème Session Extraordinaire 2022">
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية الثانية لسنة 2022</h2>
+            <p>
+                تم اليوم الاربعاء 09 مارس 2022 عقد الدورة الإستثنائية الثانية لسنة 2022 حيث تم تداول مجموعة من النقط
+                بحضور السيدة المديرة الاقليمية لقطاع الشغل ببركان التي قدمت الشروحات اللازمة حول الاتفاقية المتعلقة
+                ببرنامج أوراش لأعضاء المجلس الاقليمي.
+            </p>
+            <p>
+                جدول الاعمال كان على الشكل التالي:
+            </p>
+            <ol>
+                <li>المصادقة على برمجة الفائض المالي الناتج عن تنفيذ ميزانية سنة 2021.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الاقليمي لبركان ومؤسسة الملتقى التابعة للزاوية القادرية
+                    البودشيشية.</li>
+                <li>المصادقة على اتفاقية شراكة تتعلق ببرنامج أوراش بين المجلس الاقليمي لبركان ووزارة الادماج الاقتصادي
+                    والمقاولات الصغرى.</li>
+                <li>المصادقة على اتفاقية شراكة تتعلق بتنظيم المنتدى الوطني للمجتمع الرقمي بإقليم بركان (النسخة الثانية).
+                </li>
+                <li>المصادقة على ملحق رقم 01 لاتفاقية شراكة المتعلقة بتمويل وإنجاز بعض المشاريع باقليم بركان (تأهيل
+                    مداخل مدينة بركان...).</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">2ème Session Extraordinaire 2022</h2>
+            <p>
+                Le Mercredi 09 Mars 2022, s'est tenue la deuxième session extraordinaire de l'année 2022, où un ensemble
+                de points a été débattu en présence de la Directrice Provinciale du secteur de l'emploi à Berkane, qui a
+                fourni aux membres du Conseil Provincial les explications nécessaires concernant la convention relative
+                au programme "Awrach".
+            </p>
+            <p>
+                L'ordre du jour était le suivant :
+            </p>
+            <ol>
+                <li>Approbation de la programmation de l'excédent financier résultant de l'exécution du budget de
+                    l'année 2021.</li>
+                <li>Approbation d'une convention de partenariat entre le Conseil Provincial de Berkane et la Fondation
+                    Al-Multaqa relevant de la Zaouia Qadiriya Boutchichiya.</li>
+                <li>Approbation d'une convention de partenariat relative au programme "Awrach" entre le Conseil
+                    Provincial de Berkane et le Ministère de l'Inclusion Économique, de la Petite Entreprise, de
+                    l'Emploi et des Compétences.</li>
+                <li>Approbation d'une convention de partenariat relative à l'organisation de la 2ème édition du Forum
+                    National de la Société Digitale dans la province de Berkane.</li>
+                <li>Approbation de l'avenant n° 01 à la convention de partenariat relative au financement et à la
+                    réalisation de certains projets dans la province de Berkane.</li>
+            </ol>
+        </div>
+    </div>
+</app-session-layout>

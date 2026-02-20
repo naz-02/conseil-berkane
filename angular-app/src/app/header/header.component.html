@@ -1,0 +1,140 @@
+<header id="main-header">
+    <div class="header-content">
+        <div class="logo">
+            <a routerLink="/">
+                <img src="assets/images/logo.jpg"
+                    [alt]="langService.currentLang() === 'fr' ? 'Logo du Conseil Provincial de Berkane' : 'شعار المجلس الإقليمي لبركان'"
+                    style="height: 40px;">
+            </a>
+        </div>
+
+        <nav id="main-nav" [class.mobile-menu-open]="isMenuOpen">
+            <ul>
+                <li><a routerLink="/" routerLinkActive="active-page" [routerLinkActiveOptions]="{exact: true}"
+                        (click)="closeMenu()">{{
+                        langService.currentLang() === 'fr' ? 'Accueil' : 'الرئيسية' }}</a></li>
+
+                <li class="dropdown" [class.submenu-open]="openSubmenuIndex === 0">
+                    <a href="#" (click)="toggleSubmenu(0, $event)" aria-haspopup="true"
+                        [attr.aria-expanded]="openSubmenuIndex === 0">{{ langService.currentLang() === 'fr' ? 'Le
+                        Conseil'
+                        : 'المجلس' }}</a>
+                    <div class="dropdown-content">
+                        <a routerLink="/le-conseil.html" fragment="president" (click)="closeMenu()">{{
+                            langService.currentLang() === 'fr' ?
+                            'Mot du Président' : 'كلمة الرئيس' }}</a>
+                        <a routerLink="/le-conseil.html" fragment="membres" (click)="closeMenu()">{{
+                            langService.currentLang() === 'fr' ? 'Les
+                            Membres' : 'الأعضاء' }}</a>
+                        <a routerLink="/organigrames.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr' ?
+                            'Organigramme' :
+                            'الهيكل التنظيمي' }}</a>
+                    </div>
+                </li>
+
+                <li class="dropdown" [class.submenu-open]="openSubmenuIndex === 1">
+                    <a href="#" (click)="toggleSubmenu(1, $event)" aria-haspopup="true"
+                        [attr.aria-expanded]="openSubmenuIndex === 1">{{ langService.currentLang() === 'fr' ? 'Sessions'
+                        :
+                        'الدورات' }}</a>
+                    <div class="dropdown-content">
+                        <a routerLink="/sessions-2021.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr'
+                            ? 'Session 2021' :
+                            'دورة 2021' }}</a>
+                        <a routerLink="/sessions-2022.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr'
+                            ? 'Session 2022' :
+                            'دورة 2022' }}</a>
+                        <a routerLink="/sessions-2023.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr'
+                            ? 'Session 2023' :
+                            'دورة 2023' }}</a>
+                        <a routerLink="/sessions-2024.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr'
+                            ? 'Session 2024' :
+                            'دورة 2024' }}</a>
+                        <a routerLink="/sessions-2025.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr'
+                            ? 'Session 2025' :
+                            'دورة 2025' }}</a>
+                        <a routerLink="/sessions-2026.html" (click)="closeMenu()">{{ langService.currentLang() === 'fr'
+                            ? 'Session 2026' :
+                            'دورة 2026' }}</a>
+                    </div>
+                </li>
+
+                <li class="dropdown" [class.submenu-open]="openSubmenuIndex === 2">
+                    <a href="#" (click)="toggleSubmenu(2, $event)" aria-haspopup="true"
+                        [attr.aria-expanded]="openSubmenuIndex === 2">{{ langService.currentLang() === 'fr' ?
+                        'Coopération
+                        et Partenariat' :
+                        'التعاون و الشراكة' }}</a>
+                    <div class="dropdown-content">
+
+                        <a routerLink="/programme-ouverture.html" (click)="closeMenu()">{{ langService.currentLang() ===
+                            'fr' ? 'Programme
+                            Infitah' :
+                            'برنامج إنفتاح' }}</a>
+                        <a routerLink="/programme-awrach.html" (click)="closeMenu()">{{ langService.currentLang() ===
+                            'fr' ? 'Programme
+                            Awrach' :
+                            'برنامج أوراش' }}</a>
+                    </div>
+                </li>
+
+
+
+                <li><a routerLink="/projets.html" routerLinkActive="active-page" (click)="closeMenu()">{{
+                        langService.currentLang() === 'fr' ?
+                        'Projets' : 'المشاريع' }}</a></li>
+                <li><a routerLink="/loi-organique.html" routerLinkActive="active-page" (click)="closeMenu()">{{
+                        langService.currentLang() ===
+                        'fr' ? 'Espace Juridique' : 'الفضاء القانوني' }}</a></li>
+                <li><a routerLink="/contact.html" routerLinkActive="active-page" (click)="closeMenu()">{{
+                        langService.currentLang() === 'fr' ?
+                        'Contact' : 'اتصل بنا' }}</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-utils">
+            <div class="utilitaires-desktop">
+                <input type="search" (keyup.enter)="onSearch($event)"
+                    [placeholder]="langService.currentLang() === 'fr' ? 'Rechercher...' : 'بحث'">
+                <div class="lang-switcher">
+                    <a href="#" (click)="setLang('fr', $event)" class="lang-btn"
+                        [class.active]="langService.currentLang() === 'fr'">FR</a>
+                    <span class="separator">|</span>
+                    <a href="#" (click)="setLang('ar', $event)" class="lang-btn"
+                        [class.active]="langService.currentLang() === 'ar'">AR</a>
+                </div>
+            </div>
+            <button class="hamburger" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">☰</button>
+        </div>
+    </div>
+
+    <div class="header-main-nav">
+        <div class="news-roller-container">
+            <nav class="news-roller">
+                <div class="news-roller-content">
+                    <ul>
+                        <li *ngFor="let item of newsItems">
+                            <a [routerLink]="item.link !== '#' ? '/' + item.link : null">
+                                <span class="news-icon">📢</span>
+                                <span class="news-text">
+                                    {{ langService.currentLang() === 'fr' ? item.tag + ': ' + item.title : item.tag_ar +
+                                    ': ' + item.title_ar }}
+                                </span>
+                            </a>
+                        </li>
+                        <!-- Duplicate for infinite scroll effect -->
+                        <li *ngFor="let item of newsItems">
+                            <a [routerLink]="item.link !== '#' ? '/' + item.link : null">
+                                <span class="news-icon">📢</span>
+                                <span class="news-text">
+                                    {{ langService.currentLang() === 'fr' ? item.tag + ': ' + item.title : item.tag_ar +
+                                    ': ' + item.title_ar }}
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

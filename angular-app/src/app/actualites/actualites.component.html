@@ -1,0 +1,24 @@
+<div class="page-header">
+    <h1>
+        {{ langService.currentLang() === 'fr' ? 'Actualités et Annonces Récentes' : 'آخر الأخبار والإعلانات' }}
+    </h1>
+</div>
+
+<section class="content-section">
+    <div class="grille-actualites">
+        <article class="card-actu" *ngFor="let article of newsItems">
+            <img *ngIf="article.image" [src]="article.image" [alt]="article.title" loading="lazy"
+                style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; display: block;">
+            <div class="card-actu-content">
+                <span class="tag-actu" [ngClass]="article.tag_class">
+                    {{ langService.currentLang() === 'fr' ? article.tag : article.tag_ar }}
+                </span>
+                <h3>{{ langService.currentLang() === 'fr' ? article.title : article.title_ar }}</h3>
+                <p>{{ langService.currentLang() === 'fr' ? article.content : article.content_ar }}</p>
+                <a [routerLink]="['/', article.link]" class="read-more">
+                    {{ langService.currentLang() === 'fr' ? article.link_text : article.link_text_ar }}
+                </a>
+            </div>
+        </article>
+    </div>
+</section>

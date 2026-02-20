@@ -1,0 +1,192 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Le Conseil Provincial</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">المجلس الإقليمي</h1>
+</div>
+
+<!-- Section Mot du Président -->
+<section id="president" class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Mot du Président</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">كلمة الرئيس</h2>
+    <div class="president-section">
+        <img src="assets/images/president-fixed.png" alt="Portrait du Président - صورة الرئيس" class="president-photo">
+        <div class="president-text">
+            <div *ngIf="langService.currentLang() === 'fr'">
+                <p>
+                    Fidèle aux Hautes Orientations de Sa Majesté le Roi Mohammed VI, que Dieu L’assiste, et en parfaite
+                    cohérence avec
+                    la vision Royale qui place le citoyen au cœur du projet de développement, le Conseil provincial de
+                    Berkane inscrit
+                    son action dans le cadre de la confiance que Sa Majesté accorde aux élus du Royaume pour servir
+                    l’intérêt général.
+                </p>
+                <p>
+                    Dans son discours prononcé à l’occasion de la Fête de la Révolution du Roi et du Peuple, Sa Majesté
+                    a souligné le rôle fondamental des élus dans le service des citoyens, les appelant à l’écoute de
+                    leurs préoccupations
+                    et à faire preuve de responsabilité et de sérieux dans la gestion des affaires publiques. Cette
+                    orientation Royale
+                    constitue pour nous une référence constante et un engagement moral dans l’exercice de nos
+                    responsabilités.
+                </p>
+                <p>
+                    Servir le citoyen, protéger ses droits et préserver sa dignité constituent le fondement de l’action
+                    du Conseil
+                    provincial de Berkane. Notre engagement est guidé par la conviction que le développement territorial
+                    ne peut être
+                    effectif et durable que si l’être humain est placé au centre de toutes les politiques publiques.
+                </p>
+                <p>
+                    Conscients des attentes légitimes de nos concitoyennes et concitoyens, nous œuvrons quotidiennement
+                    pour renforcer la
+                    protection du citoyen, améliorer ses conditions de vie et garantir un accès équitable aux services
+                    essentiels, dans
+                    le respect des principes de justice sociale, de transparence et de proximité.
+                </p>
+                <p>
+                    Dans ce cadre, le Conseil provincial intervient dans plusieurs champs prioritaires, notamment :
+                </p>
+                <ul>
+                    <li>La santé, à travers le soutien aux infrastructures sanitaires et l’amélioration de l’accès aux
+                        soins ;</li>
+                    <li>L’éducation, pilier fondamental du développement humain et de l’égalité des chances ;</li>
+                    <li>Le milieu rural, en visant la réduction des disparités territoriales et le désenclavement des
+                        zones les plus éloignées ;</li>
+                    <li>Les routes, essentielles à la mobilité, à la sécurité et au développement économique
+                        ;</li>
+                    <li>Le transport scolaire, afin de lutter contre l’abandon scolaire et garantir le droit à
+                        l’éducation ;</li>
+                    <li>Le tissu associatif, partenaire incontournable dans l’action sociale, la solidarité et la
+                        participation citoyenne.</li>
+                </ul>
+                <p>
+                    L’ensemble de ces interventions s’inscrit dans une vision globale visant à renforcer la dignité du
+                    citoyen, promouvoir
+                    l’inclusion sociale et accompagner un développement équilibré et durable de la province de Berkane.
+                </p>
+                <p>
+                    La responsabilité qui nous est confiée n’est pas uniquement institutionnelle ; elle est avant tout
+                    morale, collective
+                    et citoyenne. Elle exige engagement, écoute, rigueur et mobilisation permanente au service de
+                    l’intérêt général.
+                </p>
+                <p>
+                    Le Conseil provincial de Berkane demeurera ainsi un espace ouvert, proche des citoyens, attentif à
+                    leurs préoccupations
+                    et résolument engagé pour un avenir meilleur, fondé sur la confiance, la solidarité et le respect de
+                    la dignité humaine.
+                </p>
+                <div class="signature-block">
+                    <div class="signature-title">Le Président du Conseil Provincial de Berkane</div>
+                    <div class="signature-text">محمد جلول</div>
+                    <div class="signature-name">Mohamed Jelloul</div>
+                </div>
+            </div>
+
+            <div *ngIf="langService.currentLang() === 'ar'" dir="rtl">
+                <p>
+                    وفاءً للتوجيهات السامية لصاحب الجلالة الملك محمد السادس نصره الله وأيده، وانسجامًا مع الرؤية الملكية
+                    السامية التي
+                    تجعل من المواطن محور كل سياسات التنمية، يحرص المجلس الإقليمي لبركان على تنزيل برامجه في إطار الثقة
+                    المولوية التي
+                    يوليها جلالته للمنتخبين من أجل خدمة الصالح العام.
+                </p>
+                <p>
+                    وقد أكد جلالة الملك، في خطابه السامي بمناسبة ذكرى ثورة الملك والشعب، على الدور المحوري
+                    للمنتخبين في
+                    خدمة المواطنين، داعيًا إياهم إلى الإنصات لانشغالاتهم، والتحلي بروح المسؤولية والجدية في تدبير الشأن
+                    العام، وهو ما
+                    يشكل بالنسبة لنا مرجعية أساسية ومنهج عمل دائم.
+                </p>
+                <p>
+                    إن خدمة المواطن، وصون حقوقه، والحفاظ على كرامته، تشكل المرتكز الجوهري لعمل المجلس الإقليمي لبركان،
+                    وقلب كل السياسات
+                    والبرامج التي نسهر على تنفيذها. فالتنمية الترابية الحقيقية لا يمكن أن تتحقق إلا إذا وُضع الإنسان في
+                    صلب الاهتمام
+                    والانشغال.
+                </p>
+                <p>
+                    وانطلاقًا من وعينا العميق بانتظارات المواطنات والمواطنين، يعمل المجلس الإقليمي بشكل متواصل على حماية
+                    المواطن، وتحسين
+                    ظروف عيشه، وضمان الولوج العادل إلى الخدمات الأساسية، وذلك في احترام تام لمبادئ العدالة الاجتماعية،
+                    والشفافية،
+                    والقرب.
+                </p>
+                <p>
+                    وفي هذا الإطار، يضطلع المجلس الإقليمي بعدة مجالات تدخل ذات أولوية، من بينها:
+                </p>
+                <ul>
+                    <li>قطاع الصحة، من خلال دعم البنيات التحتية الصحية وتحسين الولوج إلى العلاجات؛</li>
+                    <li>قطاع التعليم، باعتباره ركيزة أساسية للتنمية البشرية وتكافؤ الفرص؛</li>
+                    <li>العالم القروي، عبر تقليص الفوارق المجالية وفك العزلة عن المناطق النائية؛</li>
+                    <li>الطرق والمسالك، لما لها من دور محوري في تسهيل التنقل وتعزيز السلامة وتنشيط التنمية المحلية؛</li>
+                    <li>النقل المدرسي، في إطار محاربة الهدر المدرسي وضمان الحق في التمدرس؛</li>
+                    <li>النسيج الجمعوي، كشريك أساسي في العمل الاجتماعي وتعزيز قيم التضامن والمشاركة المواطِنة.</li>
+                </ul>
+                <p>
+                    وتندرج مختلف هذه التدخلات ضمن رؤية شمولية تروم تعزيز كرامة المواطن، وترسيخ الإدماج الاجتماعي، وتحقيق
+                    تنمية ترابية
+                    متوازنة ومستدامة على مستوى إقليم بركان.
+                </p>
+                <p>
+                    إن المسؤولية الملقاة على عاتقنا ليست مسؤولية مؤسساتية فحسب، بل هي قبل كل شيء مسؤولية أخلاقية
+                    وجماعية، تتطلب
+                    الجدية، والإنصات، والعمل الدؤوب في خدمة الصالح العام.
+                </p>
+                <p>
+                    وسيظل المجلس الإقليمي لبركان فضاءً مفتوحًا في وجه المواطنات والمواطنين، قريبًا من انشغالاتهم،
+                    ومجندًا من أجل مستقبل
+                    أفضل، قوامه الثقة، والتضامن، واحترام الكرامة الإنسانية.
+                </p>
+                <div class="signature-block">
+                    <div class="signature-title">رئيس المجلس الإقليمي لبركان</div>
+                    <div class="signature-text">محمد جلول</div>
+                    <div class="signature-name">Mohamed Jelloul</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Placeholder Section Les Membres -->
+<section id="membres" class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Les Membres du Conseil</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">أعضاء المجلس</h2>
+
+    <!-- President Card (Centered on top) -->
+    <div class="members-grid" style="display: flex; justify-content: center; margin-bottom: 30px;">
+        <div class="member-card" style="width: 100%; max-width: 350px;">
+            <div class="member-image-container">
+                <img [src]="'assets/images/' + president.image" [alt]="president.nameFr" class="member-image">
+            </div>
+            <div class="member-info">
+                <h3>
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ president.nameFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ president.nameAr }}</span>
+                </h3>
+                <p class="member-role">
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ president.roleFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ president.roleAr }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other Members Grid -->
+    <div class="members-grid">
+        <div class="member-card" *ngFor="let member of otherMembers">
+            <div class="member-image-container">
+                <img [src]="'assets/images/' + member.image" [alt]="member.nameFr" class="member-image">
+            </div>
+            <div class="member-info">
+                <h3>
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ member.nameFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ member.nameAr }}</span>
+                </h3>
+                <p class="member-role">
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ member.roleFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ member.roleAr }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

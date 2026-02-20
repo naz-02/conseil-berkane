@@ -1,0 +1,80 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Activités de l'AMPCPP</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">أنشطة الجمعية المغربية لرؤساء مجالس العمالات والأقاليم</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/ampcpp.jpg" alt="AMPCPP Event"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">زيارة عمل إلى فرنسا</h2>
+
+            <p>
+                قام السيد محمد جلول، رئيس المجلس الإقليمي لبركان، بزيارة عمل إلى فرنسا ضمن وفد يمثل الجمعية المغربية
+                لرؤساء مجالس العمالات والأقاليم (AMPCPP)، وذلك في إطار العلاقات المتنامية بين الجمعية ونظيرتها الفرنسية،
+                جمعية الأقاليم الفرنسية (ADF).
+            </p>
+            <p>
+                وقد جاءت هذه الزيارة استجابة للدعوة التي وجهتها جمعية الأقاليم الفرنسية لنظيرتها المغربية، للمشاركة في
+                الملتقى العام للجمعية الفرنسية للأقاليم المنعقد بإقليم تارن بمدينة ألبي، خلال الفترة الممتدة من 12 إلى
+                14 نونبر 2025.
+            </p>
+            <p>
+                وتندرج هذه المشاركة في سياق تفعيل الإعلان المشترك للتعاون الذي تم توقيعه بين الطرفين خلال الزيارة التي
+                قام بها رئيس جمعية الأقاليم الفرنسية، السيد فرانسوا سوفاديه، والسيد كريستوف رامون، رئيس إقليم تارن، إلى
+                المغرب في يونيو 2025، بكل من الرباط وطنجة.
+            </p>
+            <p>
+                وتهدف هذه الشراكة إلى تعزيز التعاون اللامركزي وتبادل الخبرات بين الأقاليم المغربية والفرنسية، من خلال
+                إطلاق برامج عمل مشتركة تهم مجالات الحكامة الترابية، والمشاركة المواطِنة، والتنمية المستدامة، بما ينسجم
+                مع توجهات البلدين في دعم اللامركزية وتقوية دور الجماعات الترابية في التنمية المحلية.
+            </p>
+            <p>
+                وخلال أشغال اليوم الأول من الملتقى ، أجرى السيد محمد جلول والوفد المغربي سلسلة من اللقاءات مع رؤساء
+                الأقاليم الفرنسية وعدد من المسؤولين الترابيين، تم خلالها تبادل الرؤى حول سبل تطوير الشراكات الثنائية،
+                وتدارس إمكانيات التعاون في مجالات التهيئة الترابية، وتدبير المجالات القروية، والابتكار في الخدمات
+                المحلية.
+            </p>
+        </div>
+    </div>
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Visite de travail en France</h2>
+            <p>
+                M. Mohamed Jelloul, Président du Conseil Provincial de Berkane, a effectué une visite de travail en
+                France au sein d'une délégation représentant l'Association Marocaine des Présidents des Conseils
+                Préfectoraux et Provinciaux (AMPCPP), dans le cadre des relations croissantes entre l'association et son
+                homologue française, l'Assemblée des Départements de France (ADF).
+            </p>
+            <p>
+                Cette visite répond à l'invitation adressée par l'ADF à son homologue marocaine pour participer aux
+                Assises des Départements de France tenues dans le département du Tarn, à Albi, du 12 au 14 novembre
+                2025.
+            </p>
+            <p>
+                Cette participation s'inscrit dans le cadre de la mise en œuvre de la déclaration commune de coopération
+                signée entre les deux parties lors de la visite du Président de l'ADF, M. François Sauvadet, et de M.
+                Christophe Ramond, Président du Conseil Départemental du Tarn, au Maroc en juin 2025, à Rabat et Tanger.
+            </p>
+            <p>
+                Ce partenariat vise à renforcer la coopération décentralisée et l'échange d'expertises entre les
+                départements marocains et français, à travers le lancement de programmes d'action communs concernant la
+                gouvernance territoriale, la participation citoyenne et le développement durable, conformément aux
+                orientations des deux pays en matière de soutien à la décentralisation et de renforcement du rôle des
+                collectivités territoriales dans le développement local.
+            </p>
+            <p>
+                Durant les travaux de la première journée de la rencontre, M. Mohamed Jelloul et la délégation marocaine
+                ont tenu une série de réunions avec des présidents de départements français et plusieurs responsables
+                territoriaux, au cours desquelles ont été échangés des points de vue sur les moyens de développer des
+                partenariats bilatéraux, et examinées les possibilités de coopération dans les domaines de l'aménagement
+                du territoire, de la gestion des zones rurales et de l'innovation dans les services locaux.
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,337 @@
+<!-- SELECTION VIEW -->
+<div *ngIf="viewType === 'selection'" class="container">
+    <div class="page-header">
+        <h1>{{ langService.currentLang() === 'fr' ? 'Organigramme' : 'الهيكل التنظيمي' }}</h1>
+    </div>
+    <div class="selection-menu">
+        <a routerLink="/organigramme-conseil.html" class="selection-card">
+            <i class="fas fa-users"></i>
+            <h2>{{ langService.currentLang() === 'fr' ? 'Composition du Conseil' : 'تشكيلة المجلس' }}</h2>
+        </a>
+        <a routerLink="/organigramme-administratif.html" class="selection-card">
+            <i class="fas fa-sitemap"></i>
+            <h2>{{ langService.currentLang() === 'fr' ? 'Organigramme Administratif' : 'الهيكل التنظيمي الإداري' }}</h2>
+        </a>
+    </div>
+</div>
+
+<!-- CONSEIL VIEW (Responsive Tree) -->
+<div *ngIf="viewType === 'conseil'">
+    <div class="page-header">
+        <h1>{{ langService.currentLang() === 'fr' ? 'Composition du Conseil' : 'تشكيلة المجلس' }}</h1>
+    </div>
+
+    <div class="chart-container-fluid">
+        <div class="tree">
+            <ul>
+                <li>
+                    <!-- President -->
+                    <a class="org-card president-card org-box" data-name-fr="Président" data-name-ar="الرئيس"
+                        data-role-fr="Président du Conseil&#10;Mandat : 2021-2027&#10;Appartenance politique : Parti de l'Authenticité et de la Modernité"
+                        data-role-ar="السيد رئيس المجلس&#10;الفترة الانتدابية : 2021-2027&#10;الانتماء السياسي : حزب الأصالة و المعاصرة"
+                        data-image="president-pro.jpg" (click)="onChartClick($event)">
+                        <img src="assets/images/president-pro.jpg" class="card-avatar" alt="President">
+                        <h4>{{ getBoxName('Président', 'الرئيس') }}</h4>
+                        <h5 class="person-name">{{ getBoxName('M. Mohammed Jelloul', 'السيد محمد جلول') }}</h5>
+                    </a>
+
+                    <ul>
+                        <!-- Secretariat Branch -->
+                        <li>
+                            <div class="branch-label"
+                                style="padding: 10px; font-weight: bold; color: var(--couleur-secondaire);">
+                                {{ langService.currentLang() === 'fr' ? 'Secrétaire du Conseil' : 'كاتب المجلس' }}
+                            </div>
+                            <ul class="secretary-offset">
+                                <li>
+                                    <a class="org-card org-box" data-name-fr="Secrétaire du Conseil"
+                                        data-name-ar="كاتب المجلس"
+                                        data-role-fr="Secrétaire du Conseil&#10;Appartenance politique : Parti du Progrès et du Socialisme"
+                                        data-role-ar="كاتب المجلس&#10;الانتماء السياسي : حزب التقدم و الاشتراكية"
+                                        data-image="member_mohamed_bouyaalaoui_v2.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_mohamed_bouyaalaoui_v2.jpg" class="card-avatar"
+                                            alt="Secrétaire">
+                                        <h4>{{ getBoxName('Secrétaire du Conseil', 'كاتب المجلس') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('Mohamed Bouyaalaoui', 'بويعلاوي محمد') }}
+                                        </h5>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a class="org-card org-box" data-name-fr="Vice-Secrétaire"
+                                                data-name-ar="نائب كاتب المجلس"
+                                                data-role-fr="Vice-Secrétaire du Conseil&#10;Appartenance politique : Parti de l'Authenticité et de la Modernité"
+                                                data-role-ar="نائب كاتب المجلس&#10;الانتماء السياسي : حزب الأصالة و المعاصرة"
+                                                data-image="member_karim_erradi_v3.jpg" (click)="onChartClick($event)">
+                                                <img src="assets/images/member_karim_erradi_v3.jpg" class="card-avatar"
+                                                    alt="Vice-Secrétaire">
+                                                <h4>{{ getBoxName('Vice-Secrétaire', 'نائب كاتب المجلس') }}</h4>
+                                                <h5 class="person-name">{{ getBoxName('Karim Erradi', 'راضي كريمي') }}
+                                                </h5>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- VPs Branch -->
+                        <li>
+                            <div class="branch-label"
+                                style="padding: 10px; font-weight: bold; color: var(--couleur-secondaire);">
+                                {{ langService.currentLang() === 'fr' ? 'Vice-Présidents' : 'نواب الرئيس' }}
+                            </div>
+                            <ul style="display: flex; justify-content: center;">
+                                <li>
+                                    <a class="org-card org-box" data-name-fr="Vice 1" data-name-ar="النائب الأول"
+                                        data-role-fr="1er Vice-Président&#10;Appartenance politique : Front des Forces Démocratiques"
+                                        data-role-ar="النائب الأول للرئيس&#10;الانتماء السياسي : حزب جبهة القوى الديمقراطية"
+                                        data-image="member_farid_bntaha_v2.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_farid_bntaha_v2.jpg" class="card-avatar"
+                                            alt="Vice 1">
+                                        <h4>{{ getBoxName('1er Vice-Président', 'النائب الأول') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('Farid Bntaha', 'فريد بنته') }}</h5>
+                                    </a>
+                                    <!-- Committees under Vice 1 -->
+                                    <ul class="no-connector">
+                                        <li>
+                                            <a class="org-card org-box"
+                                                data-name-fr="Président de la commission du budget, des affaires financières et de la programmation"
+                                                data-name-ar="رئيس اللجنة المكلفة بالميزانية و الشؤون المالية و البرمجة"
+                                                data-role-fr="Président de la commission du budget, des affaires financières et de la programmation&#10;Appartenance politique : Parti de l'Authenticité et de la Modernité"
+                                                data-role-ar="رئيس اللجنة المكلفة بالميزانية و الشؤون المالية و البرمجة&#10;الانتماء السياسي : حزب الأصالة و المعاصرة"
+                                                data-image="member_abdelkader_karimi_v2.jpg"
+                                                (click)="onChartClick($event)">
+                                                <img src="assets/images/member_abdelkader_karimi_v2.jpg"
+                                                    class="card-avatar" alt="Comite 1">
+                                                <h4>{{ getBoxName('Président de la commission du budget, des affaires
+                                                    financières et de la programmation', 'رئيس اللجنة المكلفة بالميزانية
+                                                    و الشؤون المالية و البرمجة') }}</h4>
+                                                <h5 class="person-name">{{ getBoxName('Abdelkader Karimi', 'عبد القادر
+                                                    كريمي') }}</h5>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="org-card org-box" data-name-fr="Vice 2" data-name-ar="النائب الثاني"
+                                        data-role-fr="2ème Vice-Président&#10;Appartenance politique : Parti du Progrès et du Socialisme"
+                                        data-role-ar="النائب الثاني للرئيس&#10;الانتماء السياسي : حزب التقدم والاشتراكية"
+                                        data-image="member_khalid_azzouzi_v4.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_khalid_azzouzi_v4.jpg" class="card-avatar"
+                                            alt="Vice 2">
+                                        <h4>{{ getBoxName('2ème Vice-Président', 'النائب الثاني') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('Khalid Azzouzi', 'عزوزي خالد') }}</h5>
+                                    </a>
+                                    <ul class="no-connector">
+                                        <li>
+                                            <a class="org-card org-box"
+                                                data-name-fr="Présidente de la commission des affaires sociales et de la famille"
+                                                data-name-ar="رئيسة اللجنة المكلفة بالشؤون الاجتماعية و الاسرة"
+                                                data-role-fr="Présidente de la commission des affaires sociales et de la famille&#10;Vacant"
+                                                data-role-ar="رئيسة اللجنة المكلفة بالشؤون الاجتماعية و الاسرة&#10;شاغر"
+                                                (click)="onChartClick($event)">
+                                                <div class="card-avatar"
+                                                    style="background-color: #eee; display: flex; align-items: center; justify-content: center;">
+                                                    <i class="fas fa-users" style="font-size: 24px; color: #ccc;"></i>
+                                                </div>
+                                                <h4>{{ getBoxName('Présidente de la commission des affaires sociales et
+                                                    de la famille', 'رئيسة اللجنة المكلفة بالشؤون الاجتماعية و الاسرة')
+                                                    }}</h4>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a class="org-card org-box"
+                                                        data-name-fr="Vice-Présidente de la commission"
+                                                        data-name-ar="نائبة رئيسة اللجنة"
+                                                        data-role-fr="Vice-Présidente de la commission des affaires sociales et de la famille&#10;Appartenance politique : Parti de l'Authenticité et de la Modernité"
+                                                        data-role-ar="نائبة رئيسة اللجنة المكلفة بالشؤون الاجتماعية و الاسرة&#10;الانتماء السياسي : حزب الأصالة و المعاصرة"
+                                                        data-image="member_ghizlane_bourada_v4.jpg"
+                                                        (click)="onChartClick($event)">
+                                                        <img src="assets/images/member_ghizlane_bourada_v4.jpg"
+                                                            class="card-avatar" alt="Vice-Présidente">
+                                                        <h4>{{ getBoxName('Vice-Présidente de la commission', 'نائبة
+                                                            رئيسة اللجنة') }}</h4>
+                                                        <h5 class="person-name">{{ getBoxName('Ghizlane Bourada',
+                                                            'غزلان بورعدة') }}</h5>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="org-card org-box" data-name-fr="3ème Vice-Présidente"
+                                        data-name-ar="النائبة الثالثة"
+                                        data-role-fr="3ème Vice-Présidente&#10;Appartenance politique : Parti de l'Authenticité et de la Modernité"
+                                        data-role-ar="النائبة الثالثة للرئيس&#10;الانتماء السياسي : حزب الأصالة و المعاصرة"
+                                        data-image="member_farida_najaoui_v2.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_farida_najaoui_v2.jpg" class="card-avatar"
+                                            alt="Vice 3">
+                                        <h4>{{ getBoxName('3ème Vice-Président', 'النائب الثالث') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('Farida Najaoui', 'فريدة النكاوي') }}</h5>
+                                    </a>
+                                    <ul class="no-connector">
+                                        <li>
+                                            <a class="org-card org-box"
+                                                data-name-fr="Président de la commission du développement rural et urbain, de la promotion des investissements, de l'eau, de l'énergie et de l'environnement"
+                                                data-name-ar="رئيس اللجنة المكلفة بالتنمية القروية و الحضرية و انعاش الاستثمارات و الماء و الطاقة و البيئة"
+                                                data-role-fr="Président de la commission du développement rural et urbain, de la promotion des investissements, de l'eau, de l'énergie et de l'environnement&#10;Appartenance politique : Mouvement Populaire"
+                                                data-role-ar="رئيس اللجنة المكلفة بالتنمية القروية و الحضرية و انعاش الاستثمارات و الماء و الطاقة و البيئة&#10;الانتماء السياسي : الحركة الشعبية"
+                                                data-image="member_jamal_zriouhi_v2.jpg" (click)="onChartClick($event)">
+                                                <img src="assets/images/member_jamal_zriouhi_v2.jpg" class="card-avatar"
+                                                    alt="Comite 3">
+                                                <h4>{{ getBoxName('Président de la commission du développement rural et
+                                                    urbain, de la promotion des investissements, de l\'eau, de
+                                                    l\'énergie et de l\'environnement', 'رئيس اللجنة المكلفة بالتنمية
+                                                    القروية و الحضرية و انعاش الاستثمارات و الماء و الطاقة و البيئة') }}
+                                                </h4>
+                                                <h5 class="person-name">{{ getBoxName('Jamal Zriouhi', 'جمال زريوحي') }}
+                                                </h5>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ADMINISTRATIF VIEW (Responsive Tree) -->
+<div *ngIf="viewType === 'administratif'">
+    <div class="page-header">
+        <h1>{{ langService.currentLang() === 'fr' ? 'Organigramme Administratif' : 'الهيكل التنظيمي الإداري' }}</h1>
+    </div>
+
+    <div class="chart-container-fluid">
+        <div class="tree">
+            <ul>
+                <li>
+                    <!-- President -->
+                    <a class="org-card president-card org-box" data-name-fr="Présidence" data-name-ar="الرئاسة"
+                        data-role-fr="Président du Conseil&#10;Mandat : 2021-2027&#10;Appartenance politique : Parti de l'Authenticité et de la Modernité"
+                        data-role-ar="السيد رئيس المجلس&#10;الفترة الانتدابية : 2021-2027&#10;الانتماء السياسي : حزب الأصالة و المعاصرة"
+                        data-image="president-pro.jpg" (click)="onChartClick($event)">
+                        <img src="assets/images/president-pro.jpg" class="card-avatar" alt="Présidence">
+                        <h4>{{ getBoxName('Présidence', 'الرئاسة') }}</h4>
+                        <h5 class="person-name">{{ getBoxName('M. Mohammed Jelloul', 'السيد محمد جلول') }}</h5>
+                    </a>
+
+                    <ul>
+                        <!-- Tech Director Branch -->
+                        <li>
+                            <a class="org-card org-box" data-name-fr="Direction des Affaires Présidentielles"
+                                data-name-ar="مديرية شؤون الرئاسة" data-image="member_said_yahyaoui_v2.jpg"
+                                (click)="onChartClick($event)">
+                                <img src="assets/images/member_said_yahyaoui_v2.jpg" class="card-avatar"
+                                    alt="Direction des Affaires Présidentielles">
+                                <h4>{{ getBoxName('Direction des Affaires Présidentielles', 'مديرية شؤون الرئاسة') }}
+                                </h4>
+                                <h5 class="person-name">{{ getBoxName('M. Said Yahyaoui', 'السيد سعيد يحياوي') }}</h5>
+                            </a>
+                        </li>
+
+                        <!-- General Director Branch -->
+                        <li>
+                            <a class="org-card org-box" data-name-fr="Direction Générale des Services"
+                                data-name-ar="المديرية العامة للمصالح" data-image="member_khalid_aidi_v2.jpg"
+                                (click)="onChartClick($event)">
+                                <img src="assets/images/member_khalid_aidi_v2.jpg" class="card-avatar"
+                                    alt="Direction Générale des Services">
+                                <h4>{{ getBoxName('Direction Générale des Services', 'المديرية العامة للمصالح') }}</h4>
+                                <h5 class="person-name">{{ getBoxName('M. Khalid Aidi', 'السيد خليد عايدي') }}</h5>
+                            </a>
+
+                            <!-- Departments under DGS -->
+                            <ul>
+                                <li>
+                                    <a class="org-card org-box" data-name-fr="Service des Affaires Financières"
+                                        data-name-ar="مصلحة الشؤون المالية والميزانية والبرمجة"
+                                        data-image="member_youssef_ilaouan_v2.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_youssef_ilaouan_v2.jpg" class="card-avatar"
+                                            alt="Service des Affaires Financières">
+                                        <h4>{{ getBoxName('Service des Affaires Financières', 'مصلحة الشؤون المالية
+                                            والميزانية والبرمجة') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('M. Youssef Ilaouan', 'السيد يوسف العوان')
+                                            }}</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="org-card org-box"
+                                        data-name-fr="Service des Affaires Administratives et RH"
+                                        data-name-ar="مصلحة الشؤون الإدارية والموارد البشرية"
+                                        data-image="member_mimoun_bentaha_v2.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_mimoun_bentaha_v2.jpg" class="card-avatar"
+                                            alt="Service des Affaires Administratives et RH">
+                                        <h4>{{ getBoxName('Service des Affaires Administratives et RH', 'مصلحة الشؤون
+                                            الإدارية والموارد البشرية') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('M. Mimoun Bentaha', 'السيد ميمون بنته')
+                                            }}</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="org-card org-box"
+                                        data-name-fr="Service des Affaires Techniques et Équipements"
+                                        data-name-ar="مصلحة الشؤون التقنية والتجهزات"
+                                        data-image="member_mohammed_margoum_v2.jpg" (click)="onChartClick($event)">
+                                        <img src="assets/images/member_mohammed_margoum_v2.jpg" class="card-avatar"
+                                            alt="Service des Affaires Techniques et Équipements">
+                                        <h4>{{ getBoxName('Service des Affaires Techniques et Équipements', 'مصلحة
+                                            الشؤون التقنية والتجهزات') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('M. Mohammed Margoum', 'السيد محمد مرغوم')
+                                            }}</h5>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="org-card org-box"
+                                        data-name-fr="Service du Développement Social et Partenariat"
+                                        data-name-ar="مصلحة التنمية الاجتماعية والشراكة" data-image="milouda_5.jpg"
+                                        (click)="onChartClick($event)">
+                                        <img src="assets/images/milouda_5.jpg" class="card-avatar"
+                                            alt="Service du Développement Social et Partenariat">
+                                        <h4>{{ getBoxName('Service du Développement Social et Partenariat', 'مصلحة
+                                            التنمية الاجتماعية والشراكة') }}</h4>
+                                        <h5 class="person-name">{{ getBoxName('Mme. Milouda Mhyaoui', 'السيدة ميلودة
+                                            محياوي') }}</h5>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!-- Finance/Private Sec Branch -->
+                        <li>
+                            <a class="org-card org-box" data-name-fr="Secrétariat Particulier"
+                                data-name-ar="الكتابة الخاصة" (click)="onChartClick($event)">
+                                <div class="card-avatar"
+                                    style="background-color: #eee; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-file-signature" style="font-size: 24px; color: #ccc;"></i>
+                                </div>
+                                <h4>{{ getBoxName('Secrétariat Particulier', 'الكتابة الخاصة') }}</h4>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div *ngIf="isModalOpen" class="modal">
+    <div class="modal-content">
+        <span class="close" (click)="closeModal()">&times;</span>
+        <div class="modal-body">
+            <img *ngIf="selectedPerson!.image" [src]="'assets/images/' + selectedPerson!.image" alt="Person Image"
+                class="person-image">
+            <h2>{{ selectedPerson!.name }}</h2>
+            <h3 *ngIf="selectedPerson!.role"
+                style="color: var(--couleur-secondaire); margin-top: 5px; white-space: pre-wrap;">{{
+                selectedPerson!.role }}</h3>
+        </div>
+    </div>
+</div>

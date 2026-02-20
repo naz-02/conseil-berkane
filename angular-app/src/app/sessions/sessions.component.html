@@ -1,0 +1,1368 @@
+<div class="page-header page-header-sessions">
+    <h1>
+        <span *ngIf="langService.currentLang() === 'fr'">Sessions {{year}}</span>
+        <span *ngIf="langService.currentLang() === 'ar'">دورات {{year}}</span>
+    </h1>
+</div>
+<section class="content-section">
+    <!-- Sessions for 2026 -->
+    <ng-container *ngIf="year === '2026'">
+        <!-- Session 1 Extraordinaire 2026 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="1ère Session Extraordinaire 2026"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">1ère Session
+                        Extraordinaire 2026</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 01 لسنة 2026</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 04 Février 2026 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 01 يومه الأربعاء 04 فبراير
+                        2026...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-1-extraordinaire-2026.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Janvier 2026 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Janvier 2026"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Janvier 2026</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يناير 2026</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 12 Janvier 2026 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        عقد المجلس الإقليمي لبركان دورته العادية لشهر يناير 2026 يومه الاثنين 12 يناير 2026...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-janvier-2026-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Sessions for 2025 -->
+    <ng-container *ngIf="year === '2025'">
+        <!-- Session 13 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session 13"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">13ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 13</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mardi 30 Décembre 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 13 يومه الثلاثاء 30 دجنبر
+                        2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-13-extraordinaire-2025.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Session 12 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session 12"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">12ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 12</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 10 Décembre 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 12 يومه الأربعاء 10 دجنبر
+                        2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-12-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 11 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session 11"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">11ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 11</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 24 Novembre 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 11 يومه الاثنين 24 نونبر
+                        2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-11-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 10 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session 10"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">10ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 10</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 20 Octobre 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 10 يومه الاثنين 20 أكتوبر
+                        2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-10-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 9 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session 9"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">9ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 09</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 16 Octobre 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 09 يومه الخميس 16 أكتوبر
+                        2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-9-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Septembre 2025 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Septembre 2025"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Septembre 2025</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر شتنبر 2025</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 08 Septembre 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        عقد المجلس الإقليمي لبركان دورته العادية لشهر شتنبر 2025 يومه الاثنين 08 شتنبر 2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-septembre-2025.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 8 Extraordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="8ème Session Extraordinaire"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">8ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 08</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 13 Août 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 08 يومه الأربعاء 13 غشت
+                        2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-8-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 7 Extraordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="7ème Session Extraordinaire"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">7ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 07</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 07 Août 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان يومه الخميس 07 غشت 2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-7-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 6 Extraordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="6ème Session Extraordinaire"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">6ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 06</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mardi 08 Juillet 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        عقد المجلس الاقليمي لبركان بمقره يومه الثلاثاء 08 يوليوز 2025 دورة استثنائية رقم 06...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-6-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Session Juin 2025 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Juin 2025"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Juin 2025</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يونيو 2025</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mardi 10 Juin 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يوم الثلاثاء 10 يونيو 2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-juin-2025.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Session 4 Extraordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="4ème Session Extraordinaire"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">4ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 04</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 19 Mai 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يوم الاثنين 19 مايو 2025...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-4-extraordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Session Janvier 2025 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Janvier 2025"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Janvier 2025</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يناير 2025</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 13 Janvier 2025 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        عقد المجلس الاقليمي لبركان يوم الاثنين 13 يناير 2025 على الساعة الحادية عشرة صباحا...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-janvier-2025.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Sessions for 2024 -->
+    <ng-container *ngIf="year === '2024'">
+        <!-- Session 9 Extraordinaire 2024 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="9ème Session Extraordinaire 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">9ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 09</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue en Décembre 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان في دجنبر 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-9-extraordinaire-2024.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 8 Extraordinaire 2024 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="8ème Session Extraordinaire 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">8ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 08</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 23 Octobre 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يومه الأربعاء 23 أكتوبر 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-8-extraordinaire-2024.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 7 Extraordinaire 2024 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="7ème Session Extraordinaire 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">7ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 07</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 29 Juillet 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        عقد المجلس الاقليمي لبركان يومه الاثنين 29 يوليوز 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-7-extraordinaire-2024.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 6 Extraordinaire 2024 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="6ème Session Extraordinaire 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">6ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 06</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 11 Juillet 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان يومه الخميس 11 يوليوز 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-6-extraordinaire-2024.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Juin 2024 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Juin 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Juin</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يونيو</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 10 Juin 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يوم الاثنين 10 يونيو 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-juin-2024-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 4 Extraordinaire 2024 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="4ème Session Extraordinaire 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">4ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 04</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 16 Mai 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان يومه الخميس 16 مايو 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-4-extraordinaire-2024.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 2 Extraordinaire 2024 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="2ème Session Extraordinaire 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">2ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 02</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 07 Mars 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان يومه الخميس 07 مارس 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-2-extraordinaire-2024.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Janvier 2024 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Janvier 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Janvier</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يناير</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 08 Janvier 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        عقد المجلس الإقليمي لبركان يومه الاثنين 08 يناير 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-janvier-2024-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Septembre 2024 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Septembre 2024"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Septembre</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر شتنبر</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 09 Septembre 2024 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يوم الاثنين 09 شتنبر 2024...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-septembre-2024-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+
+
+    <!-- Sessions for 2023 -->
+    <ng-container *ngIf="year === '2023'">
+        <!-- Session 8 Extraordinaire 2023 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="8ème Session Extraordinaire 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">8ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 08</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mardi 26 Décembre 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان يومه الثلاثاء 26 دجنبر 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-8-extraordinaire-2023.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Septembre 2023 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Septembre 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Septembre 2023</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر شتنبر 2023</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 11 Septembre 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يوم الاثنين 11 شتنبر 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-septembre-2023-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 4 Extraordinaire 2023 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="4ème Session Extraordinaire 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">4ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 04</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 17 Août 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان يومه الخميس 17 غشت 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-4-extraordinaire-2023.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 3 Extraordinaire 2023 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="3ème Session Extraordinaire 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">3ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 03</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 06 Juillet 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان يومه الخميس 06 يوليوز 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-3-extraordinaire-2023.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Juin 2023 Ordinaire Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Juin 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Juin 2023</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يونيو 2023</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 12 Juin 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمقر الجديد للمجلس الاقليمي لبركان يوم الاثنين 12 يونيو 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-juin-2023-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 2 Extraordinaire 2023 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="2ème Session Extraordinaire 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">2ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 02</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Vendredi 14 Avril 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        انعقدت بقاعة الاجتماعات بالمجلس الاقليمي لبركان اليوم الجمعة 14 أبريل 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-2-extraordinaire-2023.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 1 Extraordinaire 2023 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="1ère Session Extraordinaire 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">1ère Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 01</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 20 Mars 2023 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان اليوم الاثنين 20 مارس 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-1-extraordinaire-2023.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Ordinaire Janvier 2023 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Janvier 2023"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire de Janvier 2023</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يناير 2023</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 09 Janvier 2023 au Centre de Formation de Football.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضن مركز التكوين لكرة القدم الدورة العادية للمجلس الإقليمي لبركان يوم الاثنين 09 يناير 2023...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-janvier-2023-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Sessions for 2022 -->
+    <ng-container *ngIf="year === '2022'">
+        <!-- Session 11 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="11ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">11ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 11</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mardi 26 Décembre 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمقر المجلس الاقليمي لبركان اليوم الاثنين 26 دجنبر 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-11-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 10 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="10ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">10ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 10</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 21 Décembre 2022 au Centre de Formation de Football (Sidi Slimane).
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات المتواجدة بمركز التكوين لكرة القدم بجماعة سيدي سليمان الدورة الاستثنائية
+                        رقم 10...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-10-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 9 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="9ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">9ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 09</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 30 Novembre 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        انعقدت بقاعة الاجتماعات بالمجلس الاقليمي لبركان اليوم الأربعاء 30 نونبر 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-9-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 8 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="8ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">8ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 08</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 03 Novembre 2022 au Centre de Formation de Football (Sidi Slimane).
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بمركز التكوين لكرة القدم المتواجدة بالجماعة الترابية سيدي سليمان شراعة
+                        اليوم الخميس 03 نونبر 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-8-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 7 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="7ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">7ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 07</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Vendredi 30 Septembre 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان اليوم الجمعة 30 شتنبر 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-7-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 6 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="6ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">6ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 06</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 27 Juillet 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        يوم الأربعاء 27 يوليوز 2022 وفي حدود الساعة العاشرة صباحا، عقد المجلس...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-6-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 5 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="5ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">5ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 05</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 07 Juillet 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان، صبيحة يوم الخميس 07 يوليوز 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-5-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session Ordinaire Juin 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="Session Ordinaire Juin 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">Session
+                        Ordinaire Juin 2022</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        العادية لشهر يونيو 2022</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 13 Juin 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان، اليوم الاثنين 13 يونيو 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-juin-2022-ordinaire.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 4 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="4ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">4ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 04</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Lundi 30 Mai 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان، اليوم الاثنين 30 مايو 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-4-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 3 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="3ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">3ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية رقم 03</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Vendredi 29 Avril 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        بقاعة الاجتماعات التابعة للمجلس الإقليمي تم اليوم الجمعة 29 ابريل 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-3-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 2 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="2ème Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">2ème Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية الثانية</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Mercredi 09 Mars 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        تم اليوم الاربعاء 09 مارس 2022 عقد الدورة الإستثنائية الثانية لسنة 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-2-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Session 1 Extraordinaire 2022 Card -->
+        <div class="session-card"
+            style="border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); background: #fff;">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="assets/images/session-unified.jpg" alt="1ère Session Extraordinaire 2022"
+                        style="width: 100%; border-radius: 4px; object-fit: cover; height: 200px;">
+                </div>
+                <div class="col-md-8">
+                    <h3 *ngIf="langService.currentLang() === 'fr'" style="margin-top: 0; color: #004a8c;">1ère Session
+                        Extraordinaire</h3>
+                    <h3 *ngIf="langService.currentLang() === 'ar'" style="margin-top: 0; color: #004a8c;">الدورة
+                        الاستثنائية الأولى</h3>
+
+                    <p *ngIf="langService.currentLang() === 'fr'">
+                        Tenue le Jeudi 17 Février 2022 au siège du Conseil Provincial de Berkane.
+                    </p>
+                    <p *ngIf="langService.currentLang() === 'ar'">
+                        تم اليوم الخميس 17 فبراير 2022 عقد أشغال الدورة الاستثنائية الأولى لسنة 2022...
+                    </p>
+
+                    <div style="margin-top: 15px;">
+                        <a routerLink="/session-1-extraordinaire-2022.html" class="btn btn-primary">
+                            <span *ngIf="langService.currentLang() === 'fr'">En savoir plus</span>
+                            <span *ngIf="langService.currentLang() === 'ar'">للمزيد من المعلومات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Empty State for other years -->
+    <div *ngIf="year !== '2025' && year !== '2024' && year !== '2023'" class="no-sessions">
+        <p *ngIf="langService.currentLang() === 'fr'">Aucune session disponible pour cette année.</p>
+        <p *ngIf="langService.currentLang() === 'ar'">لا توجد دورات متاحة لهذه السنة.</p>
+    </div>
+</section>

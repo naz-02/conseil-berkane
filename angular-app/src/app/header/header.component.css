@@ -1,0 +1,12 @@
+/* Alternative more complex pattern if the simple check works well */
+/* .zellige-border {
+  height: 15px;
+  background-color: #f7f9fb;
+  background-image:
+    linear-gradient(335deg, #1d714b 23px, transparent 23px),
+    linear-gradient(155deg, #1d714b 23px, transparent 23px),
+    linear-gradient(335deg, #1d714b 23px, transparent 23px),
+    linear-gradient(155deg, #1d714b 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+} */

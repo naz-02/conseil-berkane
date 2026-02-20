@@ -1,0 +1,56 @@
+<app-session-layout titleFr="1ère Session Extraordinaire 2022" titleAr="الدورة الاستثنائية الأولى لسنة 2022"
+    imageUrl="assets/images/session-unified.jpg" imageAlt="1ère Session Extraordinaire 2022">
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية الأولى لسنة 2022</h2>
+            <p>
+                تم اليوم الخميس 17 فبراير 2022 عقد أشغال الدورة الاستثنائية الأولى لسنة 2022 حيث تضمن جدول أعمال الدورة:
+            </p>
+            <ol>
+                <li>الدراسة والمصادقة على اتفاقية شراكة تتعلق بمشروع تهيئة، تجهيز وتسيير مركز احتضان المقاولات الناشئة
+                    والابتكار الصناعي بشراكة مع اللجنة الإقليمية للتنمية البشرية.</li>
+                <li>المصادقة على إلغاء المقرر عدد 01 بتاريخ 10 يناير 2022 المتعلق بالمصادقة على تعيين السيد مصطفى بن
+                    شريف محاميا للمجلس الاقليمي لبركان وإبرام العقد معه.</li>
+                <li>المصادقة على تعيين السيد مصطفى بن شريف محاميا للمجلس الاقليمي لبركان وإبرام العقد معه.</li>
+                <li>المصادقة على إلغاء المقرر عدد 43 بتاريخ 02 غشت 2021 المتعلق بالمصادقة على اتفاقية شراكة بين المجلس
+                    الاقليمي لبركان وجماعة السعيدية لإنجاز منشأة فنية بتراب الجماعة.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الاقليمي لبركان وجماعة السعيدية لإنجاز منشأة فنية بتراب
+                    الجماعة.</li>
+                <li>المصادقة على احداث هيئة المساواة وتكافؤ الفرص ومقاربة النوع.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الاقليمي لبركان وجماعة مداغ لبناء ملعب للقرب.</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">1ère Session Extraordinaire 2022</h2>
+            <p>
+                Le Jeudi 17 Février 2022, se sont tenus les travaux de la première session extraordinaire de l'année
+                2022, dont l'ordre du jour comprenait :
+            </p>
+            <ol>
+                <li>Étude et approbation d'une convention de partenariat relative au projet d'aménagement, d'équipement
+                    et de gestion du centre d'incubation des startups et de l'innovation industrielle, en partenariat
+                    avec le Comité Provincial du Développement Humain.</li>
+                <li>Approbation de l'annulation de la décision n° 01 du 10 janvier 2022 relative à l'approbation de la
+                    nomination de Me. Mustapha Ben Cherif comme avocat du Conseil Provincial de Berkane et à la
+                    conclusion du contrat avec lui.</li>
+                <li>Approbation de la nomination de Me. Mustapha Ben Cherif comme avocat du Conseil Provincial de
+                    Berkane et conclusion du contrat avec lui.</li>
+                <li>Approbation de l'annulation de la décision n° 43 du 02 août 2021 relative à l'approbation d'une
+                    convention de partenariat entre le Conseil Provincial de Berkane et la commune de Saïdia pour la
+                    réalisation d'un ouvrage d'art sur le territoire de la commune.</li>
+                <li>Approbation d'une convention de partenariat entre le Conseil Provincial de Berkane et la commune de
+                    Saïdia pour la réalisation d'un ouvrage d'art sur le territoire de la commune.</li>
+                <li>Approbation de la création de l'Instance de l'Équité, de l'Égalité des Chances et de l'Approche
+                    Genre.</li>
+                <li>Approbation d'une convention de partenariat entre le Conseil Provincial de Berkane et la commune de
+                    Madagh pour la construction d'un terrain de proximité.</li>
+            </ol>
+        </div>
+    </div>
+</app-session-layout>

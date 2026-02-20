@@ -1,0 +1,52 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Espace Juridique</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الفضاء القانوني</h1>
+</div>
+
+<section class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Constitution du Royaume du Maroc</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">دستور المملكة المغربية</h2>
+
+    <p *ngIf="langService.currentLang() === 'fr'">
+        Vous pouvez consulter le document intégral de la Constitution ci-dessous ou le télécharger.
+    </p>
+    <p *ngIf="langService.currentLang() === 'ar'">
+        يمكنكم الإطلاع على الوثيقة الكاملة للدستور المغربي أدناه أو تحميلها.
+    </p>
+
+    <div
+        style="text-align: center; margin-bottom: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <a href="assets/documents/الدستور.pdf" target="_blank" class="btn btn-primary">
+            <span *ngIf="langService.currentLang() === 'fr'">Voir le PDF</span>
+            <span *ngIf="langService.currentLang() === 'ar'">عرض ملف PDF</span>
+        </a>
+        <a href="assets/documents/الدستور.pdf" download class="btn btn-secondary">
+            <span *ngIf="langService.currentLang() === 'fr'">Télécharger le PDF</span>
+            <span *ngIf="langService.currentLang() === 'ar'">تحميل ملف PDF</span>
+        </a>
+    </div>
+</section>
+
+<section class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Loi Organique des Préfectures et Provinces</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">القانون التنظيمي للعمالات و الأقاليم</h2>
+
+    <p *ngIf="langService.currentLang() === 'fr'">
+        Vous pouvez consulter le document intégral de l'Espace Juridique ci-dessous ou le télécharger.
+    </p>
+    <p *ngIf="langService.currentLang() === 'ar'">
+        يمكنكم الإطلاع على الوثيقة الكاملة للقانون التنضيمي أدناه أو تحميلها.
+    </p>
+
+    <div
+        style="text-align: center; margin-bottom: 20px; display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+        <a href="assets/documents/القانون التنضيمي.pdf" target="_blank" class="btn btn-primary">
+            <span *ngIf="langService.currentLang() === 'fr'">Voir le PDF</span>
+            <span *ngIf="langService.currentLang() === 'ar'">عرض ملف PDF</span>
+        </a>
+        <a href="assets/documents/القانون التنضيمي.pdf" download class="btn btn-secondary">
+            <span *ngIf="langService.currentLang() === 'fr'">Télécharger le PDF</span>
+            <span *ngIf="langService.currentLang() === 'ar'">تحميل ملف PDF</span>
+        </a>
+    </div>
+</section>

@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* President Section Styles */
+.president-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.president-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: top;
+}
+
+.president-text {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+.president-text p {
+    margin-bottom: 20px;
+}
+
+.president-text strong {
+    color: var(--couleur-principale, #333);
+    font-size: 1.1rem;
+}
+
+.president-text em {
+    color: var(--couleur-secondaire, #666);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .president-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .president-photo {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Members Grid Styles */
+.members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.member-card {
+    background: #fff;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.member-image-container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+}
+
+.member-card:hover .member-image {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: var(--couleur-principale, #333);
+    font-weight: 700;
+}
+
+.member-role {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--couleur-secondaire, #666);
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .members-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+
+    .member-image-container {
+        height: 250px;
+    }
+}
+
+/* Commissions Grid Styles */
+.commissions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.commission-card {
+    background: #fff;
+    border-radius: 15px;
+    /* Match member-card */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* Match member-card */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Match member-card */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    /* Match member-card */
+    display: flex;
+    flex-direction: column;
+}
+
+.commission-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    /* Match member-card hover */
+}
+
+/* Reuse .member-image-container and .member-image for commissions naturally */
+
+.commission-card:hover .member-image {
+    transform: scale(1.05);
+}
+
+.president-label-text {
+    font-size: 0.9rem;
+    color: var(--couleur-secondaire, #888);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: -5px 0 5px 0;
+    font-weight: 600;
+}
+
+.commission-title-text {
+    font-weight: 600 !important;
+    color: #444 !important;
+}
+
+/* Signature Styles */
+
+.signature-img {
+    height: 300px;
+    width: auto;
+    margin-top: -60px;
+    object-fit: contain;
+}
+
+.signature-block {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.signature-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signature-text {
+    font-family: 'Aref Ruqaa', serif;
+    font-size: 3.5rem;
+    color: #000;
+    line-height: normal;
+    margin-bottom: -15px;
+    /* Adjust spacing for Ruqaa's height */
+    display: block;
+    /* Remove inline-block/rotation */
+    transform: none;
+}
+
+.signature-name {
+    font-size: 2rem;
+    color: #444;
+    margin-top: 5px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    line-height: 1.2;
+    transform: rotate(-2deg);
+    /* Matching rotation */
+}

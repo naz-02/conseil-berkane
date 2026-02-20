@@ -1,0 +1,43 @@
+.page-header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    color: #004a8c;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.content-section {
+    padding: 0 20px 40px;
+}
+
+.session-report {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+.session-title {
+    color: #d32f2f;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+ol {
+    margin-top: 20px;
+    padding-right: 20px;
+    /* For RTL */
+}
+
+li {
+    margin-bottom: 10px;
+}

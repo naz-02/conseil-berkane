@@ -1,0 +1,41 @@
+<div class="search-container">
+    <div class="search-header">
+        <h1>
+            <span *ngIf="langService.currentLang() === 'fr'">Résultats de recherche pour : "{{ query }}"</span>
+            <span *ngIf="langService.currentLang() === 'ar'">نتائج البحث عن: "{{ query }}"</span>
+        </h1>
+    </div>
+
+    <div class="loading" *ngIf="isLoading">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="no-results" *ngIf="!isLoading && results.length === 0">
+        <p *ngIf="langService.currentLang() === 'fr'">Aucun résultat trouvé.</p>
+        <p *ngIf="langService.currentLang() === 'ar'">لا توجد نتائج.</p>
+    </div>
+
+    <div class="results-grid" *ngIf="!isLoading && results.length > 0">
+        <div class="result-card" *ngFor="let result of results">
+            <div class="card-image" *ngIf="result.image">
+                <img [src]="result.image" [alt]="result.title">
+            </div>
+            <div class="card-content">
+                <span class="type-badge" [ngClass]="result.type">
+                    <ng-container *ngIf="langService.currentLang() === 'fr'">
+                        {{ result.type === 'project' ? 'Projet' : (result.type === 'news' ? 'Actualité' : 'Session') }}
+                    </ng-container>
+                    <ng-container *ngIf="langService.currentLang() === 'ar'">
+                        {{ result.type === 'project' ? 'مشروع' : (result.type === 'news' ? 'خبر' : 'دورة') }}
+                    </ng-container>
+                </span>
+                <h3>{{ result.title }}</h3>
+                <p>{{ result.description | slice:0:150 }}{{ result.description.length > 150 ? '...' : '' }}</p>
+                <a [routerLink]="result.link" class="btn-detail">
+                    <span *ngIf="langService.currentLang() === 'fr'">Voir plus</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">اقرأ المزيد</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

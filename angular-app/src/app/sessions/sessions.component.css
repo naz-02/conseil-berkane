@@ -1,0 +1,21 @@
+.page-header {
+    background: var(--couleur-primaire);
+    color: var(--couleur-blanc);
+    padding: 40px 5%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 {
+    color: var(--couleur-blanc);
+    margin-bottom: 0;
+}
+
+.content-section {
+    padding: 40px 20px;
+    margin-bottom: 40px;
+    background-color: var(--couleur-card-bg);
+    border-radius: 8px;
+    box-shadow: var(--ombre-douce);
+    text-align: center;
+}

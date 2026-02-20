@@ -1,0 +1,74 @@
+<app-session-layout titleFr="Onzième Session Extraordinaire" titleAr="الدورة الاستثنائية الحادية عشر"
+    imageUrl="assets/images/session-unified.jpg" imageAlt="Image de la onzième session extraordinaire">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">11ème Session Extraordinaire</h2>
+            <p>
+                La salle de réunion du siège du Conseil Provincial de Berkane a accueilli la 11ème session
+                extraordinaire le Lundi 24 Novembre 2025 à 11h00, sous la présidence de M. Mohamed Jelloul, Président du
+                Conseil Provincial, aux côtés de la représentante de l'autorité provinciale, et en présence des chefs de
+                services du Conseil Provincial de Berkane.
+            </p>
+            <p>
+                La séance a été ouverte par le Président, qui a passé en revue l'ordre du jour comprenant un point
+                unique :
+            </p>
+            <ul>
+                <li>Approbation de la modification du projet de budget provincial pour l'année 2026 (deuxième lecture).
+                </li>
+            </ul>
+            <p>
+                Le Président a expliqué que la tenue de cette session faisait suite à la dépêche provinciale n° 3401 du
+                12 Novembre 2025 et à l'article 182 de la loi organique 112.14, concernant les observations de
+                l'autorité provinciale sur le projet de budget. Le service compétent a étudié ces observations pour
+                tenter de réduire certaines dépenses, mais il s'est avéré difficile d'apporter des modifications car
+                toutes les dépenses sont justifiées et documentées.
+            </p>
+            <p>
+                Après une discussion approfondie par les membres du Conseil Provincial, le projet de budget provincial
+                pour l'année 2026 a été présenté en deuxième lecture et approuvé à l'unanimité par les membres du
+                Conseil, dans ses deux volets : recettes et dépenses.
+            </p>
+            <p>
+                La session s'est clôturée par la lecture d'un message de loyauté et de fidélité adressé à Sa Majesté le
+                Roi Mohammed VI, que Dieu l'assiste, et la séance a été levée à 12h00 le même jour.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية رقم 11</h2>
+
+            <p>
+                احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 11 يومه الاثنين 24 نونبر 2025 على
+                الساعة الحادية عشرة صباحا، برئاسة السيد: مـحمد جلول رئيس المجلس الإقليمي لبركان إلى جانب السيدة نورة
+                بالفضيل ممثلة السلطة الإقليمية وبحضور السادة رؤساء مصالح المجلس الإقليمي لبركان.
+            </p>
+            <p>
+                افتتحت الجلسة والتي تضمن جدول أعمالها النقطة الفريدة: المصادقة على تعديل مشروع الميزانية الإقليمية برسم
+                سنة 2026 (القراءة الثانية).
+            </p>
+            <p>
+                من طرف السيد رئيس المجلس بكلمة أوضح من خلالها أن انعقاد هاته الدورة جاءت بناء على البرقية العاملية عدد
+                3401 بتاريخ 12 نونبر 2025 وكذا المادة 182 من القانون التنظيمي 112.14 المتعلق بالعمالات والأقاليم، والتي
+                من خلالها أبدت السلطة الإقليمية بعد توصلها بمشروع الميزانية الإقليمية برسم سنة 2026 في قراءتها الأولى
+                مجموعة من الملاحظات، عكفت المصلحة المختصة بإدارة المجلس على دراستها في محاولة للتخفيض من بعض النفقات،
+                إلا أنه وبعد هاته الدراسة تبين صعوبة إجراء تعديلات على فصول هاته الميزانية على اعتبار أن كل المصاريف
+                مبررة ومسندة بوثائق وحجج.
+            </p>
+            <p>
+                وبعد نقاشات مستفيضة من طرف أعضاء المجلس الإقليمي لبركان تم عرض مشروع الميزانية الإقليمية برسم سنة 2026
+                (القراءة الثانية)، حيث تمت المصادقة عليها بإجماع السادة أعضاء المجلس، بشقيها: المصاريف والمداخيل.
+            </p>
+            <p>
+                بعد ذلك تمت تلاوة برقية ولاء وإخلاص مرفوعة إلى السدة العالية بالله، صاحب الجلالة الملك مـحمد السادس نصره
+                الله وأيده، ليعلن بعد ذلك عن اختتام أشغال هاته الدورة ورفع جلستها على الساعة الثانية عشرة زوالا من نفس
+                اليوم والتاريخ المشار إليهما أعلاه.
+            </p>
+        </div>
+    </div>
+</app-session-layout>

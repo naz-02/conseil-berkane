@@ -1,0 +1,54 @@
+<app-session-layout titleFr="4ème Session Extraordinaire 2022" titleAr="الدورة الاستثنائية رقم 04 لسنة 2022"
+    imageUrl="assets/images/session-unified.jpg" imageAlt="4ème Session Extraordinaire 2022">
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية رقم 04 لسنة 2022</h2>
+            <p>
+                بمقر المجلس الاقليمي لبركان على الساعة العاشرة صباحا، انعقدت اليوم الاثنين 30 مايو 2022 الدورة
+                الاستثنائية التي جاءت بطلب من السيد عامل اقليم بركان تبعا لرسالته عدد 3572 بتاريخ 20 مايو 2022.
+            </p>
+            <p>
+                تناولت الدورة بالتفصيل المصادقة على مجموعة من الاتفاقيات الخاصة بتفعيل تنزيل "برنامج أوراش" وعروض مشاريع
+                لفائدة تعاونيات وجمعيات الاقليم والتي صادقت عليها اللجنة الاقليمية، هذا فضلا عن نقط اخرى ذات اهمية وصبغة
+                استعجالية.
+            </p>
+            <p>
+                ويتمثل الهدف العام لهذا البرنامج في الاستجابة لحاجيات المواطنات والمواطنين عبر انجاز اشغال وانشطة ذات
+                طابع مؤقت تندرج في اطار المنفعة العامة.
+            </p>
+            <p>
+                وبعد نقاشات واستفسارات همت بالخصوص عدد الجمعيات والتعاونيات المنتقاة والمشاريع المقبولة، صادق المجلس
+                باجماع اعضائه الحاضرين على كل النقط المدرجة بجدول اعمال هاته الدورة.
+            </p>
+        </div>
+    </div>
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">4ème Session Extraordinaire 2022</h2>
+            <p>
+                Au siège du Conseil Provincial de Berkane, s'est tenue le Lundi 30 Mai 2022 à 10h00, une session
+                extraordinaire convoquée à la demande de Monsieur le Gouverneur de la province de Berkane, suite à sa
+                lettre n° 3572 du 20 mai 2022.
+            </p>
+            <p>
+                Cette session a porté en détail sur l'approbation d'un ensemble de conventions relatives à la mise en
+                œuvre du "Programme Awrach" et des offres de projets au profit des coopératives et associations de la
+                province, validées par le Comité Provincial. D'autres points importants et urgents ont également été
+                traités.
+            </p>
+            <p>
+                L'objectif général de ce programme est de répondre aux besoins des citoyens à travers la réalisation de
+                travaux et d'activités à caractère temporaire s'inscrivant dans le cadre de l'utilité publique.
+            </p>
+            <p>
+                Après des discussions et des questions portant notamment sur le nombre d'associations et de coopératives
+                sélectionnées et les projets acceptés, le Conseil a approuvé à l'unanimité de ses membres présents tous
+                les points inscrits à l'ordre du jour de cette session.
+            </p>
+        </div>
+    </div>
+</app-session-layout>

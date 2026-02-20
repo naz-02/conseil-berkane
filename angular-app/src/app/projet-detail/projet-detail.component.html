@@ -1,0 +1,88 @@
+<div class="project-detail-container" *ngIf="project">
+    <div class="breadcrumb">
+        <a routerLink="/projets">
+            <span *ngIf="langService.currentLang() === 'fr'">← Retour aux projets</span>
+            <span *ngIf="langService.currentLang() === 'ar'">← العودة للمشاريع</span>
+        </a>
+    </div>
+
+    <div class="detail-header">
+        <h1>
+            <span *ngIf="langService.currentLang() === 'fr'">{{ project.titleFr }}</span>
+            <span *ngIf="langService.currentLang() === 'ar'">{{ project.titleAr }}</span>
+        </h1>
+        <span class="category-badge">{{ getCategoryLabel(project.category || '') }}</span>
+    </div>
+
+    <div class="detail-grid">
+        <!-- Gallery Section -->
+        <div class="gallery-section">
+            <div class="main-image">
+                <img [src]="activeImage" [alt]="project.titleFr">
+            </div>
+            <div class="thumbnails" *ngIf="project.gallery.length > 1">
+                <img *ngFor="let img of project.gallery" [src]="img" [class.active]="activeImage === img"
+                    (click)="setActiveImage(img)">
+            </div>
+        </div>
+
+        <!-- Info Section (Fiche Technique) -->
+        <div class="info-section">
+            <div class="fiche-technique">
+                <h2 *ngIf="langService.currentLang() === 'fr'">Fiche Technique</h2>
+                <h2 *ngIf="langService.currentLang() === 'ar'">البطاقة التقنية</h2>
+
+                <div class="info-row">
+                    <strong *ngIf="langService.currentLang() === 'fr'">Intitulé du Projet:</strong>
+                    <strong *ngIf="langService.currentLang() === 'ar'">اسم المشروع:</strong>
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ project.titleFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ project.titleAr }}</span>
+                </div>
+
+                <div class="info-row">
+                    <strong *ngIf="langService.currentLang() === 'fr'">Coût Global:</strong>
+                    <strong *ngIf="langService.currentLang() === 'ar'">التكلفة الإجمالية:</strong>
+                    <span dir="ltr">{{ project.cost }}</span>
+                </div>
+
+                <div class="info-row">
+                    <strong *ngIf="langService.currentLang() === 'fr'">Localisation:</strong>
+                    <strong *ngIf="langService.currentLang() === 'ar'">الموقع:</strong>
+                    <span>{{ project.location }}</span>
+                </div>
+
+                <div class="info-row status-row">
+                    <strong *ngIf="langService.currentLang() === 'fr'">Taux de réalisation:</strong>
+                    <strong *ngIf="langService.currentLang() === 'ar'">نسبة الإنجاز:</strong>
+                    <span class="status-badge" *ngIf="langService.currentLang() === 'fr'">{{ project.status }}</span>
+                    <span class="status-badge" *ngIf="langService.currentLang() === 'ar'">{{
+                        getStatusLabel(project.status) }}</span>
+                </div>
+
+                <div class="info-row" *ngIf="project.partnerImages && project.partnerImages.length > 0">
+                    <strong *ngIf="langService.currentLang() === 'fr'">Partenaires:</strong>
+                    <strong *ngIf="langService.currentLang() === 'ar'">شركاء:</strong>
+                    <div class="partners-list">
+                        <div class="partner-circle" *ngFor="let img of project.partnerImages">
+                            <img [src]="img" alt="Partner">
+                        </div>
+                    </div>
+                </div>
+                <div class="info-row"
+                    *ngIf="(!project.partnerImages || project.partnerImages.length === 0) && (project.partnersFr || project.partnersAr)">
+                    <strong *ngIf="langService.currentLang() === 'fr'">Partenaires:</strong>
+                    <strong *ngIf="langService.currentLang() === 'ar'">شركاء:</strong>
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ project.partnersFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ project.partnersAr }}</span>
+                </div>
+            </div>
+
+            <div class="description-box">
+                <h3 *ngIf="langService.currentLang() === 'fr'">Description</h3>
+                <h3 *ngIf="langService.currentLang() === 'ar'">الوصف</h3>
+                <p *ngIf="langService.currentLang() === 'fr'">{{ project.descriptionFr }}</p>
+                <p *ngIf="langService.currentLang() === 'ar'">{{ project.descriptionAr }}</p>
+            </div>
+        </div>
+    </div>
+</div>

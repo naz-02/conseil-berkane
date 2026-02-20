@@ -1,0 +1,56 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Félicitations aux Lions de l'Atlas</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">هنيئا لأسود الأطلس</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/cup arab.jpg" alt="Coupe Arabe"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">هنيئا لأسود الأطلس</h2>
+            <p>
+                بمناسبة التتويج المستحق للمنتخب الوطني المغربي بلقب كأس العرب للمرة الثانية في تاريخه، إثر فوزه على
+                المنتخب الأردني، نتقدم بأحر التهاني وأصدق عبارات الفخر والاعتزاز.
+            </p>
+            <p>
+                هذا الإنجاز الرياضي يجسد الروح الوطنية العالية، وقوة الشخصية، والانضباط والاحترافية التي ميزت أداء
+                اللاعبين والطاقم التقني طيلة المنافسة، ويؤكد المكانة المرموقة لكرة القدم المغربية على المستويين العربي
+                والقاري.
+            </p>
+            <p>
+                وبهذه المناسبة السعيدة، نتشرف بأن نرفع أسمى آيات التهاني والتبريكات إلى صاحب الجلالة الملك محمد السادس
+                نصره الله، وإلى كافة مكونات الشعب المغربي.
+            </p>
+            <p style="font-weight: bold; font-size: 1.2em; color: #d35400;">
+                #هنيئا لأسود الأطلس بهذا التتويج الغالي.
+            </p>
+        </div>
+    </div>
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Félicitations aux Lions de l'Atlas</h2>
+            <p>
+                À l'occasion du sacre mérité de l'équipe nationale marocaine remportant la Coupe Arabe pour la deuxième
+                fois de son histoire, suite à sa victoire sur l'équipe jordanienne, nous présentons nos plus
+                chaleureuses félicitations et nos plus sincères expressions de fierté.
+            </p>
+            <p>
+                Cet exploit sportif incarne le haut esprit patriotique, la force de caractère, la discipline et le
+                professionnalisme qui ont marqué la performance des joueurs et du staff technique tout au long de la
+                compétition, et confirme la position prestigieuse du football marocain aux niveaux arabe et continental.
+            </p>
+            <p>
+                En cette heureuse occasion, nous avons l'honneur d'adresser nos plus hautes félicitations et vœux à Sa
+                Majesté le Roi Mohammed VI, que Dieu l'assiste, ainsi qu'à toutes les composantes du peuple marocain.
+            </p>
+            <p style="font-weight: bold; font-size: 1.2em; color: #d35400;">
+                #Félicitations aux Lions de l'Atlas pour ce précieux sacre.
+            </p>
+        </div>
+    </div>
+</section>

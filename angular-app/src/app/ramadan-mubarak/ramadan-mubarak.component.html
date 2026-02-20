@@ -1,0 +1,34 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Ramadan Mubarak</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">رمضان مبارك</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/ramadan_mubarak.jpg" alt="Ramadan Mubarak"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Ramadan Mubarak</h2>
+            <p>
+                À l'occasion du mois sacré de Ramadan, le Président du Conseil Provincial, en son nom propre et au nom
+                de tous les membres et fonctionnaires du Conseil, présente ses meilleurs vœux à la population de la
+                province, priant Dieu le Tout-Puissant de faire de ce mois une période de bienfaits, de solidarité et
+                d'entraide pour tous.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">رمضان مبارك</h2>
+            <p>
+                يتقدم السيد رئيس المجلس الإقليمي أصالة عن نفسه و نيابة عن جميع أعضاء و موظفي المجلس الاقليمي بأحر
+                التهاني وأصدق المتمنيات إلى ساكنة الإقليم وكافة المواطنات والمواطنين، راجياً من الله العلي القدير أن
+                يعيده علينا وعليكم باليمن والبركات، وأن يجعله شهر خير وتضامن وتآزر بين الجميع. و كل عام و أنتم بخير
+            </p>
+        </div>
+    </div>
+</section>

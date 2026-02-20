@@ -1,0 +1,97 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Documents Administratifs</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الوثائق الإدارية</h1>
+</div>
+
+<!-- Section Procès-verbaux -->
+<section id="pv" class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Procès-verbaux du Conseil</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">محاضر المجلس</h2>
+
+    <div class="document-item">
+        <h3 *ngIf="langService.currentLang() === 'fr'">Procès-verbal de la Session Ordinaire du 10.10.2025</h3>
+        <h3 *ngIf="langService.currentLang() === 'ar'">محضر الدورة العادية 10.10.2025</h3>
+
+        <p class="meta" *ngIf="langService.currentLang() === 'fr'">Publié le : 25/10/2025 | Type : PV</p>
+        <p class="meta" *ngIf="langService.currentLang() === 'ar'">تاريخ النشر : 25/10/2025 | النوع : محضر</p>
+
+        <p *ngIf="langService.currentLang() === 'fr'">
+            Téléchargez le procès-verbal complet de la session ordinaire d'octobre 2025, incluant l'ordre du jour et les
+            décisions.
+        </p>
+        <p *ngIf="langService.currentLang() === 'ar'">
+            حمل المحضر الكامل للدورة العادية لشهر أكتوبر 2025، بما في ذلك جدول الأعمال والقرارات.
+        </p>
+
+        <a href="#" class="download-link">
+            <span *ngIf="langService.currentLang() === 'fr'">Télécharger le document →</span>
+            <span *ngIf="langService.currentLang() === 'ar'">تحميل الوثيقة →</span>
+        </a>
+    </div>
+
+    <div class="document-item">
+        <h3 *ngIf="langService.currentLang() === 'fr'">Procès-verbal de la Session Extraordinaire du 20.11.2025</h3>
+        <h3 *ngIf="langService.currentLang() === 'ar'">محضر الدورة الاستثنائية 20.11.2025</h3>
+
+        <p class="meta" *ngIf="langService.currentLang() === 'fr'">Publié le : 22/11/2025 | Type : PV</p>
+        <p class="meta" *ngIf="langService.currentLang() === 'ar'">تاريخ النشر : 22/11/2025 | النوع : محضر</p>
+
+        <p *ngIf="langService.currentLang() === 'fr'">
+            Accédez au procès-verbal de la dernière session extraordinaire du Conseil Provincial.
+        </p>
+        <p *ngIf="langService.currentLang() === 'ar'">
+            اطلع على محضر الدورة الاستثنائية الأخيرة للمجلس الإقليمي.
+        </p>
+
+        <a href="#" class="download-link">
+            <span *ngIf="langService.currentLang() === 'fr'">Télécharger le document →</span>
+            <span *ngIf="langService.currentLang() === 'ar'">تحميل الوثيقة →</span>
+        </a>
+    </div>
+</section>
+
+<!-- Section Budget & Rapports -->
+<section id="budget" class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Budget & Rapports Annuels</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">الميزانية والتقارير السنوية</h2>
+
+    <div class="document-item">
+        <h3 *ngIf="langService.currentLang() === 'fr'">Rapport Annuel 2024</h3>
+        <h3 *ngIf="langService.currentLang() === 'ar'">التقرير السنوي 2024</h3>
+
+        <p class="meta" *ngIf="langService.currentLang() === 'fr'">Publié le : 15/03/2025 | Type : Rapport</p>
+        <p class="meta" *ngIf="langService.currentLang() === 'ar'">تاريخ النشر : 15/03/2025 | النوع : تقرير</p>
+
+        <p *ngIf="langService.currentLang() === 'fr'">
+            Le rapport annuel détaillant les activités et les réalisations du Conseil Provincial pour l'année 2024.
+        </p>
+        <p *ngIf="langService.currentLang() === 'ar'">
+            التقرير السنوي الذي يفصل أنشطة وإنجازات المجلس الإقليمي لعام 2024.
+        </p>
+
+        <a href="#" class="download-link">
+            <span *ngIf="langService.currentLang() === 'fr'">Télécharger le document →</span>
+            <span *ngIf="langService.currentLang() === 'ar'">تحميل الوثيقة →</span>
+        </a>
+    </div>
+
+    <div class="document-item">
+        <h3 *ngIf="langService.currentLang() === 'fr'">Budget Prévisionnel 2026</h3>
+        <h3 *ngIf="langService.currentLang() === 'ar'">الميزانية التقديرية 2026</h3>
+
+        <p class="meta" *ngIf="langService.currentLang() === 'fr'">Publié le : 01/10/2025 | Type : Budget</p>
+        <p class="meta" *ngIf="langService.currentLang() === 'ar'">تاريخ النشر : 01/10/2025 | النوع : ميزانية</p>
+
+        <p *ngIf="langService.currentLang() === 'fr'">
+            Consultez le budget prévisionnel du Conseil Provincial pour l'année fiscale 2026.
+        </p>
+        <p *ngIf="langService.currentLang() === 'ar'">
+            اطلع على الميزانية التقديرية للمجلس الإقليمي للسنة المالية 2026.
+        </p>
+
+        <a href="#" class="download-link">
+            <span *ngIf="langService.currentLang() === 'fr'">Télécharger le document →</span>
+            <span *ngIf="langService.currentLang() === 'ar'">تحميل الوثيقة →</span>
+        </a>
+    </div>
+</section>

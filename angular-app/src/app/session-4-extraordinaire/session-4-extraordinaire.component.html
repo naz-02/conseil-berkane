@@ -1,0 +1,158 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">4ème Session Extraordinaire</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الدورة الاستثنائية رقم 04</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/session-unified.jpg" alt="4ème Session Extraordinaire"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">4ème Session Extraordinaire</h2>
+            <p>
+                Le Conseil Provincial de Berkane a tenu sa 4ème session extraordinaire le Lundi 19 Mai 2025 à 11h00 au
+                siège du Conseil Provincial, conformément à l'article 37 de la loi organique n° 112.14 relative aux
+                préfectures et provinces, sous la présidence de M. Mohamed Jelloul, Président du Conseil Provincial, aux
+                côtés de Mme Nora Belfadil, représentante de l'autorité provinciale, et des chefs de services du Conseil
+                Provincial.
+            </p>
+            <p>
+                La séance a été ouverte par le Président du Conseil avec un mot de bienvenue, présentant les points
+                inscrits à l'ordre du jour :
+            </p>
+            <ol>
+                <li>Approbation de l'élection du 3ème Vice-Président du Conseil Provincial suite à la vacance du poste.
+                </li>
+                <li>Approbation de la programmation d'une partie du reliquat de l'excédent financier de l'année 2024.
+                </li>
+                <li>Approbation de la modification de l'organigramme du Conseil Provincial de Berkane.</li>
+                <li>Approbation d'une convention de partenariat pour l'aménagement d'une cour pour les classes de
+                    préscolaire à l'école primaire Qassim Amin, commune d'Ain Regada.</li>
+                <li>Approbation d'une convention de partenariat entre le Conseil Provincial et l'Association Marocaine
+                    pour l'Enseignement Originel Nouveau "Région de l'Oriental" pour soutenir l'enseignement originel
+                    dans les écoles de la province.</li>
+                <li>Approbation d'une convention de partenariat avec l'Association Renaissance Sportive de Berkane (RSB)
+                    pour soutenir le club de football suite à son titre de champion national.</li>
+                <li>Approbation d'une convention de partenariat avec la Direction Provinciale de la Jeunesse et de la
+                    Communication pour l'équipement du centre d'estivage de Saïdia.</li>
+                <li>Approbation d'un avenant à la convention de partenariat pour la réhabilitation du Palais du Festival
+                    de Saïdia afin d'accueillir des activités culturelles et artistiques pour la saison estivale.</li>
+                <li>Approbation d'une convention de partenariat avec la Commune de Berkane et l'Agence de l'Oriental
+                    concernant l'acquisition d'un bus pour l'équipe de basketball de la RSB.</li>
+                <li>Approbation de l'annulation de la décision n° 17 du 12 mars 2025 relative au projet de
+                    réhabilitation et d'équipement du Club Culturel et Social de la Fondation des Œuvres Sociales de
+                    l'Enseignement à Berkane.</li>
+                <li>Approbation d'une convention de partenariat pour le projet de réhabilitation et d'équipement dudit
+                    Club.</li>
+                <li>Approbation d'une convention de partenariat pour le soutien et l'accompagnement des enfants en
+                    situation difficile.</li>
+                <li>Approbation d'une convention de partenariat pour la lutte contre les moustiques dans la commune de
+                    Saïdia.</li>
+                <li>Approbation d'un avenant à la convention de partenariat pour l'équipement de la fourrière
+                    provinciale provisoire pour chiens et chats errants.</li>
+                <li>Approbation d'une convention de partenariat pour le nettoyage des points noirs sur l'avenue Mohammed
+                    V et l'ancienne prison locale.</li>
+                <li>Approbation d'un avenant à la convention de partenariat pour l'aménagement, l'extension et
+                    l'équipement du centre pour femmes en situation difficile.</li>
+                <li>Approbation d'une convention de partenariat avec la commune d'Aghbal pour la réhabilitation de la
+                    source Ain Aghbal.</li>
+                <li>Approbation d'une convention de partenariat avec la SDL "Harakia Berkane" pour fournir des services
+                    de transport au Conseil Provincial.</li>
+                <li>Approbation de l'annulation de la décision n° 22 du 20 mars 2023 relative à la convention cadre pour
+                    la gestion participative de la nappe phréatique des Triffa.</li>
+                <li>Approbation de la convention cadre pour la gestion participative de la nappe phréatique des Triffa.
+                </li>
+            </ol>
+            <p>
+                Avant les délibérations, les rapports des commissions (Budget/Finances et Affaires Sociales/Famille) ont
+                été présentés.
+            </p>
+            <p>
+                Après discussion, tous les points ont été approuvés à l'unanimité, à l'exception de :
+            </p>
+            <ul>
+                <li>Point 7 : Reporté à une session ultérieure.</li>
+                <li>Point 16 : Rejeté (car les projets de l'INDH suivent une procédure spécifique).</li>
+            </ul>
+            <p>
+                La session s'est clôturée à 12h30 par la lecture de la lettre de loyauté adressée à Sa Majesté le Roi
+                Mohammed VI.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية رقم 04</h2>
+            <p>
+                عقد المجلس الاقليمي لبركان يوم الاثنين 19 مايو 2025 على الساعة الحادية عشرة صباحا، بمقر المجلس الإقليمي
+                لبركان دورة استثنائية رقم 04 طبقا للمادة 37 من القانون التنظيمي رقم 112.14 المتعلق بالعمالات والأقاليم،
+                برئاسة السيد: مـحمد جلول، رئيس المجلس الاقليمي لبركان الى جانب السيدة نورة بالفضيل ممثلة السلطة
+                الاقليمية ورؤساء مصالح المجلس الاقليمي لبركان.
+            </p>
+            <p>
+                افتتحت الجلسة من طرف السيد رئيس المجلس بكلمة ترحيبية استعرض من خلالها النقط المدرجة بجدول أعمال هاته
+                الدورة والتي كانت على الشكل التالي:
+            </p>
+            <ol>
+                <li>المصادقة على عملية انتخاب النائب الثالث لرئيس المجلس الإقليمي لبركان بعد شغور المنصب.</li>
+                <li>المصادقة على برمجة جزء مما تبقى من الفائض المالي لسنة 2024.</li>
+                <li>المصادقة على تعديل الهيكل التنظيمي للمجلس الإقليمي لبركان.</li>
+                <li>المصادقة على اتفاقية شراكة تتعلق بتهيئة ساحة لأقسام التعليم الأولي بمدرسة قاسم أمين الابتدائية
+                    بجماعة عين الركادة.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان والجمعية المغربية للتعليم الأصيل الجديد "جهة
+                    الشرق" لدعم مكون التعليم الأصيل الجديد بمدارس الإقليم.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان وجمعية النهضة الرياضية البركانية لدعم مواكبة
+                    النهضة الرياضية البركانية لكرة القدم في إطار إحرازه على ذرع البطولة الوطنية لكرة القدم.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان والمديرية الإقليمية للشباب والتواصل لتجهيز
+                    مركز الاصطياف بالسعيدية.</li>
+                <li>المصادقة على ملحق تعديلي لاتفاقية شراكة من أجل إعادة تأهيل قصر المهرجان بالسعيدية بغية احتضان أنشطة
+                    ثقافية وفنية للموسم الصيفي.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان وجماعة بركان ووكالة تنمية الشرق "L’ADO" بخصوص
+                    اقتناء حافلة لفائدة جمعية النهضة البركانية لكرة السلة.</li>
+                <li>المصادقة على إلغاء المقرر عدد 17 بتاريخ 12 مارس 2025 المتعلق باتفاقية شراكة بين المجلس الإقليمي
+                    لبركان والمديرية الإقليمية للتعليم وفرع مؤسسة الاعمال الاجتماعية ببركان حول مشروع تأهيل وتجهيز
+                    النادي الثقافي الاجتماعي لمؤسسة الأعمال الاجتماعية للتعليم ببركان.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان والمديرية الإقليمية للتعليم وفرع مؤسسة الاعمال
+                    الاجتماعية ببركان حول مشروع تأهيل وتجهيز النادي الثقافي الاجتماعي لمؤسسة الأعمال الاجتماعية للتعليم
+                    ببركان.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان، وجمعية إدماج وتنمية الطفولة ببركان ومندوبية
+                    التعاون الوطني والمبادرة الوطنية للتنمية البشرية، لدعم ومواكبة الأطفال في وضعية صعبة.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان وجماعة السعيدية وشركة تنمية السعيدية وشركة
+                    التنمية المحلية "مرافق بركان" لممارسة مهام معالجة حشرة البعوض بجماعة السعيدية.</li>
+                <li>المصادقة على ملحق تعديلي للاتفاقية الشراكة الخاصة بتجهيز المحجز الإقليمي المؤقت للكلاب والقطط
+                    الضالة.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان وشركة التنمية الجهوية "خدمات الشرق" وجماعة
+                    بركان لتنقية النقط السوداء بشارع محمد الخامس والسجن المحلي القديم.</li>
+                <li>المصادقة على ملحق تعديلي لاتفاقية شراكة الخاصة بتهيئة، توسعة وتجهيز مركز المرأة في وضعية صعبة.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان وجماعة أغبال من أجل تأهيل عين أغبال.</li>
+                <li>المصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان وشركة التنمية المحلية "حركية بركان" لتقديم
+                    خدمات لفائدة المجلس الإقليمي لبركان عبر استعمال حافلة نقل بمبلغ جزافي.</li>
+                <li>المصادقة على إلغاء المقرر عدد 22 بتاريخ 20 مارس 2023 المتعلق باتفاقية إطار للتدبير التشاركي للفرشة
+                    المائية طريفة إقليم بركان.</li>
+                <li>المصادقة على اتفاقية إطار للتدبير التشاركي للفرشة المائية طريفة إقليم بركان.</li>
+            </ol>
+            <p>
+                وقبل التداول ومناقشة النقط المدرجة بجدول اعمال هاته الدورة تم الاستماع إلى تقارير اللجنتين المكلفتين
+                بالميزانية والشؤون المالية والبرمجة وكذا اللجنة المكلفة بالشؤون الاجتماعية والأسرة المنبثقتين عن المجلس
+                الاقليمي لبركان بخصوص اجتماعهما المنعقدين في إطار التحضير لهاته الدورة.
+            </p>
+            <p>
+                وبعد مناقشة كل النقط المضمنة بجدول أعمال هاته الدورة تمت المصادقة عليها بإجماع السادة الأعضاء الحاضرين،
+                باستثناء النقطتين السابعة والمتعلقة بالمصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان والمديرية
+                الإقليمية للشباب والتواصل لتجهيز مركز الاصطياف بالسعيدية. التي تم تأجيلها إلى دورة لاحقة وكذا النقطة
+                السادسة عشرة والمتعلقة بالمصادقة على ملحق تعديلي لاتفاقية شراكة الخاصة بتهيئة، توسعة وتجهيز مركز المرأة
+                في وضعية صعبة والتي تم رفض المصادقة عليها على اعتبار أن مشاريع المبادرة الوطنية للتنمية البشرية لها
+                مسطرة وإجراءات خاصة تمتد في الزمان لحين اكمال المشروع ولا علاقة له بسنة الإنجاز.
+            </p>
+            <p>
+                وفي الختام تمت تلاوة برقية ولاء وإخلاص مرفوعة إلى السدة العالية بالله، صاحب الجلالة الملك مـحمد السادس
+                نصره الله وأيده، ليعلن بعد ذلك عن اختتام أشغال هاته الدورة ورفعها على الساعة الثانية عشرة والنصف بعد
+                الزوال من نفس اليوم والتاريخ المشار إليهما أعلاه.
+            </p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,105 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">1ère Session Extraordinaire 2026</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الدورة الاستثنائية رقم 01 لسنة 2026</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/session-unified.jpg" alt="Session 1 Extraordinaire 2026"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">1ère Session Extraordinaire 2026</h2>
+            <p>
+                La salle de réunion du siège du Conseil Provincial de Berkane a accueilli la 1ère session extraordinaire
+                le Mercredi 04 Février 2026 à 11h00, sous la présidence de M. Mohamed Jelloul, Président du Conseil
+                Provincial, aux côtés de Mme Nora Belfadil, représentante de l'autorité provinciale, et en présence des
+                chefs de services du Conseil Provincial.
+            </p>
+            <p>
+                La séance a été ouverte par un mot de bienvenue du Président aux personnes présentes, passant en revue
+                l'ordre du jour de cette session extraordinaire qui comprenait les points suivants :
+            </p>
+            <ol>
+                <li>Approbation de l'avenant à la convention de partenariat entre le Conseil Provincial de Berkane, le
+                    Comité Provincial de Développement Humain (INDH), la Délégation Provinciale du Ministère de la Santé
+                    et de la Protection Sociale, l'ANAPEC, l'association CAPIS, et la commune de Saidia pour le soutien
+                    des services de santé au niveau de la province de Berkane.</li>
+                <li>Constat de la vacance du poste de 2ème Vice-Présidente suite à sa démission.</li>
+                <li>Confirmation de la promotion du 3ème Vice-Président au poste de 2ème Vice-Président.</li>
+                <li>Élection du 3ème Vice-Président.</li>
+                <li>Étude et approbation d'une convention de partenariat entre le Conseil Provincial de Berkane, la
+                    commune de Berkane et la Direction Régionale de la Culture et de la Communication concernant les
+                    frais d'installation du compteur d'eau potable à la Maison de la Culture.</li>
+                <li>Approbation d'une convention de partenariat pour le soutien des activités génératrices de revenus au
+                    profit des femmes en situation difficile et des personnes en situation de handicap.</li>
+                <li>Approbation d'une convention de partenariat relative à l'ouverture de la piste "Route Amsrour" en
+                    direction d'Achir dans la commune de Rislane.</li>
+                <li>Approbation d'une convention de partenariat pour l'électrification du Douar Ghnine dans la commune
+                    de Rislane.</li>
+                <li>Réexamen et approbation du projet de budget du Conseil Provincial de Berkane pour l'année 2026.</li>
+                <li>Étude et approbation de l'avenant à la convention de partenariat concernant le projet d'organisation
+                    de la 3ème édition du Forum International sur les Villes Intelligentes à Berkane.</li>
+                <li>Étude et approbation de l'avenant n° 01 à la convention de partenariat n° 67/2024 relative à
+                    l'acquisition et l'installation d'un ascenseur pour les élèves à besoins spécifiques au lycée
+                    qualifiant Saidia, commune de Saidia.</li>
+            </ol>
+            <p>
+                Après délibération et étude de tous les points, ceux-ci ont été approuvés à l'unanimité par les membres
+                présents, à l'exception du point 6 relatif au soutien des activités génératrices de revenus, en
+                attendant la sélection de l'association qui sera chargée de la gestion de ce dossier. La session reste
+                ouverte jusqu'au Mardi 10 Février 2026 pour reprendre et achever l'étude du point 6.
+            </p>
+            <p>
+                La séance a été levée à 11h45 pour reprendre à la date indiquée ci-dessus.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية رقم 01 لسنة 2026</h2>
+            <p>
+                احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 01 يومه الأربعاء 04 فبراير 2026
+                على الساعة الحادية عشرة صباحا، برئاسة السيد: مـحمد جلول رئيس المجلس الإقليمي لبركان إلى جانب السيدة نورة
+                بالفضيل ممثلة السلطة الإقليمية وبحضور السادة رؤساء مصالح المجلس الإقليمي لبركان.
+            </p>
+            <p>
+                افتتحت الجلسة بكلمة ترحيبية للسادة الحضور، استعرض من خلالها السيد الرئيس جدول أعمال هاته الدورة
+                الاستثنائية والتي تضمنت النقط التالية:
+            </p>
+            <ol>
+                <li>المصادقة على ملحق اتفاقية شراكة بين المجلس الإقليمي لبركان، اللجنة الإقليمية للتنمية البشرية لبركان،
+                    المندوبية الإقليمية لوزارة الصحة والحماية الاجتماعية ببركان، الوكالة الوطنية لإنعاش التشغيل
+                    والكفاءات، جمعية دائرة أصدقاء صغار المعاقين للتمدرس CAPIS، وجماعة السعيدية من أجل دعم الخدمات الصحية
+                    على مستوى إقليم بركان.</li>
+                <li>معاينة شغور منصب النائبة الثانية للرئيس على إثر تقديم استقالتها.</li>
+                <li>تثبيت ارتقاء النائب الثالث لرئيس المجلس الإقليمي لبركان لمنصب النائب الثاني.</li>
+                <li>انتخاب النائب الثالث للرئيس.</li>
+                <li>الدراسة والمصادقة على اتفاقية شراكة بين المجلس الإقليمي لبركان، جماعة بركان والمديرية الجهوية
+                    للثقافة والتواصل من أجل مصاريف وضع العداد الخاص بالماء الصالح للشرب بدار الثقافة.</li>
+                <li>المصادقة على اتفاقية شراكة لدعم الأنشطة المدرة للدخل لفائدة المرأة في وضعية صعبة والأشخاص في وضعية
+                    إعاقة.</li>
+                <li>المصادقة على اتفاقية شراكة تتعلق بفتح مسلك – طريق أمصرور – في اتجاه أشير بجماعة رسلان.</li>
+                <li>المصادقة على اتفاقية شراكة بتزويد دوار قنين بجماعة رسلان بالكهرباء.</li>
+                <li>إعادة الدراسة والمصادقة على مشروع ميزانية المجلس الإقليمي لبركان برسم سنة 2026.</li>
+                <li>الدراسة والمصادقة على ملحق اتفاقية شراكة تتعلق بمشروع تنظيم النسخة الثالثة من الملتقى الدولي حول
+                    المدن الذكية ببركان.</li>
+                <li>الدراسة والمصادقة على ملحق اتفاقية رقم 01 لاتفاقية شراكة رقم 67/2024 تتعلق باقتناء ووضع مصعد خاص
+                    بالتلاميذ ذوي الاحتياجات الخاصة بثانوية السعيدية التأهيلية بجماعة السعيدية.</li>
+            </ol>
+            <p>
+                وبعد التداول ودراسة جميع النقط المدرجة بجدول الاعمال هاته الدورة تمت المصادقة عليها بإجماع السادة
+                الأعضاء الحاضرين باستثناء النقطة السادسة المتعلقة بالمصادقة على اتفاقية شراكة لدعم الأنشطة المذرة للدخل
+                لفائدة المرأة في وضعية صعبة والأشخاص في وضعية إعاقة في انتظار انتقاء الجمعية التي سيعهد إليها تدبير هذا
+                الملف على أن تبقى الدورة الاستثنائية المشار إليها أعلاه مفتوحة إلى يوم الثلاثاء 10 فبراير 2026 لاستئناف
+                واستكمال دراسة النقطة السادسة من جدول أعمال الدورة.
+            </p>
+            <p>
+                بعد ذلك تم ورفع الجلسة على الساعة 11h45 صباحا على أن تستأنف بالتاريخ المشار إليه أعلاه.
+            </p>
+        </div>
+    </div>
+</section>

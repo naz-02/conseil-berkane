@@ -1,0 +1,94 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Session Extraordinaire N°13</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الدورة الاستثنائية رقم 13</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/session-unified.jpg" alt="Session Extraordinaire N°13"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Session Extraordinaire N°13 - 30 Décembre 2025</h2>
+            <p>
+                La salle de réunion du siège du Conseil Provincial de Berkane a accueilli, le mardi 30 décembre 2025 à
+                11h00, la session extraordinaire n°13, sous la présidence de M. Mohamed Jelloul, Président du Conseil
+                Provincial de Berkane, et en présence de M. Rabah Benabdelkader, représentant de l'autorité provinciale,
+                ainsi que des chefs de services du Conseil Provincial.
+            </p>
+            <p>
+                La séance a été ouverte par le Président avec un mot de bienvenue aux personnes présentes, passant en
+                revue l'ordre du jour de cette session extraordinaire qui comprenait les points suivants :
+            </p>
+            <ol>
+                <li>Étude et approbation de l'adhésion du Conseil Provincial de Berkane au groupement de collectivités
+                    "Trifa".</li>
+                <li>Étude et approbation d'une demande adressée aux services du Ministère de l'Intérieur pour changer la
+                    dénomination du groupement "Trifa" en "Groupement des Collectivités Territoriales Trifa".</li>
+                <li>Étude et approbation de l'ajout de la gestion du transport urbain et intercommunal au champ
+                    d'intervention et aux objectifs du groupement "Trifa".</li>
+                <li>Étude et approbation d'une convention de partenariat entre le Conseil Provincial de Berkane,
+                    l'Initiative Nationale pour le Développement Humain (INDH), les communes de la province, la
+                    Direction Provinciale de l'Éducation Nationale, du Préscolaire et des Sports, et l'Association
+                    Provinciale pour le Développement et la Généralisation de l'Enseignement, pour contribuer à la
+                    couverture du déficit financier du projet de transport scolaire dans la province de Berkane.</li>
+            </ol>
+            <p>
+                Après délibération et discussion de tous les points inscrits à l'ordre du jour de cette session, le
+                point relatif à l'adhésion du Conseil Provincial de Berkane au groupement de collectivités "Trifa" a été
+                approuvé. Les deux points y afférents, ainsi que le quatrième point relatif à l'étude et l'approbation
+                de la convention de partenariat entre le Conseil Provincial de Berkane, l'INDH, les communes de la
+                province, la Direction Provinciale de l'Éducation Nationale et l'Association Provinciale pour le
+                Développement et la Généralisation de l'Enseignement pour contribuer à la couverture du déficit
+                financier du projet de transport scolaire dans la province de Berkane, ont également été approuvés à
+                l'unanimité des membres présents.
+            </p>
+            <p>
+                Ensuite, une lettre de loyauté et de fidélité adressée à Sa Majesté le Roi Mohammed VI, que Dieu
+                l'assiste et le glorifie, a été lue, avant d'annoncer la clôture des travaux de cette session à 11h45 le
+                même jour mentionné ci-dessus.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية رقم 13 - 30 دجنبر 2025</h2>
+            <p>
+                احتضنت قاعة الاجتماعات بمقر المجلس الإقليمي لبركان دورة استثنائية رقم 13 يومه الثلاثاء 30 دجنبر 2025 على
+                الساعة الحادية عشرة صباحا، برئاسة السيد: مـحمد جلول رئيس المجلس الإقليمي لبركان إلى جانب السيد رابح
+                بنعبد القادر ممثل السلطة الإقليمية وبحضور السادة رؤساء مصالح المجلس الإقليمي لبركان.
+            </p>
+            <p>
+                افتتحت الجلسة بكلمة ترحيبية للسادة الحضور، استعرض من خلالها السيد الرئيس جدول أعمال هاته الدورة
+                الاستثنائية والتي تضمنت النقط التالية:
+            </p>
+            <ol>
+                <li>الدراسة والمصادقة على انضمام المجلس الإقليمي لبركان الى مجموعة الجماعات "تريفة".</li>
+                <li>الدراسة والمصادقة على طلب موجه الى مصالح وزارة الداخلية لاستصدار قرار يقضي بتغيير تسمية مجموعة
+                    الجماعات "تريفة" ليصبح تحت اسم "مجموعة الجماعات الترابية تريفة".</li>
+                <li>الدراسة والمصادقة على إضافة تدبير قطاع النقل الحضري والنقل ما بين الجماعات الى مجال تدخل وهدف مجموعة
+                    الجماعات "تريفة".</li>
+                <li>الدراسة والمصادقة على اتفاقية شراكة بين كل من المجلس الإقليمي لبركان، المبادرة الوطنية للتنمية
+                    البشرية، الجماعات التابعة لنفوذ هذا الإقليم، المديرية الإقليمية لوزارة التربية الوطنية والتعليم
+                    الأولي والرياضة والجمعية الإقليمية لتطوير وتعميم التعليم للمساهمة في تغطية العجز المالي الخاص بمشروع
+                    النقل المدرسي بإقليم بركان.</li>
+            </ol>
+            <p>
+                وبعد التداول ومناقشة جميع النقط المدرجة بجدول اعمال هاته الدورة تمت المصادقة على النقطة المتعقلة بانضمام
+                المجلس الإقليمي لبركان الى مجموعة الجماعات "تريفة". وعلى النقطتين المتعلقتين بها وكذا على النقطة الرابعة
+                والمتعلقة بالدراسة والمصادقة على اتفاقية شراكة بين كل من المجلس الإقليمي لبركان، المبادرة الوطنية
+                للتنمية البشرية، الجماعات التابعة لنفوذ هذا الإقليم، المديرية الإقليمية لوزارة التربية الوطنية والتعليم
+                الأولي والرياضة والجمعية الإقليمية لتطوير وتعميم التعليم للمساهمة في تغطية العجز المالي الخاص بمشروع
+                النقل المدرسي بإقليم بركان. بإجماع السادة الأعضاء الحاضرين.
+            </p>
+            <p>
+                بعد ذلك تمت تلاوة برقية ولاء وإخلاص مرفوعة إلى السدة العالية بالله، صاحب الجلالة الملك مـحمد السادس نصره
+                الله وأيده، ليعلن بعد ذلك عن اختتام أشغال هاته الدورة ورفعها على الساعة 11h45 صباحا من نفس اليوم المشار
+                اليه أعلاه.
+            </p>
+        </div>
+    </div>
+</section>

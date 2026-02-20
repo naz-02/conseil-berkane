@@ -1,0 +1,70 @@
+/* CSS for PrimeNG OrganizationChart Structure (Fallback if theme is missing) */
+.p-organizationchart {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.p-organizationchart-table {
+    border-spacing: 0;
+    border-collapse: separate;
+    margin: 0 auto;
+}
+
+.p-organizationchart-table>tbody>tr>td {
+    text-align: center;
+    vertical-align: top;
+    padding: 0 0.75rem;
+}
+
+.p-organizationchart-node-content {
+    display: inline-block;
+    position: relative;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    background: #ffffff;
+    color: #495057;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.p-organizationchart-line-down {
+    margin: 0 auto;
+    height: 20px;
+    width: 1px;
+    background: #dee2e6;
+}
+
+.p-organizationchart-line-right {
+    border-radius: 0px;
+}
+
+.p-organizationchart-line-left {
+    border-radius: 0;
+}
+
+.p-organizationchart-connector-right {
+    border-radius: 0px;
+}
+
+.p-organizationchart-connector-left {
+    border-radius: 0px;
+}
+
+.p-organizationchart-connector-down {
+    border-radius: 0px;
+}
+
+/* Lines */
+.p-organizationchart-line-top {
+    border-top: 1px solid #dee2e6;
+}
+
+.p-organizationchart-line-left {
+    border-right: 1px solid #dee2e6;
+}
+
+.p-organizationchart-line-right {
+    border-left: 1px solid #dee2e6;
+}

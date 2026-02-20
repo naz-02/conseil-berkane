@@ -1,0 +1,91 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">8ème Session Extraordinaire</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الدورة الاستثنائية رقم 08</h1>
+</div>
+
+<section class="content-section">
+    <img src="assets/images/session-unified.jpg" alt="8ème Session Extraordinaire"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">8ème Session Extraordinaire</h2>
+            <p>
+                La salle de réunion du Conseil Provincial de Berkane a accueilli le Mercredi 13 Août 2025 à 11h00, la
+                8ème session extraordinaire, sous la présidence de M. Mohamed Jelloul, Président du Conseil Provincial
+                de Berkane, aux côtés de Mme Nora Belfadil, représentante de l'autorité provinciale, et en présence des
+                chefs de services du Conseil Provincial de Berkane.
+            </p>
+            <p>
+                La séance a été ouverte par le Président du Conseil avec un mot de bienvenue, passant en revue l'ordre
+                du jour de cette session qui était le suivant :
+            </p>
+            <ol>
+                <li>
+                    Approbation de l'annulation de la décision n° 11 du 06 Mars 2025 concernant l'approbation d'une
+                    convention de partenariat relative à l'acquisition de quatre ambulances équipées et d'un véhicule
+                    4x4 au profit du Commandement Provincial de la Protection Civile à Berkane.
+                </li>
+                <li>
+                    Réexamen et approbation d'une convention de partenariat relative à l'acquisition de quatre
+                    ambulances équipées et d'un véhicule 4x4 au profit du Commandement Provincial de la Protection
+                    Civile à Berkane.
+                </li>
+                <li>
+                    Approbation d'une convention de partenariat relative au financement et à la réalisation du projet de
+                    réhabilitation et d'aménagement du site de la Grotte du Chameau dans la commune de Zegzel - Province
+                    de Berkane.
+                </li>
+            </ol>
+            <p>
+                Après délibération et discussion de tous les points inscrits à l'ordre du jour de cette session, ils ont
+                été approuvés à l'unanimité des membres présents.
+            </p>
+            <p>
+                Ensuite, lecture a été donnée d'un message de loyauté et de fidélité adressé à Sa Majesté le Roi
+                Mohammed VI, que Dieu l'assiste, et la clôture des travaux de cette session a été annoncée à 11h30 le
+                même jour mentionné ci-dessus.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">الدورة الاستثنائية رقم 08</h2>
+            <p>
+                احتضنت قاعة الاجتماعات بالمجلس الاقليمي لبركان يومه الأربعاء 13 غشت 2025 على الساعة الحادية عشرة صباحا،
+                الدورة الاستثنائية رقم 08، برئاسة السيد: مـحمد جلول رئيس المجلس الاقليمي لبركان الى جانب السيدة نورة
+                بالفضيل ممثلة السلطة الاقليمية وبحضور السادة رؤساء مصالح المجلس الاقليمي لبركان.
+            </p>
+            <p>
+                افتتحت الجلسة من طرف السيد رئيس المجلس بكلمة ترحيبية استعرض من خلالها النقط المدرجة بجدول أعمال هاته
+                الدورة والتي كانت على الشكل التالي:
+            </p>
+            <ol>
+                <li>
+                    المصادقة على إلغاء المقرر عدد 11 بتاريخ 06 مارس 2025 المتعلق بالمصادقة على اتفاقية شراكة تتعلق
+                    باقتناء أربع سيارات إسعاف مجهزة وسيارة رباعية الدفع لفائدة القيادة الإقليمية للوقاية المدنية ببركان.
+                </li>
+                <li>
+                    إعادة الدراسة والمصادقة على اتفاقية شراكة تتعلق باقتناء أربع سيارات إسعاف مجهزة وسيارة رباعية الدفع
+                    لفائدة القيادة الإقليمية للوقاية المدنية ببركان.
+                </li>
+                <li>
+                    المصادقة على اتفاقية شراكة تتعلق بتمويل وإنجاز مشروع تأهيل وتهيئة موقع مغارة الجمل بجماعة زكزل
+                    -إقليم بركان-.
+                </li>
+            </ol>
+            <p>
+                وبعد التداول ومناقشة جميع النقط المدرجة بجدول اعمال هاته الدورة تمت المصادقة عليها بإجماع السادة الأعضاء
+                الحاضرين.
+            </p>
+            <p>
+                بعد ذلك تمت تلاوة برقية ولاء وإخلاص مرفوعة إلى السدة العالية بالله، صاحب الجلالة الملك مـحمد السادس نصره
+                الله وأيده، ليعلن بعد ذلك عن اختتام أشغال هاته الدورة ورفعها على الساعة الحادية والنصف صباحا من نفس
+                اليوم المشار اليه أعلاه.
+            </p>
+        </div>
+    </div>
+</section>

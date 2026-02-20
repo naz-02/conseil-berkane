@@ -1,0 +1,74 @@
+<div class="container mt-5 mb-5 fade-in" [attr.dir]="langService.currentLang() === 'ar' ? 'rtl' : 'ltr'">
+
+    <!-- Header Section -->
+    <div class="text-center mb-5">
+        <h1 class="display-4 fw-bold text-primary mb-3">
+            {{ langService.currentLang() === 'fr' ? 'Programme Infitah' : 'برنامج الانفتاح' }}
+        </h1>
+        <div class="divider mx-auto"></div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-5">
+
+                    <!-- Intro Text -->
+                    <div class="text-center mb-5">
+                        <p class="lead text-muted mb-4" *ngIf="langService.currentLang() === 'fr'">
+                            Le Conseil Provincial de Berkane a approuvé à l'unanimité de ses membres présents, lors de
+                            la session extraordinaire n°09 tenue le 16 octobre 2025, les projets inclus dans le
+                            "Programme Infitah du Conseil Provincial de Berkane". Les axes de ce programme ainsi que
+                            les projets formulés sont les suivants :
+                        </p>
+                        <p class="lead text-muted mb-4" *ngIf="langService.currentLang() === 'ar'">
+                            صادق المجلس الإقليمي لبركان خلال الدورة الاستثنائية رقم 09 المنعقدة بتاريخ 16 أكتوبر 2025
+                            بإجماع أعضائه الحاضرين على المشاريع المضمنة ببرنامج عمل انفتاح المجلس الإقليمي لبركان"، وقد
+                            جاءت محاور هذا البرنامج وكذا المشاريع المصاغة على الشكل التالي:
+                        </p>
+                    </div>
+
+                    <!-- Program Grid Section -->
+                    <div class="program-grid mb-5">
+                        <div class="program-card" *ngFor="let item of data">
+                            <div class="card-icon-wrapper">
+                                <div class="card-icon">
+                                    <i [class]="item.icon"></i>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <h3 class="axis-title">
+                                    {{ langService.currentLang() === 'fr' ? item.axisFr : item.axisAr }}
+                                </h3>
+                                <div class="separator-small"></div>
+                                <ul class="project-list" [class.rtl-list]="langService.currentLang() === 'ar'">
+                                    <li *ngFor="let project of item.projects" class="project-item">
+                                        <!-- Completed: Vector SVG Checkmark -->
+                                        <div class="list-bullet completed-vector" *ngIf="project.completed">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                                class="vector-check">
+                                                <path d="M20 6L9 17L4 12" stroke="#00d15e" stroke-width="3"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+
+                                        <!-- Not Completed: Font Icon -->
+                                        <i class="fas fa-check-circle list-bullet" *ngIf="!project.completed"></i>
+                                        <span [class.text-completed]="project.completed"
+                                            [class.fw-bold]="project.completed">
+                                            {{ langService.currentLang() === 'fr' ? project.fr : project.ar }}
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

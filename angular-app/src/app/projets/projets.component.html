@@ -1,0 +1,43 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Nos Projets & Réalisations</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">مشاريعنا وإنجازاتنا</h1>
+</div>
+
+<section class="content-section">
+    <!-- Category Filter Tabs -->
+    <div class="categories-tabs">
+        <button *ngFor="let cat of categories" [class.active]="activeCategory === cat" (click)="setCategory(cat)"
+            class="tab-btn">
+            {{ getCategoryLabel(cat) }}
+        </button>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="project-grid">
+        <div class="project-card" *ngFor="let project of filteredProjects" [routerLink]="['/projets', project.id]"
+            style="cursor: pointer;">
+            <div class="project-image-container">
+                <img [src]="project.imageUrl" [alt]="project.titleFr" class="project-image">
+                <div class="main-badge" *ngIf="project.isMain">Principal</div>
+            </div>
+            <div class="project-card-content">
+                <h3>
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ project.titleFr }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ project.titleAr }}</span>
+                </h3>
+
+                <p>
+                    <span *ngIf="langService.currentLang() === 'fr'">{{ getCategoryLabel(project.category || '')
+                        }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">{{ project.category }}</span>
+                </p>
+
+                <p class="status completed">
+                    <span *ngIf="langService.currentLang() === 'fr'">Statut : {{ project.status }}</span>
+                    <span *ngIf="langService.currentLang() === 'ar'">الحالة : {{ getStatusLabel(project.status)
+                        }}</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

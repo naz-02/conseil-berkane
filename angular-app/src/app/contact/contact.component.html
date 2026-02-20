@@ -1,0 +1,78 @@
+<div class="page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Contactez-nous</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">تواصل معنا</h1>
+</div>
+
+<section class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Informations de Contact</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">معلومات الاتصال</h2>
+    <div class="contact-info">
+        <div class="contact-info-item">
+            <h3 *ngIf="langService.currentLang() === 'fr'">Adresse</h3>
+            <h3 *ngIf="langService.currentLang() === 'ar'">العنوان</h3>
+            <p>
+                <span *ngIf="langService.currentLang() === 'fr'">Caracucho, Rue de Londres, Berkane 63300</span>
+                <span *ngIf="langService.currentLang() === 'ar'">كاراكشو، زنقة لندن, Berkane 63300</span>
+            </p>
+        </div>
+        <div class="contact-info-item">
+            <h3 *ngIf="langService.currentLang() === 'fr'">Téléphone</h3>
+            <h3 *ngIf="langService.currentLang() === 'ar'">الهاتف</h3>
+            <p>+212 5 36 61 62 63</p>
+        </div>
+        <div class="contact-info-item">
+            <h3 *ngIf="langService.currentLang() === 'fr'">Email</h3>
+            <h3 *ngIf="langService.currentLang() === 'ar'">البريد الإلكتروني</h3>
+            <p>contact@cpberkane.com</p>
+        </div>
+    </div>
+
+    <div class="localisation-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.548468593217!2d-2.3305494242449485!3d34.94285957283477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7823162c5757c3%3A0x1d25cb282953938c!2sConseil%20Provincial%20de%20Berkane!5e0!3m2!1sfr!2sma!4v1764280117847!5m2!1sfr!2sma"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<section class="content-section">
+    <h2 *ngIf="langService.currentLang() === 'fr'">Envoyez-nous un Message</h2>
+    <h2 *ngIf="langService.currentLang() === 'ar'">أرسل لنا رسالة</h2>
+    <div class="contact-form">
+        <form (submit)="onSubmit($event)">
+            <label for="name">
+                <span *ngIf="langService.currentLang() === 'fr'">Votre Nom :</span>
+                <span *ngIf="langService.currentLang() === 'ar'">اسمك :</span>
+            </label>
+            <input type="text" id="name" name="name" [(ngModel)]="name"
+                [placeholder]="langService.currentLang() === 'fr' ? 'Votre nom complet' : 'اسمك الكامل'" required>
+
+            <label for="email">
+                <span *ngIf="langService.currentLang() === 'fr'">Votre Email :</span>
+                <span *ngIf="langService.currentLang() === 'ar'">بريدك الإلكتروني :</span>
+            </label>
+            <input type="email" id="email" name="email" [(ngModel)]="email"
+                [placeholder]="langService.currentLang() === 'fr' ? 'votre.email@example.com' : 'بريدك الإلكتروني'"
+                required>
+
+            <label for="subject">
+                <span *ngIf="langService.currentLang() === 'fr'">Sujet :</span>
+                <span *ngIf="langService.currentLang() === 'ar'">الموضوع :</span>
+            </label>
+            <input type="text" id="subject" name="subject" [(ngModel)]="subject"
+                [placeholder]="langService.currentLang() === 'fr' ? 'Sujet de votre message' : 'موضوع رسالتك'" required>
+
+            <label for="message">
+                <span *ngIf="langService.currentLang() === 'fr'">Votre Message :</span>
+                <span *ngIf="langService.currentLang() === 'ar'">رسالتك :</span>
+            </label>
+            <textarea id="message" name="message" [(ngModel)]="message"
+                [placeholder]="langService.currentLang() === 'fr' ? 'Écrivez votre message ici...' : 'اكتب رسالتك هنا...'"
+                required></textarea>
+
+            <button type="submit" class="btn btn-primary">
+                <span *ngIf="langService.currentLang() === 'fr'">Envoyer le Message</span>
+                <span *ngIf="langService.currentLang() === 'ar'">إرسال الرسالة</span>
+            </button>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,55 @@
+<footer class="footer-professionnel">
+    <div class="footer-container">
+
+        <div class="footer-col footer-mission">
+            <h3>{{ langService.currentLang() === 'fr' ? 'Conseil Provincial de Berkane' : 'المجلس الإقليمي لبركان' }}
+            </h3>
+            <p>{{ langService.currentLang() === 'fr' ? 'Organe délibérant au service du développement économique et
+                social de la province.' : 'هيئة تداولية في خدمة التنمية الاقتصادية والاجتماعية للإقليم.' }}</p>
+        </div>
+
+        <div class="footer-col footer-contact">
+            <h4>{{ langService.currentLang() === 'fr' ? 'Contact & Localisation' : 'تواصل والموقع' }}</h4>
+            <p>
+                <span>{{ langService.currentLang() === 'fr' ? 'Adresse :' : 'العنوان :' }}</span>
+                <span>{{ langService.currentLang() === 'fr' ? 'Caracucho, Rue de Londres, Berkane 63300' : 'كاراكشو،
+                    زنقة لندن, Berkane 63300' }}</span><br>
+                <span>{{ langService.currentLang() === 'fr' ? 'Téléphone :' : 'هاتف :' }}</span> +212 5 36 61 62 63<br>
+                <span>{{ langService.currentLang() === 'fr' ? 'Email :' : 'بريد إلكتروني :' }}</span>
+                contact@cpberkane.com
+            </p>
+            <div class="localisation-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3270.548468593217!2d-2.3305494242449485!3d34.94285957283477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7823162c5757c3%3A0x1d25cb282953938c!2sConseil%20Provincial%20de%20Berkane!5e0!3m2!1sfr!2sma!4v1764280117847!5m2!1sfr!2sma"
+                    [title]="langService.currentLang() === 'fr' ? 'Carte de localisation du Conseil Provincial de Berkane' : 'خريطة موقع المجلس الإقليمي لبركان'"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-col footer-liens">
+            <h4>{{ langService.currentLang() === 'fr' ? 'Liens Utiles' : 'روابط مهمة' }}</h4>
+            <ul>
+                <li><a routerLink="/plan-site">{{ langService.currentLang() === 'fr' ? 'Plan du Site' : 'خريطة الموقع'
+                        }}</a></li>
+                <li><a routerLink="/mentions-legales">{{ langService.currentLang() === 'fr' ? 'Mentions Légales' :
+                        'إشعارات قانونية' }}</a></li>
+                <li><a routerLink="/accessibilite">{{ langService.currentLang() === 'fr' ? 'Accessibilité' : 'إمكانية
+                        الوصول' }}</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom-bar">
+        <p class="copyright-text">
+            © {{ currentYear }} <span *ngIf="langService.currentLang() === 'fr'">Conseil Provincial de
+                Berkane.</span><span *ngIf="langService.currentLang() === 'ar'">المجلس الإقليمي لبركان.</span>
+            <span>{{ langService.currentLang() === 'fr' ? 'Tous droits réservés.' : 'جميع الحقوق محفوظة.' }}</span>
+        </p>
+        <div class="footer-social-links">
+            <a href="https://www.facebook.com/cpberkane?rdid=9JG2E8SgyjK1s2mk#" aria-label="Facebook"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
