@@ -75,10 +75,46 @@
                 </div>
             </div>
 
-            <!-- Session 11 Extraordinaire 2025 Slide -->
-            <div class="mySlides fade slide-5" [class.active-slide]="slideIndex === 5"
+            <!-- Session 13 Extraordinaire 2025 Slide -->
+            <div class="mySlides fade slide-2" [class.active-slide]="slideIndex === 2"
                 style="background-image: url('assets/images/session-unified.jpg');">
-                <div class="hero-content-wrapper slide-5-content">
+                <div class="hero-content-wrapper slide-2-content">
+                    <h1>
+                        {{ langService.currentLang() === 'fr' ? 'La treizième session extraordinaire du Conseil
+                        Provincial de Berkane' : 'الدورة الاستثنائية الثالثة عشر للمجلس الاقليمي لبركان' }}
+                    </h1>
+                    <p>
+                        {{ langService.currentLang() === 'fr' ? 'Détails sur la treizième session extraordinaire.' :
+                        'تفاصيل حول الدورة الاستثنائية الثالثة عشر' }}
+                    </p>
+                    <a routerLink="/session-13-extraordinaire-2025.html" class="btn btn-primary">
+                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Session 12 Extraordinaire 2025 Slide -->
+            <div class="mySlides fade slide-3" [class.active-slide]="slideIndex === 3"
+                style="background-image: url('assets/images/session-unified.jpg');">
+                <div class="hero-content-wrapper slide-3-content">
+                    <h1>
+                        {{ langService.currentLang() === 'fr' ? 'La douzième session extraordinaire du Conseil
+                        Provincial de Berkane' : 'الدورة الاستثنائية الثانية عشر للمجلس الاقليمي لبركان' }}
+                    </h1>
+                    <p>
+                        {{ langService.currentLang() === 'fr' ? 'Détails sur la douzième session extraordinaire.' :
+                        'تفاصيل حول الدورة الاستثنائية الثانية عشر' }}
+                    </p>
+                    <a routerLink="/session-12-extraordinaire.html" class="btn btn-primary">
+                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Session 11 Extraordinaire 2025 Slide -->
+            <div class="mySlides fade slide-4" [class.active-slide]="slideIndex === 4"
+                style="background-image: url('assets/images/session-unified.jpg');">
+                <div class="hero-content-wrapper slide-4-content">
                     <h1>
                         {{ langService.currentLang() === 'fr' ? 'La onzième session extraordinaire du Conseil Provincial
                         de Berkane' : 'الدورة الاستثنائية الحادية عشر للمجلس الاقليمي لبركان' }}
@@ -104,7 +140,6 @@
             <span class="dot" [class.active]="slideIndex === 2" (click)="currentSlide(2)"></span>
             <span class="dot" [class.active]="slideIndex === 3" (click)="currentSlide(3)"></span>
             <span class="dot" [class.active]="slideIndex === 4" (click)="currentSlide(4)"></span>
-            <span class="dot" [class.active]="slideIndex === 5" (click)="currentSlide(5)"></span>
         </div>
 
     </section>
