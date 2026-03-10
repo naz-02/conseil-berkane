@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { LanguageService } from '../language.service';
 import { NewsService, NewsItem } from '../news.service';
+import { SeoService } from '../seo.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -18,9 +19,19 @@ export class HomeComponent implements OnInit, OnDestroy {
     slideIndex = 1;
     slideInterval: any;
 
-    constructor(public langService: LanguageService, private newsService: NewsService) { }
+    constructor(
+        public langService: LanguageService,
+        private newsService: NewsService,
+        private seoService: SeoService
+    ) { }
 
     ngOnInit() {
+        this.seoService.setMetaTags({
+            title: this.langService.currentLang() === 'fr' ? 'Accueil | Conseil Provincial de Berkane' : 'الرئيسية | المجلس الإقليمي لبركان',
+            description: this.langService.currentLang() === 'fr'
+                ? 'Portail officiel du Conseil Provincial de Berkane. Retrouvez les actualités, projets et services.'
+                : 'البوابة الرسمية للمجلس الإقليمي لبركان. أخبار، مشاريع وخدمات.'
+        });
         this.newsService.getNews().subscribe(data => {
             this.newsItems = data;
         });

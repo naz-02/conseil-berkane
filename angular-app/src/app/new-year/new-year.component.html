@@ -1,0 +1,32 @@
+<div class="news-page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Vœux du Nouvel An</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">تهنئة بمناسبة السنة الجديدة</h1>
+</div>
+
+<section class="news-content-section">
+    <img src="assets/images/new year.jpg" alt="Vœux du Nouvel An"
+        style="width:100%; max-width:600px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Vœux du Nouvel An</h2>
+            <p>
+                À l'occasion de cette nouvelle année, le Conseil Provincial de Berkane renouvelle son engagement au
+                service du développement territorial et de l'intérêt général. Meilleurs vœux pour une année réussie à
+                tous.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">تهنئة بمناسبة السنة الجديدة</h2>
+            <p>
+                في مستهل هذه السنة الجديدة، يجدد المجلس الإقليمي لبركان التزامه بخدمة التنمية الترابية والصالح العام.
+                أطيب المتمنيات لسنة موفقة للجميع
+            </p>
+        </div>
+    </div>
+</section>

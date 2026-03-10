@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ProjectsService, Project } from '../projects.service';
 import { LanguageService } from '../language.service';
+import { SeoService } from '../seo.service';
 import { HttpClient } from '@angular/common/http';
 import { forkJoin } from 'rxjs';
 
@@ -31,12 +32,25 @@ export class SearchComponent implements OnInit {
         private route: ActivatedRoute,
         private projectsService: ProjectsService,
         public langService: LanguageService,
-        private http: HttpClient
+        private http: HttpClient,
+        private seoService: SeoService
     ) { }
 
     ngOnInit() {
         this.route.queryParams.subscribe(params => {
             this.query = params['q'] || '';
+
+            const title = this.langService.currentLang() === 'fr'
+                ? (this.query ? `Recherche: ${this.query} | Conseil Provincial de Berkane` : 'Recherche | Conseil Provincial de Berkane')
+                : (this.query ? `بحث: ${this.query} | المجلس الإقليمي لبركان` : 'بحث | المجلس الإقليمي لبركان');
+
+            this.seoService.setMetaTags({
+                title: title,
+                description: this.langService.currentLang() === 'fr'
+                    ? `Résultats de recherche pour "${this.query}" sur le portail du Conseil Provincial de Berkane.`
+                    : `نتائج البحث عن "${this.query}" في بوابة المجلس الإقليمي لبركان.`
+            });
+
             if (this.query) {
                 this.performSearch(this.query);
             }

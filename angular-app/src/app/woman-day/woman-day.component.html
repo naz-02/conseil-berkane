@@ -1,0 +1,30 @@
+<div class="news-page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Journée Internationale des Droits des Femmes</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">اليوم العالمي للمرأة</h1>
+</div>
+
+<section class="news-content-section">
+    <img src="assets/images/woman day.jpg" alt="Journée Internationale des Droits des Femmes"
+        style="width:100%; max-width:600px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Journée Internationale des Droits des Femmes</h2>
+            <p>
+                Le Conseil Provincial de Berkane célèbre la journée internationale des droits des femmes et rend hommage
+                à toutes les femmes pour leurs contributions exceptionnelles à la société.
+            </p>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">اليوم العالمي للمرأة</h2>
+            <p>
+                يحتفل المجلس الإقليمي لبركان باليوم العالمي للمرأة ويكرم جميع النساء لمساهماتهن المتميزة في المجتمع.
+            </p>
+        </div>
+    </div>
+</section>

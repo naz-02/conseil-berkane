@@ -4,13 +4,13 @@ import { LanguageService } from '../language.service';
 import { SeoService } from '../seo.service';
 
 @Component({
-    selector: 'app-ramadan-mubarak',
+    selector: 'app-new-year',
     standalone: true,
     imports: [CommonModule],
-    templateUrl: './ramadan-mubarak.component.html',
+    templateUrl: './new-year.component.html',
     styles: []
 })
-export class RamadanMubarakComponent implements OnInit {
+export class NewYearComponent implements OnInit {
     constructor(
         public langService: LanguageService,
         private seoService: SeoService
@@ -18,14 +18,14 @@ export class RamadanMubarakComponent implements OnInit {
 
     ngOnInit(): void {
         const title = this.langService.currentLang() === 'fr'
-            ? 'Ramadan Mubarak | Conseil Provincial de Berkane'
-            : 'رمضان مبارك | المجلس الإقليمي لبركان';
+            ? 'Vœux du Nouvel An | Conseil Provincial de Berkane'
+            : 'تهنئة بمناسبة السنة الجديدة | المجلس الإقليمي لبركان';
 
         this.seoService.setMetaTags({
             title: title,
             description: this.langService.currentLang() === 'fr'
-                ? 'Le Conseil Provincial de Berkane vous souhaite un Ramadan Mubarak.'
-                : 'المجلس الإقليمي لبركان يهنئكم بمناسبة شهر رمضان المبارك.'
+                ? 'Le Conseil Provincial de Berkane vous souhaite ses meilleurs vœux pour la nouvelle année.'
+                : 'المجلس الإقليمي لبركان يهنئكم بمناسبة السنة الجديدة.'
         });
     }
 }

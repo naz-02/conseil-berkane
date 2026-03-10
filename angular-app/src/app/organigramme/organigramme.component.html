@@ -4,11 +4,11 @@
         <h1>{{ langService.currentLang() === 'fr' ? 'Organigramme' : 'الهيكل التنظيمي' }}</h1>
     </div>
     <div class="selection-menu">
-        <a routerLink="/organigramme-conseil.html" class="selection-card">
+        <a routerLink="/organigramme-conseil" class="selection-card">
             <i class="fas fa-users"></i>
             <h2>{{ langService.currentLang() === 'fr' ? 'Composition du Conseil' : 'تشكيلة المجلس' }}</h2>
         </a>
-        <a routerLink="/organigramme-administratif.html" class="selection-card">
+        <a routerLink="/organigramme-administratif" class="selection-card">
             <i class="fas fa-sitemap"></i>
             <h2>{{ langService.currentLang() === 'fr' ? 'Organigramme Administratif' : 'الهيكل التنظيمي الإداري' }}</h2>
         </a>
@@ -18,6 +18,9 @@
 <!-- CONSEIL VIEW (Responsive Tree) -->
 <div *ngIf="viewType === 'conseil'">
     <div class="page-header">
+        <a routerLink="/organigramme" class="back-btn">
+            <i class="fas fa-arrow-left"></i> {{ langService.currentLang() === 'fr' ? 'Retour' : 'رجوع' }}
+        </a>
         <h1>{{ langService.currentLang() === 'fr' ? 'Composition du Conseil' : 'تشكيلة المجلس' }}</h1>
     </div>
 
@@ -204,6 +207,9 @@
 <!-- ADMINISTRATIF VIEW (Responsive Tree) -->
 <div *ngIf="viewType === 'administratif'">
     <div class="page-header">
+        <a routerLink="/organigramme" class="back-btn">
+            <i class="fas fa-arrow-left"></i> {{ langService.currentLang() === 'fr' ? 'Retour' : 'رجوع' }}
+        </a>
         <h1>{{ langService.currentLang() === 'fr' ? 'Organigramme Administratif' : 'الهيكل التنظيمي الإداري' }}</h1>
     </div>
 

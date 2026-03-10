@@ -16,6 +16,45 @@
     color: white;
     margin-bottom: 20px;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-5px);
+}
+
+:host-context([dir="rtl"]) .back-btn {
+    left: auto;
+    right: 20px;
+    flex-direction: row-reverse;
+}
+
+:host-context([dir="rtl"]) .back-btn i {
+    transform: rotate(180deg);
+}
+
+:host-context([dir="rtl"]) .back-btn:hover {
+    transform: translateX(5px);
 }
 
 .page-header h1 {
@@ -58,12 +97,11 @@
 }
 
 .tree li {
-    float: left;
+    display: table-cell;
     text-align: center;
     list-style-type: none;
     position: relative;
     padding: 40px 10px 0 10px;
-    /* More breathing room */
     transition: all 0.5s;
 }
 
@@ -120,8 +158,7 @@
 
 /* --- RTL SUPPORT FOR ARABIC --- */
 :host-context([dir="rtl"]) .tree li {
-    float: right;
-    /* Ensure floats flip (though flex probably handles it) */
+    display: table-cell;
 }
 
 :host-context([dir="rtl"]) .tree li::before {
@@ -157,6 +194,7 @@
     right: 50%;
     border-right: var(--line-thickness) solid var(--line-color);
     border-left: none;
+    transform: translateX(50%);
 }
 
 /* Helper to disconnect branches (e.g. Committees from Vices) */
@@ -359,6 +397,7 @@
     font-size: 4rem;
     background: linear-gradient(135deg, #004a8c 0%, #0066cc 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 25px;
 }

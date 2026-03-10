@@ -4,13 +4,13 @@ import { LanguageService } from '../language.service';
 import { SeoService } from '../seo.service';
 
 @Component({
-    selector: 'app-ramadan-mubarak',
+    selector: 'app-woman-day',
     standalone: true,
     imports: [CommonModule],
-    templateUrl: './ramadan-mubarak.component.html',
+    templateUrl: './woman-day.component.html',
     styles: []
 })
-export class RamadanMubarakComponent implements OnInit {
+export class WomanDayComponent implements OnInit {
     constructor(
         public langService: LanguageService,
         private seoService: SeoService
@@ -18,14 +18,14 @@ export class RamadanMubarakComponent implements OnInit {
 
     ngOnInit(): void {
         const title = this.langService.currentLang() === 'fr'
-            ? 'Ramadan Mubarak | Conseil Provincial de Berkane'
-            : 'رمضان مبارك | المجلس الإقليمي لبركان';
+            ? 'Journée Internationale des Droits des Femmes | Conseil Provincial de Berkane'
+            : 'اليوم العالمي للمرأة | المجلس الإقليمي لبركان';
 
         this.seoService.setMetaTags({
             title: title,
             description: this.langService.currentLang() === 'fr'
-                ? 'Le Conseil Provincial de Berkane vous souhaite un Ramadan Mubarak.'
-                : 'المجلس الإقليمي لبركان يهنئكم بمناسبة شهر رمضان المبارك.'
+                ? 'Le Conseil Provincial de Berkane célèbre la journée internationale des droits des femmes.'
+                : 'المجلس الإقليمي لبركان يحتفل باليوم العالمي للمرأة.'
         });
     }
 }

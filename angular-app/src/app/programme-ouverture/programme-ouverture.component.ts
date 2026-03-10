@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../language.service';
+import { SeoService } from '../seo.service';
 
 @Component({
     selector: 'app-programme-ouverture',
@@ -9,7 +10,7 @@ import { LanguageService } from '../language.service';
     templateUrl: './programme-ouverture.component.html',
     styleUrl: './programme-ouverture.component.css'
 })
-export class ProgrammeOuvertureComponent {
+export class ProgrammeOuvertureComponent implements OnInit {
     data = [
         {
             icon: "fas fa-laptop-code",
@@ -126,5 +127,21 @@ export class ProgrammeOuvertureComponent {
         }
     ];
 
-    constructor(public langService: LanguageService) { }
+    constructor(
+        public langService: LanguageService,
+        private seoService: SeoService
+    ) { }
+
+    ngOnInit(): void {
+        const title = this.langService.currentLang() === 'fr'
+            ? 'Programme Ouverture | Conseil Provincial de Berkane'
+            : 'برنامج الانفتاح | المجلس الإقليمي لبركان';
+
+        this.seoService.setMetaTags({
+            title: title,
+            description: this.langService.currentLang() === 'fr'
+                ? 'Consultez les axes et projets du programme d\'Ouverture du Conseil Provincial de Berkane.'
+                : 'اطلع على محاور ومشاريع برنامج الانفتاح للمجلس الإقليمي لبركان.'
+        });
+    }
 }

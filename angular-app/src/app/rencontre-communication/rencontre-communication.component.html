@@ -1,11 +1,11 @@
-<div class="page-header">
+<div class="news-page-header">
     <h1 *ngIf="langService.currentLang() === 'fr'">Rencontre de Communication</h1>
     <h1 *ngIf="langService.currentLang() === 'ar'">لقاء تواصلي تفاعلي</h1>
 </div>
 
-<section class="content-section">
+<section class="news-content-section">
     <img src="assets/images/rencontre-communication.jpg" alt="Rencontre de Communication"
-        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+        style="width:100%; max-width:600px; margin: 0 auto 30px; display: block; border-radius: 8px;">
 
     <!-- Arabic Content -->
     <div *ngIf="langService.currentLang() === 'ar'">

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '../language.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
+import { SeoService } from '../seo.service';
 
 @Component({
     selector: 'app-organigramme',
@@ -17,9 +18,25 @@ export class OrganigrammeComponent implements OnInit {
     selectedBoxElement: Element | null = null;
     isModalOpen = false;
 
-    constructor(public langService: LanguageService, private route: ActivatedRoute, private router: Router) { }
+    constructor(
+        public langService: LanguageService,
+        private route: ActivatedRoute,
+        private router: Router,
+        private seoService: SeoService
+    ) { }
 
     ngOnInit() {
+        const title = this.langService.currentLang() === 'fr'
+            ? 'Organigramme | Conseil Provincial de Berkane'
+            : 'الهيكل التنظيمي | المجلس الإقليمي لبركان';
+
+        this.seoService.setMetaTags({
+            title: title,
+            description: this.langService.currentLang() === 'fr'
+                ? 'Consultez l\'organigramme administratif et du conseil de la province de Berkane.'
+                : 'اطلع على الهيكل التنظيمي الإداري والمجلس بإقليم بركان.'
+        });
+
         this.route.url.subscribe(url => {
             const path = url[0]?.path;
             if (path && path.includes('conseil')) {

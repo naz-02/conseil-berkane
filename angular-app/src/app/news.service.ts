@@ -25,6 +25,6 @@ export class NewsService {
     constructor(private http: HttpClient) { }
 
     getNews(): Observable<NewsItem[]> {
-        return this.http.get<NewsItem[]>('assets/news.json');
+        return this.http.get<NewsItem[]>(`assets/news.json?t=${new Date().getTime()}`);
     }
 }

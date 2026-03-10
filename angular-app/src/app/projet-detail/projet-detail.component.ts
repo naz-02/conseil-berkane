@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { ProjectsService, Project } from '../projects.service';
 import { LanguageService } from '../language.service';
+import { SeoService } from '../seo.service';
 
 @Component({
     selector: 'app-projet-detail',
@@ -19,7 +20,8 @@ export class ProjetDetailComponent implements OnInit {
     constructor(
         private route: ActivatedRoute,
         private projectsService: ProjectsService,
-        public langService: LanguageService
+        public langService: LanguageService,
+        private seoService: SeoService
     ) { }
 
     ngOnInit() {
@@ -34,6 +36,20 @@ export class ProjetDetailComponent implements OnInit {
         if (this.project) {
             this.activeImage = this.project.imageUrl;
             this.relatedProjects = this.projectsService.getRelatedProjects(this.project.category || '', id);
+
+            // Set Dynamic SEO
+            const title = this.langService.currentLang() === 'fr'
+                ? `${this.project.titleFr} | Conseil Provincial de Berkane`
+                : `${this.project.titleAr} | المجلس الإقليمي لبركان`;
+
+            this.seoService.setMetaTags({
+                title: title,
+                description: this.langService.currentLang() === 'fr'
+                    ? this.project.descriptionFr
+                    : this.project.descriptionAr,
+                image: this.project.imageUrl
+            });
+
             window.scrollTo(0, 0);
         }
     }

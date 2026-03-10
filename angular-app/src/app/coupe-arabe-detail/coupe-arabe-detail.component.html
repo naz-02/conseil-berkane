@@ -1,11 +1,11 @@
-<div class="page-header">
+<div class="news-page-header">
     <h1 *ngIf="langService.currentLang() === 'fr'">Félicitations aux Lions de l'Atlas</h1>
     <h1 *ngIf="langService.currentLang() === 'ar'">هنيئا لأسود الأطلس</h1>
 </div>
 
-<section class="content-section">
+<section class="news-content-section">
     <img src="assets/images/cup arab.jpg" alt="Coupe Arabe"
-        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+        style="width:100%; max-width:600px; margin: 0 auto 30px; display: block; border-radius: 8px;">
 
     <!-- Arabic Content -->
     <div *ngIf="langService.currentLang() === 'ar'">

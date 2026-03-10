@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LanguageService } from '../language.service';
 import { ProjectsService, Project } from '../projects.service';
 import { RouterModule } from '@angular/router';
+import { SeoService } from '../seo.service';
 
 @Component({
     selector: 'app-projets',
@@ -31,10 +32,22 @@ export class ProjetsComponent implements OnInit {
 
     constructor(
         public langService: LanguageService,
-        private projectsService: ProjectsService
+        private projectsService: ProjectsService,
+        private seoService: SeoService
     ) { }
 
     ngOnInit() {
+        const title = this.langService.currentLang() === 'fr'
+            ? 'Projets de Développement | Conseil Provincial de Berkane'
+            : 'مشاريع التنمية | المجلس الإقليمي لبركان';
+
+        this.seoService.setMetaTags({
+            title: title,
+            description: this.langService.currentLang() === 'fr'
+                ? 'Découvrez les projets de développement provincial à Berkane : infrastructure, social, santé et éducation.'
+                : 'اكتشف مشاريع التنمية بإقليم بركان: البنية التحتية، القطاع الاجتماعي، الصحة والتعليم.'
+        });
+
         this.projects = this.projectsService.getProjects();
     }
 

@@ -12,7 +12,7 @@
             <h4>{{ langService.currentLang() === 'fr' ? 'Contact & Localisation' : 'تواصل والموقع' }}</h4>
             <p>
                 <span>{{ langService.currentLang() === 'fr' ? 'Adresse :' : 'العنوان :' }}</span>
-                <span>{{ langService.currentLang() === 'fr' ? 'Caracucho, Rue de Londres, Berkane 63300' : 'كاراكشو،
+                <span> {{ langService.currentLang() === 'fr' ? 'Caracucho, Rue de Londres, Berkane 63300' : 'كاراكشو،
                     زنقة لندن, Berkane 63300' }}</span><br>
                 <span>{{ langService.currentLang() === 'fr' ? 'Téléphone :' : 'هاتف :' }}</span> +212 5 36 61 62 63<br>
                 <span>{{ langService.currentLang() === 'fr' ? 'Email :' : 'بريد إلكتروني :' }}</span>
@@ -43,7 +43,7 @@
     <div class="footer-bottom-bar">
         <p class="copyright-text">
             © {{ currentYear }} <span *ngIf="langService.currentLang() === 'fr'">Conseil Provincial de
-                Berkane.</span><span *ngIf="langService.currentLang() === 'ar'">المجلس الإقليمي لبركان.</span>
+                Berkane. </span><span *ngIf="langService.currentLang() === 'ar'">المجلس الإقليمي لبركان. </span>
             <span>{{ langService.currentLang() === 'fr' ? 'Tous droits réservés.' : 'جميع الحقوق محفوظة.' }}</span>
         </p>
         <div class="footer-social-links">
