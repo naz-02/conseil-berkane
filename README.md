@@ -1,4 +1,4 @@
-# Conseil Provincial de Berkane - Portail Institutionnel
+# Conseil Provincial de Berkane - Portail Institutionnel 🍊
 
 Bienvenue sur le dépôt officiel du portail web du Conseil Provincial de Berkane. Ce projet vise à offrir une plateforme numérique moderne pour informer les citoyens sur les actualités, les projets de développement et les sessions du conseil.
 
