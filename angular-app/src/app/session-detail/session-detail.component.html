@@ -1,0 +1,31 @@
+<ng-container *ngIf="session; else notFound">
+
+    <div class="page-header">
+        <h1 *ngIf="langService.currentLang() === 'fr'">{{ session.titleFr }}</h1>
+        <h1 *ngIf="langService.currentLang() === 'ar'">{{ session.titleAr }}</h1>
+    </div>
+
+    <section class="content-section">
+        <img [src]="session.image"
+             [alt]="langService.currentLang() === 'fr' ? session.titleFr : session.titleAr"
+             style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px;">
+
+        <div *ngIf="langService.currentLang() === 'fr'"
+             class="session-report" dir="ltr"
+             [innerHTML]="session.contentFr | safeHtml">
+        </div>
+
+        <div *ngIf="langService.currentLang() === 'ar'"
+             class="session-report" dir="rtl"
+             [innerHTML]="session.contentAr | safeHtml">
+        </div>
+    </section>
+
+</ng-container>
+
+<ng-template #notFound>
+    <div class="page-header">
+        <h1 *ngIf="langService.currentLang() === 'fr'">Session introuvable</h1>
+        <h1 *ngIf="langService.currentLang() === 'ar'">الدورة غير موجودة</h1>
+    </div>
+</ng-template>
