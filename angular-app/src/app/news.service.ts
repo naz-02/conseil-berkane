@@ -15,6 +15,7 @@ export interface NewsItem {
     link_text: string;
     link_text_ar: string;
     image?: string;
+    video?: string;
 }
 
 @Injectable({
