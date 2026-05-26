@@ -1,0 +1,67 @@
+<div class="news-page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Portes Ouvertes 2026</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الأبواب المفتوحة 2026</h1>
+</div>
+
+<section class="news-content-section">
+    <video src="assets/videos/0414(1).mp4" controls
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px; box-shadow: var(--ombre-douce);"></video>
+
+    <img src="assets/images/porte-ouvert.jpg" alt="Portes Ouvertes" 
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px; box-shadow: var(--ombre-douce);">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <p style="font-weight: bold; color: var(--couleur-secondaire); margin-bottom: 20px; font-size: 1.2em;">
+                Sous le thème « Une administration citoyenne au service du développement durable », le Conseil Provincial de Berkane a organisé l'événement « Portes Ouvertes » les 15 et 16 avril, une étape institutionnelle qui reflète un saut qualitatif dans la gestion des affaires locales et incarne l'engagement du Conseil envers le choix de l'ouverture comme moyen de renforcer la confiance et la communication avec les citoyens. Cette initiative s'inscrit dans le cadre de l'adhésion du Conseil au réseau des collectivités territoriales ouvertes.
+            </p>
+            <p>
+                Le premier jour de cet événement a été une occasion marquante de rappeler les valeurs de reconnaissance et d'appréciation. En présence de Monsieur le Secrétaire Général de la Province de Berkane, ainsi que de plusieurs présidents de conseils communaux, représentants des services extérieurs, et associations partenaires du Conseil, cette journée a été marquée par l'hommage rendu à M. Abdessadek Zaki, premier président du Conseil Provincial de Berkane entre 1995 et 2003, en reconnaissance de ses contributions pionnières à la construction d'une base solide pour la gestion des affaires provinciales et son soutien au processus de développement local.
+            </p>
+            <p>
+                Les activités des Portes Ouvertes se sont poursuivies le deuxième jour dans une atmosphère de pleine interaction et de communication, avec un afflux important d'institutions éducatives et de centres qui ont visité le Conseil. Ces visites organisées visaient à présenter aux visiteurs ses différentes installations et ses rôles. Elles comprenaient des explications détaillées sur les programmes de développement supervisés par le Conseil, permettant ainsi aux élèves, étudiants et cadres des centres de mieux comprendre les mécanismes de fonctionnement de l'administration territoriale, ses enjeux, et de les sensibiliser à l'importance de participer à la gestion des affaires publiques.
+            </p>
+            <p>
+                La tournée a inclus la visite de plusieurs stands où les participants ont découvert des modèles de coopération entre le Conseil et les associations partenaires, ainsi que le rôle de ces dernières dans la synergie des efforts de développement et la promotion de l'action sociale. Une présentation spéciale a également été faite sur les services de l'unité médicale mobile, qui contribue à rapprocher les soins de santé de la population des zones rurales éloignées, ainsi que la présentation de la bibliothèque mobile en tant que projet culturel distingué qui encourage la lecture et promeut les valeurs de l'apprentissage continu chez les enfants et les jeunes.
+            </p>
+            <p>
+                L'événement ne s'est pas limité à la seule présentation des services, mais a également été le théâtre d'échanges constructifs entre les visiteurs, les cadres du Conseil et les représentants d'associations, grâce à un espace de discussion ouvert pour répondre aux questions. Cette démarche vient confirmer les principes qui visent à renforcer la confiance entre les institutions et les citoyens et à enraciner l'ouverture comme une approche pérenne.
+            </p>
+            <p>
+                Cet événement reflète une vision ambitieuse pour améliorer le service public et en faire un espace d'innovation collective et de responsabilité partagée, soutenant ainsi l'implication du citoyen en tant que pilier fondamental de la gestion des affaires publiques.
+            </p>
+
+            <div style="margin-top: 20px; color: #666;">
+                #Berkane #PortesOuvertes #DéveloppementDurable #ParticipationCitoyenne
+            </div>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <p style="font-weight: bold; color: var(--couleur-secondaire); margin-bottom: 20px; font-size: 1.2em;">
+                تحت شعار "إدارة مواطنة في خدمة التنمية المستدامة"، نظم المجلس الإقليمي لبركان فعالية "الأبواب المفتوحة" يومي 15 و16 أبريل الجاري، في محطة مؤسساتية تعكس نقلة نوعية في تدبير الشأن المحلي، وتجسد التزام المجلس بخيار الانفتاح كوسيلة لبناء الثقة وتعزيز التواصل مع المواطنين، وتأتي هذه المبادرة ضمن سياق انضمام المجلس إلى شبكة الجماعات الترابية المنفتحة.
+            </p>
+            <p>
+                اليوم الأول من هذه الفعالية كان مناسبة بارزة لاستحضار قيم الاعتراف والتقدير، حيث حضرها السيد الكاتب العام لعمالة بركان إلى جانب عدد من رؤساء المجالس الجماعية وممثلي المصالح الخارجية، والجمعيات الشريكة للمجلس وقد تميز بتكريم السيد عبد الصادق الزكي، أول رئيس للمجلس الإقليمي لبركان خلال الفترة 1995-2003، اعترافا بإسهاماته الرائدة في بناء قاعدة متينة لتدبير الشأن الإقليمي ودعمه لمسار التنمية المحلية.
+            </p>
+            <p>
+                استمرت فعاليات الأبواب المفتوحة في اليوم الثاني بأجواء مفعمة بالتفاعل والتواصل، مع توافد كبير من المؤسسات التربوية والمراكز على المجلس في زيارات منظمة تهدف إلى تعريف الزائرين بمختلف مرافقه وأدواره، تضمنت هذه الزيارات شروحات وافية عن برامج التنمية التي يشرف المجلس على تنفيذها، ما ساهم في تمكين التلاميذ والطلبة وأطر المراكز من فهم أعمق لآليات عمل الإدارة الترابية ورهاناتها، وتعزيز وعيهم بأهمية المشاركة في تدبير الشأن العام.
+            </p>
+            <p>
+                الجولة شملت زيارة لمجموعة من الأروقة، حيث اطلع المشاركون على نماذج التعاون بين المجلس والجمعيات الشريكة، والدور الذي تلعبه هذه الأخيرة في تكامل الجهود التنموية وتعزيز العمل الاجتماعي، كما تم تقديم عرض خاص عن خدمات الوحدة الطبية المتنقلة التي تسهم في تقريب الرعاية الصحية من ساكنة المناطق القروية النائية، إلى جانب التعريف بالمكتبة المتنقلة كمشروع ثقافي متميز يشجع على القراءة ويعزز قيم التعلم المستمر لدى الأطفال والشباب.
+            </p>
+            <p>
+                التظاهرة لم تقتصر على التعريف بالخدمات فقط، بل شهدت تفاعلا بناء بين الزوار وأطر المجلس وممثلي الجمعيات من خلال فتح المجال للنقاش والإجابة عن التساؤلات، ويأتي هذا التوجه لتأكيد المبادئ التي تركز على تقوية الثقة بين الأجهزة المؤسسية والمواطنين وترسيخ الانفتاح كنهج دائم.
+            </p>
+            <p>
+                الفعالية تعكس رؤية طموحة للارتقاء بالمرفق العمومي وجعله فضاء للإبداع الجماعي والمسؤولية المشتركة، بما يدعم انخراط المواطن كركيزة أساسية في تدبير الشأن العام.
+            </p>
+            <div style="margin-top: 20px; color: #666;">
+                #بركان #الأبواب_المفتوحة #التنمية_المستدامة #المشاركة_المواطنة
+            </div>
+        </div>
+    </div>
+</section>
