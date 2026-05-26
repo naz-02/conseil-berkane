@@ -31,7 +31,7 @@ jobs:
       working-directory: ./angular-app
       run: npm run build -- --configuration production
 
-    - name: 📂 Sync files (Deploy)
+    - name: 📂 Sync files (Deploy → .org)
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ${{ secrets.FTP_SERVER }}
@@ -44,4 +44,4 @@ jobs:
         exclude: |
           **/.git*
           **/.git*/**
-          **/node_modules/**
+          **/node_mod
