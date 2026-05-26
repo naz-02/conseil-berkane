@@ -2,44 +2,10 @@
     <section id="hero" class="hero-section">
         <div class="slideshow-container">
 
-            <!-- Session 4 Extraordinaire 2026 Slide (Newest) -->
+            <!-- Session Janvier 2026 Slide (Newest) -->
             <div class="mySlides fade slide-1" [class.active-slide]="slideIndex === 1"
                 style="background-image: url('assets/images/session-unified.jpg');">
                 <div class="hero-content-wrapper slide-1-content">
-                    <h1>
-                        {{ langService.currentLang() === 'fr' ? '4ème Session Extraordinaire 2026' : 'الدورة الاستثنائية رقم 04 لسنة 2026' }}
-                    </h1>
-                    <p>
-                        {{ langService.currentLang() === 'fr' ? 'Détails sur la quatrième session extraordinaire tenue le 18 Mai 2026.' :
-                        'تفاصيل حول الدورة الاستثنائية رقم 04 المنعقدة بتاريخ 18 ماي 2026' }}
-                    </p>
-                    <a routerLink="/session-4-extraordinaire-2026" class="btn btn-primary">
-                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
-                    </a>
-                </div>
-            </div>
-
-            <!-- Session 3 Extraordinaire 2026 Slide -->
-            <div class="mySlides fade slide-2" [class.active-slide]="slideIndex === 2"
-                style="background-image: url('assets/images/session-unified.jpg');">
-                <div class="hero-content-wrapper slide-2-content">
-                    <h1>
-                        {{ langService.currentLang() === 'fr' ? '3ème Session Extraordinaire 2026' : 'الدورة الاستثنائية رقم 03 لشهر مارس 2026' }}
-                    </h1>
-                    <p>
-                        {{ langService.currentLang() === 'fr' ? 'Détails sur la troisième session extraordinaire tenue le 26 Mars 2026.' :
-                        'تفاصيل حول الدورة الاستثنائية رقم 03 المنعقدة بتاريخ 26 مارس 2026' }}
-                    </p>
-                    <a routerLink="/session-3-extraordinaire-2026" class="btn btn-primary">
-                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
-                    </a>
-                </div>
-            </div>
-
-            <!-- Session Janvier 2026 Slide -->
-            <div class="mySlides fade slide-3" [class.active-slide]="slideIndex === 3"
-                style="background-image: url('assets/images/session-unified.jpg');">
-                <div class="hero-content-wrapper slide-3-content">
                     <h1>
                         {{ langService.currentLang() === 'fr' ? 'Session Ordinaire de Janvier 2026' : 'الدورة العادية
                         لشهر يناير 2026' }}
@@ -48,58 +14,116 @@
                         {{ langService.currentLang() === 'fr' ? 'Détails sur la session ordinaire de Janvier 2026.' :
                         'تفاصيل حول الدورة العادية لشهر يناير 2026' }}
                     </p>
-                    <a routerLink="/session-janvier-2026" class="btn btn-primary">
+                    <a routerLink="/session-janvier-2026.html" class="btn btn-primary">
                         {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
                     </a>
                 </div>
             </div>
 
             <!-- Session 1 Extraordinaire 2026 Slide -->
-            <div class="mySlides fade slide-4" [class.active-slide]="slideIndex === 4"
+            <div class="mySlides fade slide-2" [class.active-slide]="slideIndex === 2"
                 style="background-image: url('assets/images/session-unified.jpg');">
-                <div class="hero-content-wrapper slide-4-content">
+                <div class="hero-content-wrapper slide-2-content">
                     <h1>
-                        {{ langService.currentLang() === 'fr' ? '2ème Session Extraordinaire 2026' : 'الدورة الاستثنائية الثانية لسنة 2026' }}
+                        {{ langService.currentLang() === 'fr' ? 'Première session extraordinaire 2026 du Conseil
+                        Provincial' : 'الدورة الاستثنائية الأولى لسنة 2026 للمجلس الاقليمي' }}
                     </h1>
                     <p>
-                        {{ langService.currentLang() === 'fr' ? 'Détails sur la deuxième session extraordinaire de 2026.' :
-                        'تفاصيل حول الدورة الاستثنائية الثانية لسنة 2026' }}
+                        {{ langService.currentLang() === 'fr' ? 'Détails sur la première session extraordinaire de
+                        2026.' :
+                        'تفاصيل حول الدورة الاستثنائية الأولى لسنة 2026' }}
                     </p>
-                    <a routerLink="/session-1-extraordinaire-2026" class="btn btn-primary">
+                    <a routerLink="/session-1-extraordinaire-2026.html" class="btn btn-primary">
                         {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
                     </a>
                 </div>
             </div>
 
             <!-- Session 13 Extraordinaire 2025 Slide -->
-            <div class="mySlides fade slide-5" [class.active-slide]="slideIndex === 5"
+            <div class="mySlides fade slide-3" [class.active-slide]="slideIndex === 3"
                 style="background-image: url('assets/images/session-unified.jpg');">
-                <div class="hero-content-wrapper slide-5-content">
+                <div class="hero-content-wrapper slide-3-content">
                     <h1>
-                        {{ langService.currentLang() === 'fr' ? 'La treizième session extraordinaire 2025' : 'الدورة الاستثنائية الثالثة عشر لسنة 2025' }}
+                        {{ langService.currentLang() === 'fr' ? 'La treizième session extraordinaire du Conseil
+                        Provincial de Berkane' : 'الدورة الاستثنائية الثالثة عشر للمجلس الاقليمي لبركان' }}
                     </h1>
                     <p>
                         {{ langService.currentLang() === 'fr' ? 'Détails sur la treizième session extraordinaire.' :
                         'تفاصيل حول الدورة الاستثنائية الثالثة عشر' }}
                     </p>
-                    <a routerLink="/session-13-extraordinaire-2025" class="btn btn-primary">
+                    <a routerLink="/session-13-extraordinaire-2025.html" class="btn btn-primary">
                         {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
                     </a>
                 </div>
             </div>
 
             <!-- Session 12 Extraordinaire 2025 Slide -->
-            <div class="mySlides fade slide-6" [class.active-slide]="slideIndex === 6"
+            <div class="mySlides fade slide-4" [class.active-slide]="slideIndex === 4"
                 style="background-image: url('assets/images/session-unified.jpg');">
-                <div class="hero-content-wrapper slide-6-content">
+                <div class="hero-content-wrapper slide-4-content">
                     <h1>
-                        {{ langService.currentLang() === 'fr' ? 'La douzième session extraordinaire 2025' : 'الدورة الاستثنائية الثانية عشر لسنة 2025' }}
+                        {{ langService.currentLang() === 'fr' ? 'La douzième session extraordinaire du Conseil
+                        Provincial de Berkane' : 'الدورة الاستثنائية الثانية عشر للمجلس الاقليمي لبركان' }}
                     </h1>
                     <p>
                         {{ langService.currentLang() === 'fr' ? 'Détails sur la douzième session extraordinaire.' :
                         'تفاصيل حول الدورة الاستثنائية الثانية عشر' }}
                     </p>
-                    <a routerLink="/session-12-extraordinaire" class="btn btn-primary">
+                    <a routerLink="/session-12-extraordinaire.html" class="btn btn-primary">
+                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Session 13 Extraordinaire 2025 Slide -->
+            <div class="mySlides fade slide-2" [class.active-slide]="slideIndex === 2"
+                style="background-image: url('assets/images/session-unified.jpg');">
+                <div class="hero-content-wrapper slide-2-content">
+                    <h1>
+                        {{ langService.currentLang() === 'fr' ? 'La treizième session extraordinaire du Conseil
+                        Provincial de Berkane' : 'الدورة الاستثنائية الثالثة عشر للمجلس الاقليمي لبركان' }}
+                    </h1>
+                    <p>
+                        {{ langService.currentLang() === 'fr' ? 'Détails sur la treizième session extraordinaire.' :
+                        'تفاصيل حول الدورة الاستثنائية الثالثة عشر' }}
+                    </p>
+                    <a routerLink="/session-13-extraordinaire-2025.html" class="btn btn-primary">
+                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Session 12 Extraordinaire 2025 Slide -->
+            <div class="mySlides fade slide-3" [class.active-slide]="slideIndex === 3"
+                style="background-image: url('assets/images/session-unified.jpg');">
+                <div class="hero-content-wrapper slide-3-content">
+                    <h1>
+                        {{ langService.currentLang() === 'fr' ? 'La douzième session extraordinaire du Conseil
+                        Provincial de Berkane' : 'الدورة الاستثنائية الثانية عشر للمجلس الاقليمي لبركان' }}
+                    </h1>
+                    <p>
+                        {{ langService.currentLang() === 'fr' ? 'Détails sur la douzième session extraordinaire.' :
+                        'تفاصيل حول الدورة الاستثنائية الثانية عشر' }}
+                    </p>
+                    <a routerLink="/session-12-extraordinaire.html" class="btn btn-primary">
+                        {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Session 11 Extraordinaire 2025 Slide -->
+            <div class="mySlides fade slide-4" [class.active-slide]="slideIndex === 4"
+                style="background-image: url('assets/images/session-unified.jpg');">
+                <div class="hero-content-wrapper slide-4-content">
+                    <h1>
+                        {{ langService.currentLang() === 'fr' ? 'La onzième session extraordinaire du Conseil Provincial
+                        de Berkane' : 'الدورة الاستثنائية الحادية عشر للمجلس الاقليمي لبركان' }}
+                    </h1>
+                    <p>
+                        {{ langService.currentLang() === 'fr' ? 'Détails sur la onzième session extraordinaire.' :
+                        'تفاصيل حول الدورة الاستثنائية الحادية عشر' }}
+                    </p>
+                    <a routerLink="/session-11-extraordinaire.html" class="btn btn-primary">
                         {{ langService.currentLang() === 'fr' ? 'En Savoir Plus' : 'اعرف المزيد' }}
                     </a>
                 </div>
@@ -116,8 +140,6 @@
             <span class="dot" [class.active]="slideIndex === 2" (click)="currentSlide(2)"></span>
             <span class="dot" [class.active]="slideIndex === 3" (click)="currentSlide(3)"></span>
             <span class="dot" [class.active]="slideIndex === 4" (click)="currentSlide(4)"></span>
-            <span class="dot" [class.active]="slideIndex === 5" (click)="currentSlide(5)"></span>
-            <span class="dot" [class.active]="slideIndex === 6" (click)="currentSlide(6)"></span>
         </div>
 
     </section>
@@ -130,8 +152,6 @@
             <article class="card-actu" *ngFor="let article of newsItems">
                 <img *ngIf="article.image" [src]="article.image" [alt]="article.title" loading="lazy"
                     style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; display: block;">
-                <video *ngIf="article.video" [src]="article.video" controls
-                    style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px 8px 0 0; display: block;"></video>
                 <div class="card-actu-content">
                     <span class="tag-actu" [ngClass]="article.tag_class">{{ langService.currentLang() === 'fr' ?
                         article.tag : article.tag_ar }}</span>
@@ -145,4 +165,29 @@
         <div style="text-align: center; margin-top: 30px;">
             <a routerLink="/actualites" class="btn btn-secondary">
                 {{ langService.currentLang() === 'fr' ? 'Voir toutes les Actualités' : 'مشاهدة جميع الأخبار' }}
- 
+            </a>
+        </div>
+    </section>
+</div>
+
+<section id="services-rapides">
+    <h2 class="section-title">
+        {{ langService.currentLang() === 'fr' ? 'Services Citoyens & Accès Direct' : 'خدمات المواطنين والوصول المباشر'
+        }}
+    </h2>
+    <div class="grille-services">
+        <a routerLink="/contact.html" class="service-box">
+            <span role="img" [attr.aria-label]="langService.currentLang() === 'fr' ? 'Lettre' : 'رسالة'">✉️</span>
+            {{ langService.currentLang() === 'fr' ? 'Déposer une Réclamation' : 'تقديم شكاية' }}
+        </a>
+        <a routerLink="/loi-organique.html" class="service-box">
+            <span role="img" [attr.aria-label]="langService.currentLang() === 'fr' ? 'Parchemin' : 'رق'">📜</span>
+            {{ langService.currentLang() === 'fr' ? 'Espace Juridique' : 'الفضاء القانوني' }}
+        </a>
+        <a routerLink="/organigramme-administratif.html" class="service-box">
+            <span role="img"
+                [attr.aria-label]="langService.currentLang() === 'fr' ? 'Groupe de personnes' : 'مجموعة أشخاص'">👥</span>
+            {{ langService.currentLang() === 'fr' ? 'Contacter La direction' : 'اتصال بالادارة' }}
+        </a>
+    </div>
+</section>
