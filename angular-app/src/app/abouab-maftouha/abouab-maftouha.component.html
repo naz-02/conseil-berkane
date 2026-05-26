@@ -1,0 +1,81 @@
+<div class="news-page-header">
+    <h1 *ngIf="langService.currentLang() === 'fr'">Portes Ouvertes 2026</h1>
+    <h1 *ngIf="langService.currentLang() === 'ar'">الأبواب المفتوحة 2026</h1>
+</div>
+
+<section class="news-content-section">
+    <img src="assets/images/abouab-maftouha.jpg" alt="Journées Portes Ouvertes"
+        style="width:100%; max-width:800px; margin: 0 auto 30px; display: block; border-radius: 8px; box-shadow: var(--ombre-douce);">
+
+    <!-- French Content -->
+    <div *ngIf="langService.currentLang() === 'fr'">
+        <div class="session-report" dir="ltr">
+            <h2 class="session-title">Avis à tous : Journées "Portes Ouvertes"</h2>
+            <p style="font-weight: bold; color: var(--couleur-secondaire); margin-bottom: 20px;">
+                « Le Conseil Provincial… une administration citoyenne au service du développement durable »
+            </p>
+            <p>
+                Dans le cadre du renforcement de l’ouverture et de la communication avec les citoyennes et citoyens, le Conseil Provincial de Berkane organise les « Portes Ouvertes » les <strong>15 et 16 avril 2026</strong>.
+            </p>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid var(--couleur-primaire);">
+                <p>📅 <strong>Dates :</strong> 15 et 16 avril 2026</p>
+                <p>🕙 <strong>Heure :</strong> À partir de 10h00</p>
+                <p>📍 <strong>Lieu :</strong> Au siège de l'administration du Conseil Provincial de Berkane</p>
+            </div>
+
+            <p>
+                Nous invitons chaleureusement les habitants de l'éprovince, les acteurs de la société civile et toutes les personnes intéressées à venir :
+            </p>
+            <ul>
+                <li>Découvrir les services proposés par le Conseil.</li>
+                <li>Échanger directement avec les membres et le personnel administratif.</li>
+                <li>Contribuer par vos idées et suggestions au développement de notre province.</li>
+            </ul>
+
+            <p style="font-weight: bold; text-align: center; margin-top: 30px; font-size: 1.1em;">
+                🤝 Votre présence nous honore et votre participation fait la différence.
+            </p>
+            
+            <div style="margin-top: 20px; color: #666;">
+                #Berkane #PortesOuvertes #DéveloppementDurable #ParticipationCitoyenne
+            </div>
+        </div>
+    </div>
+
+    <!-- Arabic Content -->
+    <div *ngIf="langService.currentLang() === 'ar'">
+        <div class="session-report" dir="rtl">
+            <h2 class="session-title">إعلان للجميع: تظاهرة “الأبواب المفتوحة”</h2>
+            <p style="font-weight: bold; color: var(--couleur-secondaire); margin-bottom: 20px; font-size: 1.2em;">
+                “المجلس الإقليمي… إدارة مواطنة في خدمة التنمية المستدامة”
+            </p>
+            <p>
+                في إطار تعزيز الانفتاح والتواصل مع المواطنات والمواطنين، ينظم المجلس الإقليمي لبركان تظاهرة “الأبواب المفتوحة” يومي <strong>15 و16 أبريل 2026</strong>.
+            </p>
+
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-right: 4px solid var(--couleur-primaire);">
+                <p>📅 <strong>التاريخ:</strong> 15 و16 أبريل 2026</p>
+                <p>🕙 <strong>الوقت:</strong> ابتداءً من الساعة 10 صباحًا</p>
+                <p>📍 <strong>المكان:</strong> بمقر إدارة المجلس الإقليمي لبركان</p>
+            </div>
+
+            <p>
+                ندعو ساكنة الإقليم، فعاليات المجتمع المدني، والمهتمين، للحضور من أجل:
+            </p>
+            <ul style="padding-right: 20px;">
+                <li>اكتشاف خدمات المجلس ومختلف مصالحه.</li>
+                <li>التواصل المباشر مع أعضاء وموظفي المجلس.</li>
+                <li>المساهمة بأفكار واقتراحات من أجل تنمية إقليمنا.</li>
+            </ul>
+
+            <p style="font-weight: bold; text-align: center; margin-top: 30px; font-size: 1.3em;">
+                🤝 حضوركم يشرفنا ومشاركتكم تصنع الفرق
+            </p>
+
+            <div style="margin-top: 20px; color: #666;">
+                #بركان #الأبواب_المفتوحة #التنمية_المستدامة #المشاركة_المواطنة
+            </div>
+        </div>
+    </div>
+</section>

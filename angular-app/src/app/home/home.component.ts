@@ -58,9 +58,9 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
 
     showSlides(n: number) {
-        // Updated for 4 slides
-        if (n > 4) { this.slideIndex = 1; }
-        else if (n < 1) { this.slideIndex = 4; }
+        // Updated for 6 slides
+        if (n > 6) { this.slideIndex = 1; }
+        else if (n < 1) { this.slideIndex = 6; }
         else { this.slideIndex = n; }
     }
 }
